@@ -1,0 +1,14 @@
+FILE: _uidiy\自定义UI相关(UI DIY)\自定义UI相关\ModUI\UI制作教程.docx
+PARAS: 11
+工具教程SDK：
+http://fairygui.com/
+打开modui工程
+新建包
+在自己的包里创建UI
+如果要用别的图素，就自己弄到自己的包里就行
+GSQ的图素和控件已经内置，不用导出和加载
+将主要控件设置为导出
+发布自己的包
+将导出的所有文件复制到MOD文件夹
+包加载方法: 在MOD的对应Info.json里加入 "UIPackage":"包路径",( 例如UI/Sample)
+使用方法见Example\Scripts\Window\SampleWindow.lua

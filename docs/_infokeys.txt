@@ -1,0 +1,17 @@
+KEY                     CNT  SAMPLE                                   FILE
+Name                     42  喜结良缘                                     content
+DisplayName              42  喜结良缘【匹配新修仙聊天群】                           content
+GameVersion              42  1.24                                     content
+Version                  42  1.7                                      content
+Desc                     42  [作者]     tefeink [简介] 喜结良缘【匹配新修仙聊天群】： content
+Author                   42  TEFEINK                                  content
+IncreasedDesc            42  修复各培养桌不能培养婴儿的BUG。 修复继承【孕妇】的BUG。 修复模型时间 content
+UIPackage                40  UI/Orphanage                             content
+ID                       38  1819060504                               content
+Flag                     38  685168000                                content
+Tags                     38  ['Reincarnation', 'Gong', 'Item', 'Equip content
+IsInsideCreat            38  False                                    content
+Previews                 34  []                                       content
+ParentModInfo            31  None                                     content
+Sort                      4  99999                                    AmazingCultivationSimulator
+UIPackage说明               1  载入UI模块，多个包用逗号隔开，没有就删掉UIPackage           AmazingCultivationSimulator

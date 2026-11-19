@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Magics>
+	<List>
+		<!-- 万法阁：打开主面板 -->
+		<Magic Name="WFG_Magic_Panel" Type="Class">
+			<DisplayName>万法阁</DisplayName>
+			<Desc>展开万法阁的卷册，查看自身道途、素材库与天机。</Desc>
+			<Icon>res\Sprs\ui\icon_youcui01</Icon>
+			<Kind>None</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<SelectMode>None</SelectMode>
+			<ClassName>WFG_Magic_Panel</ClassName>
+		</Magic>
+
+		<!-- 凝练衍天珠：打开数量选择窗 -->
+		<Magic Name="WFG_Magic_NingZhu" Type="Class">
+			<DisplayName>凝练衍天珠</DisplayName>
+			<Desc>消耗 500 灵气凝练一枚衍天珠。衍天珠可服用、佩带，亦是炼制灵析剑与灵源剑的核心材料。</Desc>
+			<Icon>wfg_skill_ningzhu.png</Icon>
+			<Kind>None</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<SelectMode>None</SelectMode>
+			<ClassName>WFG_Magic_NingZhu</ClassName>
+		</Magic>
+
+		<!-- 本命法宝：打开独立的本命法宝窗口 -->
+		<Magic Name="WFG_Magic_Hall" Type="Class">
+			<DisplayName>本命法宝</DisplayName>
+			<Desc>展开本命法宝界面，查看灵析剑与灵源剑的佩带状态、素材同步与能源核心。</Desc>
+			<Icon>wfg_skill_benminfabao.png</Icon>
+			<Kind>None</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<SelectMode>None</SelectMode>
+			<ClassName>WFG_Magic_Hall</ClassName>
+		</Magic>
+
+		<!-- 自愈程序：关闭态（点击开启） -->
+		<Magic Name="WFG_Magic_HealOff" Type="Class">
+			<DisplayName>自愈程序·关闭</DisplayName>
+			<Desc>灵子程序处于待机。点此启动自愈：灵气未满时提高回灵速度，灵气充盈后再回复气血。</Desc>
+			<Icon>wfg_skill_heal_off.png</Icon>
+			<Kind>Good</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<Param1>2</Param1>
+			<SelectMode>None</SelectMode>
+			<ClassName>WFG_Magic_HealToggle</ClassName>
+		</Magic>
+
+		<!-- 自愈程序：开启态（点击关闭） -->
+		<Magic Name="WFG_Magic_HealOn" Type="Class">
+			<DisplayName>自愈程序·开启</DisplayName>
+			<Desc>灵子程序正在运转：灵气未满时持续提高回灵速度，灵气充盈后溢出部分转为气血。</Desc>
+			<Icon>wfg_skill_heal.png</Icon>
+			<Kind>Good</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<Param1>2</Param1>
+			<SelectMode>None</SelectMode>
+			<ClassName>WFG_Magic_HealToggle</ClassName>
+		</Magic>
+
+		<!-- 衍天：解析物品 -->
+		<Magic Name="WFG_Magic_Derive" Type="Class">
+			<DisplayName>衍天·解析</DisplayName>
+			<Desc>以灵气穷究一物之构造，收入自身素材库。品阶越高，所需境界与灵气越甚。</Desc>
+			<Icon>wfg_skill_derive.png</Icon>
+			<Kind>None</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<Param1>3</Param1>
+			<SelectMode>Single</SelectMode>
+			<SelectTarget>Item</SelectTarget>
+			<ClassName>WFG_Magic_Derive</ClassName>
+		</Magic>
+
+		<!-- 避天机：主动渡劫-->
+		<Magic Name="WFG_Magic_Ascend" Type="Class">
+			<DisplayName>避天机·渡劫</DisplayName>
+			<Desc>天机已蔽，雷劫不复自来。今日引雷，是登仙、是留世，皆由己心。</Desc>
+			<Icon>res\Sprs\ui\icon_daocui01</Icon>
+			<Kind>None</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<Param1>5</Param1>
+			<SelectMode>None</SelectMode>
+			<ClassName>WFG_Magic_Ascend</ClassName>
+		</Magic>
+		<!-- 衍天：创造物品（独立界面）-->
+		<Magic Name="WFG_Magic_Create" Type="Class">
+			<DisplayName>衍天·创造</DisplayName>
+			<Desc>打开素材库，择物、择量，再于地上择一处落点，以灵气重铸之。</Desc>
+			<Icon>wfg_skill_create.png</Icon>
+			<Kind>None</Kind>
+			<CostLing>0</CostLing>
+			<Penalty>0</Penalty>
+			<Param1>4</Param1>
+			<SelectMode>Single</SelectMode>
+			<SelectTarget>Point|NoBuilding|NoItem|NoPlant|Walkable</SelectTarget>
+			<ClassName>WFG_Magic_Create</ClassName>
+		</Magic>
+
+		<!-- 衍天·炼石：复用原版吸灵炼制命令 -->
+		<Magic Name="WFG_Magic_LingStoneMake">
+			<DisplayName>衍天·炼石</DisplayName>
+			<Desc>将灵气凝结为灵石，每 5000 灵气一枚。需当前灵气≥5000；持续运转，停止或灵气不足时结束。</Desc>
+			<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+			<Param1>20</Param1>
+			<CostLing>5000</CostLing>
+			<CostAge>0</CostAge>
+			<CMD>AbsorbGong_11</CMD>
+		</Magic>
+
+	</List>
+</Magics>

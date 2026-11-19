@@ -1,0 +1,9 @@
+{
+	"Name": "WFGProbe",
+	"DisplayName": "WFG 探针（手机端兼容性自检）",
+	"Desc": "仅用于诊断：进游戏后弹出一屏运行环境信息（平台/分辨率/触摸/内置依赖/FairyGUI 缩放）。不修改任何游戏数据，可随时删除。",
+	"GameVersion": 0.995,
+	"Version": 1,
+	"Author": "万法阁",
+	"Sort": "99998"
+}

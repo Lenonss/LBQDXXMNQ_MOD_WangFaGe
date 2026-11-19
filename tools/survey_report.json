@@ -1,0 +1,3127 @@
+{
+ "sources": {
+  "vanilla": [
+   "GAME/Settings/Practice/Gong/Body/Body_Gong_1.xml",
+   "GAME/Settings/Practice/Gong/Body/Body_Gong_2.xml",
+   "GAME/Settings/Practice/Gong/Body/Body_Gong_3.xml",
+   "GAME/Settings/Practice/Gong/Body/Body_Gong_5.xml",
+   "GAME/Settings/Practice/Gong/God/God_Gong_1.xml",
+   "GAME/Settings/Practice/Gong/God/God_Gong_2.xml",
+   "GAME/Settings/Practice/Gong/God/God_Gong_3.xml",
+   "GAME/Settings/Practice/Gong/Gong_1.xml",
+   "GAME/Settings/Practice/Gong/Gong_10.xml",
+   "GAME/Settings/Practice/Gong/Gong_11.xml",
+   "GAME/Settings/Practice/Gong/Gong_12.xml",
+   "GAME/Settings/Practice/Gong/Gong_13_DLC_WuDang.xml",
+   "GAME/Settings/Practice/Gong/Gong_2.xml",
+   "GAME/Settings/Practice/Gong/Gong_3.xml",
+   "GAME/Settings/Practice/Gong/Gong_4.xml",
+   "GAME/Settings/Practice/Gong/Gong_5.xml",
+   "GAME/Settings/Practice/Gong/Gong_6.xml",
+   "GAME/Settings/Practice/Gong/Gong_7.xml",
+   "GAME/Settings/Practice/Gong/Gong_8.xml",
+   "GAME/Settings/Practice/Gong/Gong_9.xml",
+   "GAME/Settings/Practice/Gong/Gong_DaNneg.xml",
+   "GAME/Settings/Practice/Gong/Gong_LingShou.xml",
+   "GAME/Settings/Practice/Gong/Gong_Lost.xml",
+   "GAME/Settings/Practice/Gong/Gong_YaoShou.xml"
+  ],
+  "example": [
+   "GAME/Mods/Example/Settings/Biomes/192Biomes.xml",
+   "GAME/Mods/Example/Settings/Display/SpecialName/SpecialNames.xml",
+   "GAME/Mods/Example/Settings/Esoterica/Test_Esoterica.xml",
+   "GAME/Mods/Example/Settings/Fight/FightSkillTemplate/Test_Skill.xml",
+   "GAME/Mods/Example/Settings/MapStories/Test_Story.xml",
+   "GAME/Mods/Example/Settings/Modifiers/Test_Modifier.xml",
+   "GAME/Mods/Example/Settings/Npc/Damages/Test_Damages.xml",
+   "GAME/Mods/Example/Settings/Npc/Experience/Test_Experience.xml",
+   "GAME/Mods/Example/Settings/Npc/Features/Test_Features.xml",
+   "GAME/Mods/Example/Settings/Npc/Moods/Test_Moods.xml",
+   "GAME/Mods/Example/Settings/Npc/Race/test.xml",
+   "GAME/Mods/Example/Settings/Practice/DanFormula/Test_Dan.xml",
+   "GAME/Mods/Example/Settings/Practice/Gong/Test_Gong.xml",
+   "GAME/Mods/Example/Settings/Practice/Magic/Test_Magic.xml",
+   "GAME/Mods/Example/Settings/Practice/Spell/Test_Spell.xml",
+   "GAME/Mods/Example/Settings/Practice/Tree/Test_Tree.xml",
+   "GAME/Mods/Example/Settings/RPG/Dialogues/Example_meet.xml",
+   "GAME/Mods/Example/Settings/RPG/Dialogues/potiancui.xml",
+   "GAME/Mods/Example/Settings/RPG/Dialogues/test.xml",
+   "GAME/Mods/Example/Settings/RPG/Info/RpgInfo.xml",
+   "GAME/Mods/Example/Settings/TerrainDef/terrain.xml",
+   "GAME/Mods/Example/Settings/ThingDef/Building/test.xml",
+   "GAME/Mods/Example/Settings/ThingDef/Item/Item_Test.xml",
+   "GAME/Mods/Example/Settings/ThingDef/RPG/rpg.xml",
+   "GAME/Mods/Example/Settings/UI/Help/Help.xml",
+   "GAME/Mods/Example/Settings/UI/MainList/test.xml",
+   "GAME/Mods/Example/Settings/World/Places/Test_Places.xml"
+  ],
+  "thirdparty": [
+   "GAME/Mods/JianLaiGongFa/Settings/Esoterica/CustomEsoterica_Sum.xml",
+   "GAME/Mods/JianLaiGongFa/Settings/Modifiers/BodyPractice/BodyGongModifer_Sum.xml",
+   "GAME/Mods/JianLaiGongFa/Settings/Modifiers/GongModifer_Sum.xml",
+   "GAME/Mods/JianLaiGongFa/Settings/Practice/BodyPractice/QuenchingMethod/BPQuenchingMethods_Sum.xml",
+   "GAME/Mods/JianLaiGongFa/Settings/Practice/BodyPractice/SuperPart/CustomBodySuperPart_Sum.xml",
+   "GAME/Mods/JianLaiGongFa/Settings/Practice/Gong/1766222868诗经功法数据.xml",
+   "GAME/Mods/JianLaiGongFa/Settings/Practice/Gong/Body/1766155155撼山拳功法数据.xml",
+   "GAME/Mods/JianLaiGongFa/Settings/Practice/Tree/1766222868诗经树数据.xml",
+   "GAME/Mods/诸天万法/Settings/Esoterica/Esoterica_Gong.xml",
+   "GAME/Mods/诸天万法/Settings/Esoterica/Esoterica_GongLvUp.xml",
+   "GAME/Mods/诸天万法/Settings/Practice/Gong/Gong_FenJue.xml",
+   "GAME/Mods/诸天万法/Settings/Practice/Tree/Gong_FenJue.xml"
+  ],
+  "workshop": [
+   "WS/1819060504/Settings/MapStories/Sheng.xml",
+   "WS/1819060504/Settings/Modifiers/ShengModifier.xml",
+   "WS/1819060504/Settings/Npc/Features/ShengF.xml",
+   "WS/1819060504/Settings/Npc/Moods/Moods_Sheng.xml",
+   "WS/1819060504/Settings/Npc/Relation/Kinship2.xml",
+   "WS/1819060504/Settings/ThingDef/Building/Building_S.xml",
+   "WS/1819060504/Settings/ThingDef/Item/HuanShou.xml",
+   "WS/1819060504/Settings/ThingDef/Item/byt.xml",
+   "WS/1819060504/Settings/UI/MainList/SSSSS.xml",
+   "WS/1819063341/Settings/MapStories/FaLang.xml",
+   "WS/1819063341/Settings/ThingDef/Building/falang.xml",
+   "WS/1819063341/Settings/UI/MainList/falang.xml",
+   "WS/1820526118/Settings/MapStories/kezhanSpecialStory.xml",
+   "WS/1820526118/Settings/Npc/Features/Features.xml",
+   "WS/1820526118/Settings/World/Places/Place_KeZhan.xml",
+   "WS/1858385768/UserApp.xml",
+   "WS/1917318204/Settings/ThingDef/Building/cg20.xml",
+   "WS/1917318204/Settings/Ui/MainList/Cg20MainList.xml",
+   "WS/2033247609/Settings/MapStories/MapStory_Disasters.xml",
+   "WS/2033247609/Settings/MapStories/MapStory_Policy.xml",
+   "WS/2033247609/Settings/UI/Help/Help.xml",
+   "WS/2267680512/Settings/HumanoidEvolution/ThinkFragment/70ca2823-f1d2-4457-928f-1350e3f32e9a.xml",
+   "WS/2267680512/Settings/HumanoidEvolution/ThinkFragment/c6a16d65-7a8b-461e-b0bd-3106dba77c1d.xml",
+   "WS/2267680512/Settings/HumanoidEvolution/ThinkFragment/cb07dc28-7a57-45eb-880c-3c64846e7637.xml",
+   "WS/2524799831/Settings/Esoterica/Esoterica_Gong.xml",
+   "WS/2524799831/Settings/Esoterica/Esoterica_GongLvUp.xml",
+   "WS/2820877178/Settings/Practice/Magic/Magic_body.xml",
+   "WS/2820877178/Settings/ThingDef/Item/Item_BodyPracticeItem.xml",
+   "WS/2820877178/Settings/Weather/Weather.xml",
+   "WS/2820877178/Settings/Weather/Weather_Env.xml",
+   "WS/2820877178/Settings/Weather/Weather_Special.xml",
+   "WS/2820877178/Settings/Weather/skill.xml",
+   "WS/3631455466/Settings/Modifiers/4358db70-603f-461e-b78f-fb04122d38da.xml",
+   "WS/3631455466/Settings/Modifiers/f3f4341f-e740-411b-b962-15b3a2b96828.xml",
+   "WS/3631455466/Settings/Practice/DanFormula/FORMUL_87450647-ed1c-4ff7-b440-b0c0d173b451.xml",
+   "WS/3631455466/Settings/Practice/DanFormula/FORMUL_fd12a010-db29-47a4-977e-6759c9a36b19.xml",
+   "WS/3631455466/Settings/ThingDef/Item/87450647-ed1c-4ff7-b440-b0c0d173b451.xml",
+   "WS/3631455466/Settings/ThingDef/Item/fd12a010-db29-47a4-977e-6759c9a36b19.xml",
+   "WS/3827219717/Settings/Esoterica/TPC_GiantSword.xml",
+   "WS/3827219717/Settings/Esoterica/TPC_Shentong.xml",
+   "WS/3827219717/Settings/Fight/FightSkillTemplate/TPC_GiantSword.xml",
+   "WS/3827219717/Settings/JobDef/ACS_UpperFloor.xml",
+   "WS/3827219717/Settings/RPG/Info/ThirdPersonScenes.xml",
+   "WS/3827219717/Settings/ThingDef/Building/ACS_FloorSlab.xml",
+   "WS/3827219717/Settings/ThingDef/Building/ACS_Stairs.xml",
+   "WS/3827219717/Settings/UI/MainList/ACS_Stairs.xml",
+   "WS/3827219717/Settings/World/Places/ThirdPersonScenes.xml"
+  ],
+  "ours": [
+   "OURS/Settings/Esoterica/Esoterica_YanTian.xml",
+   "OURS/Settings/Modifiers/Modifier_YanTian.xml",
+   "OURS/Settings/Npc/Experience/e9_WFG.xml",
+   "OURS/Settings/Practice/FabaoFormula/Fabao_YanTian.xml",
+   "OURS/Settings/Practice/Gong/Gong_YanTian.xml",
+   "OURS/Settings/Practice/Magic/Magic_YanTian.xml",
+   "OURS/Settings/Practice/Tree/Gong_YanTian.xml",
+   "OURS/Settings/ThingDef/Building/Building_YanTian.xml",
+   "OURS/Settings/ThingDef/Item/Item_YanTian.xml",
+   "OURS/Settings/UI/MainList/MainList_YanTian.xml"
+  ]
+ },
+ "gong": {
+  "vanilla": {
+   "label": "vanilla",
+   "file_count": 24,
+   "gong_count": 24,
+   "root_tags": {
+    "Gongs": 24
+   },
+   "child_tags": {
+    "DisplayName": 24,
+    "Desc": 24,
+    "SelectDesc": 24,
+    "FiveBaseNeed": 24,
+    "ElementKind": 24,
+    "GongKind": 7,
+    "Hide": 19,
+    "SuperParts": 4,
+    "QuenchingMethods": 4,
+    "Magic": 7,
+    "Stages": 24,
+    "Skill": 16,
+    "GodGuards": 3,
+    "SkillSetName": 17,
+    "YinYang": 1,
+    "IllustratedHandLabel": 4,
+    "Empty": 1
+   },
+   "child_missing": {
+    "SkillSetName": 7,
+    "Skill": 8,
+    "PracticeType": 24,
+    "GongKind": 17,
+    "Hide": 5
+   },
+   "gong_attrs": {
+    "Name": 24
+   },
+   "element_kind": {
+    "None": 14,
+    "Shui": 1,
+    "Huo": 3,
+    "Tu": 2,
+    "Mu": 2,
+    "Jin": 2
+   },
+   "gong_kind": {
+    "Body": 4,
+    "God": 3,
+    "<MISSING>": 17
+   },
+   "practice_type": {
+    "<none>": 24
+   },
+   "skill_set": {
+    "<MISSING>": 7,
+    "<EMPTY>": 17
+   },
+   "empty_skill_set": 17,
+   "hide": {
+    "1": 12,
+    "2": 3,
+    "<absent>": 5,
+    "3": 4
+   },
+   "stage_level": {
+    "3": 23,
+    "6": 23,
+    "9": 23,
+    "12": 24,
+    "7": 9,
+    "8": 6,
+    "5": 8,
+    "11": 6,
+    "4": 4,
+    "1": 5,
+    "10": 7,
+    "2": 4
+   },
+   "stage_level_by_gong": [
+    {
+     "file": "GAME/Settings/Practice/Gong/Body/Body_Gong_1.xml",
+     "name": "Body_Gong_1",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Body/Body_Gong_2.xml",
+     "name": "Body_Gong_2",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Body/Body_Gong_3.xml",
+     "name": "Body_Gong_3",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Body/Body_Gong_5.xml",
+     "name": "Body_Gong_5",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/God/God_Gong_1.xml",
+     "name": "God_Gong_1",
+     "levels": [
+      "3",
+      "6",
+      "7",
+      "8",
+      "9",
+      "12"
+     ],
+     "stages": 6
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/God/God_Gong_2.xml",
+     "name": "God_Gong_2",
+     "levels": [
+      "3",
+      "6",
+      "7",
+      "8",
+      "9",
+      "12"
+     ],
+     "stages": 6
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/God/God_Gong_3.xml",
+     "name": "God_Gong_3",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_1.xml",
+     "name": "Gong_1_Shui",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_10.xml",
+     "name": "Gong_10_Huo",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_11.xml",
+     "name": "Gong_11_Tu",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_12.xml",
+     "name": "Gong_12_None",
+     "levels": [
+      "3",
+      "5",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 5
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_13_DLC_WuDang.xml",
+     "name": "Gong_13_None",
+     "levels": [
+      "3",
+      "5",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 5
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_2.xml",
+     "name": "Gong_2_Mu",
+     "levels": [
+      "3",
+      "6",
+      "7",
+      "9",
+      "12"
+     ],
+     "stages": 5
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_3.xml",
+     "name": "Gong_3_Jin",
+     "levels": [
+      "3",
+      "5",
+      "6",
+      "7",
+      "9",
+      "11",
+      "12"
+     ],
+     "stages": 7
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_4.xml",
+     "name": "Gong_4_None",
+     "levels": [
+      "3",
+      "4",
+      "6",
+      "9",
+      "11",
+      "12"
+     ],
+     "stages": 6
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_5.xml",
+     "name": "Gong_5_Tu",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "11",
+      "12"
+     ],
+     "stages": 5
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_6.xml",
+     "name": "Gong_6_Huo",
+     "levels": [
+      "1",
+      "3",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "12"
+     ],
+     "stages": 9
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_7.xml",
+     "name": "Gong_7_Huo",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "10",
+      "12"
+     ],
+     "stages": 5
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_8.xml",
+     "name": "Gong_8_Jin",
+     "levels": [
+      "2",
+      "3",
+      "5",
+      "6",
+      "9",
+      "10",
+      "12"
+     ],
+     "stages": 7
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_9.xml",
+     "name": "Gong_9_Mu",
+     "levels": [
+      "3",
+      "6",
+      "7",
+      "9",
+      "10",
+      "12"
+     ],
+     "stages": 6
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_DaNneg.xml",
+     "name": "Gong_DaNeng",
+     "levels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "stages": 12
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_LingShou.xml",
+     "name": "Gong_LingShou",
+     "levels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "stages": 12
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_Lost.xml",
+     "name": "Gong_LOST",
+     "levels": [
+      "1",
+      "12"
+     ],
+     "stages": 2
+    },
+    {
+     "file": "GAME/Settings/Practice/Gong/Gong_YaoShou.xml",
+     "name": "Gong_YaoShou",
+     "levels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "stages": 12
+    }
+   ],
+   "stage_name_pattern": {
+    "Stage#": 142
+   },
+   "stage_child_tags": {
+    "DisplayName": 142,
+    "Desc": 104,
+    "Value": 142,
+    "Necks": 142
+   },
+   "neck_kind": {
+    "Chance": 161,
+    "God": 17,
+    "GodCity": 3,
+    "Die": 8,
+    "Explore": 14,
+    "Gold": 13,
+    "Thunder": 7,
+    "Work": 4,
+    "FuPractice": 5
+   },
+   "neck_attrs": {
+    "Location": 232,
+    "Kind": 232
+   },
+   "neck_child_by_kind": {
+    "Chance": {
+     "DisplayName": 161,
+     "Desc": 128,
+     "CostTime": 128,
+     "SuccessChange": 161,
+     "AddModifier": 65,
+     "QuenchingMethods": 12,
+     "SuperParts": 12,
+     "FailedChangeAdd": 47,
+     "Damages": 11,
+     "ResourceCost": 24,
+     "ItemCost": 15
+    },
+    "God": {
+     "DisplayName": 17,
+     "Desc": 17,
+     "ThunderValue": 17,
+     "NeckCountdown": 17,
+     "AddModifier": 13
+    },
+    "GodCity": {
+     "DisplayName": 3,
+     "Desc": 3,
+     "AddModifier": 6
+    },
+    "Die": {
+     "DisplayName": 8,
+     "Desc": 3,
+     "ThunderValue": 3
+    },
+    "Explore": {
+     "DisplayName": 14,
+     "Desc": 14,
+     "ExploreValue": 14,
+     "AddModifier": 9
+    },
+    "Gold": {
+     "DisplayName": 13,
+     "Desc": 13,
+     "AddModifier": 13,
+     "Esoterocas": 1,
+     "ItemCost": 2
+    },
+    "Thunder": {
+     "DisplayName": 7,
+     "Desc": 7,
+     "ThunderValue": 7,
+     "NeckCountdown": 7,
+     "AddModifier": 6
+    },
+    "Work": {
+     "DisplayName": 4,
+     "Desc": 4,
+     "AddModifier": 4
+    },
+    "FuPractice": {
+     "DisplayName": 5,
+     "Desc": 5,
+     "CostTime": 5,
+     "SuccessChange": 5,
+     "AddModifier": 1
+    }
+   },
+   "neck_child_all": {
+    "DisplayName": 232,
+    "Desc": 194,
+    "CostTime": 133,
+    "SuccessChange": 166,
+    "AddModifier": 117,
+    "QuenchingMethods": 12,
+    "SuperParts": 12,
+    "ThunderValue": 27,
+    "NeckCountdown": 24,
+    "FailedChangeAdd": 47,
+    "Damages": 11,
+    "ExploreValue": 14,
+    "ResourceCost": 24,
+    "ItemCost": 17,
+    "Esoterocas": 1
+   },
+   "neck_loc": {
+    "0.01": 1,
+    "0.1": 6,
+    "0.15": 1,
+    "0.2": 7,
+    "0.25": 4,
+    "0.3": 9,
+    "0.33": 6,
+    "0.35": 1,
+    "0.4": 6,
+    "0.45": 1,
+    "0.5": 8,
+    "0.6": 17,
+    "0.66": 6,
+    "0.7": 3,
+    "0.8": 4,
+    "0.85": 2,
+    "0.9": 4,
+    "0.95": 3,
+    "0.99": 1,
+    "1.0": 142
+   },
+   "error": [],
+   "files": [
+    "GAME/Settings/Practice/Gong/Body/Body_Gong_1.xml",
+    "GAME/Settings/Practice/Gong/Body/Body_Gong_2.xml",
+    "GAME/Settings/Practice/Gong/Body/Body_Gong_3.xml",
+    "GAME/Settings/Practice/Gong/Body/Body_Gong_5.xml",
+    "GAME/Settings/Practice/Gong/God/God_Gong_1.xml",
+    "GAME/Settings/Practice/Gong/God/God_Gong_2.xml",
+    "GAME/Settings/Practice/Gong/God/God_Gong_3.xml",
+    "GAME/Settings/Practice/Gong/Gong_1.xml",
+    "GAME/Settings/Practice/Gong/Gong_10.xml",
+    "GAME/Settings/Practice/Gong/Gong_11.xml",
+    "GAME/Settings/Practice/Gong/Gong_12.xml",
+    "GAME/Settings/Practice/Gong/Gong_13_DLC_WuDang.xml",
+    "GAME/Settings/Practice/Gong/Gong_2.xml",
+    "GAME/Settings/Practice/Gong/Gong_3.xml",
+    "GAME/Settings/Practice/Gong/Gong_4.xml",
+    "GAME/Settings/Practice/Gong/Gong_5.xml",
+    "GAME/Settings/Practice/Gong/Gong_6.xml",
+    "GAME/Settings/Practice/Gong/Gong_7.xml",
+    "GAME/Settings/Practice/Gong/Gong_8.xml",
+    "GAME/Settings/Practice/Gong/Gong_9.xml",
+    "GAME/Settings/Practice/Gong/Gong_DaNneg.xml",
+    "GAME/Settings/Practice/Gong/Gong_LingShou.xml",
+    "GAME/Settings/Practice/Gong/Gong_Lost.xml",
+    "GAME/Settings/Practice/Gong/Gong_YaoShou.xml"
+   ],
+   "value_range_stats": {
+    "min": 1,
+    "max": 50000000,
+    "count": 142
+   }
+  },
+  "example": {
+   "label": "example",
+   "file_count": 1,
+   "gong_count": 1,
+   "root_tags": {
+    "Gongs": 1
+   },
+   "child_tags": {
+    "DisplayName": 1,
+    "Desc": 1,
+    "FiveBaseNeed": 1,
+    "SkillSetName": 1,
+    "ElementKind": 1,
+    "Stages": 1
+   },
+   "child_missing": {
+    "SelectDesc": 1,
+    "Skill": 1,
+    "GongKind": 1,
+    "Hide": 1,
+    "PracticeType": 1
+   },
+   "gong_attrs": {
+    "Name": 1
+   },
+   "element_kind": {
+    "None": 1
+   },
+   "gong_kind": {
+    "<MISSING>": 1
+   },
+   "practice_type": {
+    "<none>": 1
+   },
+   "skill_set": {
+    "<EMPTY>": 1
+   },
+   "empty_skill_set": 1,
+   "hide": {
+    "<absent>": 1
+   },
+   "stage_level": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1
+   },
+   "stage_level_by_gong": [
+    {
+     "file": "GAME/Mods/Example/Settings/Practice/Gong/Test_Gong.xml",
+     "name": "ModTest_Gong",
+     "levels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "stages": 12
+    }
+   ],
+   "stage_name_pattern": {
+    "Stage#": 12
+   },
+   "stage_child_tags": {
+    "DisplayName": 12,
+    "Desc": 12,
+    "Value": 12,
+    "Necks": 2
+   },
+   "neck_kind": {
+    "Chance": 4
+   },
+   "neck_attrs": {
+    "Location": 4,
+    "Kind": 4
+   },
+   "neck_child_by_kind": {
+    "Chance": {
+     "DisplayName": 4,
+     "Desc": 4,
+     "CostTime": 4,
+     "SuccessChange": 1,
+     "FailedChangeAdd": 1,
+     "ResourceCost": 2,
+     "AddModifier": 4,
+     "Damages": 1,
+     "ConversionRate": 3,
+     "DynamicChanceType": 2,
+     "ItemCost": 3
+    }
+   },
+   "neck_child_all": {
+    "DisplayName": 4,
+    "Desc": 4,
+    "CostTime": 4,
+    "SuccessChange": 1,
+    "FailedChangeAdd": 1,
+    "ResourceCost": 2,
+    "AddModifier": 4,
+    "Damages": 1,
+    "ConversionRate": 3,
+    "DynamicChanceType": 2,
+    "ItemCost": 3
+   },
+   "neck_loc": {
+    "0.3": 1,
+    "0.6": 2,
+    "1.0": 1
+   },
+   "error": [],
+   "files": [
+    "GAME/Mods/Example/Settings/Practice/Gong/Test_Gong.xml"
+   ],
+   "value_range_stats": {
+    "min": 10000,
+    "max": 10000,
+    "count": 12
+   }
+  },
+  "thirdparty": {
+   "label": "thirdparty",
+   "file_count": 3,
+   "gong_count": 3,
+   "root_tags": {
+    "Gongs": 3
+   },
+   "child_tags": {
+    "DisplayName": 3,
+    "Desc": 3,
+    "SelectDesc": 3,
+    "FiveBaseNeed": 3,
+    "SkillSetName": 2,
+    "ElementKind": 3,
+    "Skill": 2,
+    "Hide": 2,
+    "Stages": 3,
+    "GongKind": 1,
+    "SuperParts": 1,
+    "QuenchingMethods": 1,
+    "Magic": 1
+   },
+   "child_missing": {
+    "GongKind": 2,
+    "PracticeType": 3,
+    "SkillSetName": 1,
+    "Skill": 1,
+    "Hide": 1
+   },
+   "gong_attrs": {
+    "Name": 3,
+    "PracticeType": 1
+   },
+   "element_kind": {
+    "None": 2,
+    "Huo": 1
+   },
+   "gong_kind": {
+    "<MISSING>": 2,
+    "Body": 1
+   },
+   "practice_type": {
+    "仙修": 1,
+    "<none>": 2
+   },
+   "skill_set": {
+    "<EMPTY>": 2,
+    "<MISSING>": 1
+   },
+   "empty_skill_set": 2,
+   "hide": {
+    "-1": 2,
+    "<absent>": 1
+   },
+   "stage_level": {
+    "3": 3,
+    "6": 3,
+    "7": 1,
+    "8": 1,
+    "9": 3,
+    "10": 1,
+    "11": 1,
+    "12": 3
+   },
+   "stage_level_by_gong": [
+    {
+     "file": "GAME/Mods/JianLaiGongFa/Settings/Practice/Gong/1766222868诗经功法数据.xml",
+     "name": "ShiJin",
+     "levels": [
+      "3",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "stages": 8
+    },
+    {
+     "file": "GAME/Mods/JianLaiGongFa/Settings/Practice/Gong/Body/1766155155撼山拳功法数据.xml",
+     "name": "Body_HanShanQuan",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    },
+    {
+     "file": "GAME/Mods/诸天万法/Settings/Practice/Gong/Gong_FenJue.xml",
+     "name": "Gong_FenJue",
+     "levels": [
+      "3",
+      "6",
+      "9",
+      "12"
+     ],
+     "stages": 4
+    }
+   ],
+   "stage_name_pattern": {
+    "Stage#": 16
+   },
+   "stage_child_tags": {
+    "DisplayName": 16,
+    "Desc": 16,
+    "Value": 16,
+    "Necks": 16
+   },
+   "neck_kind": {
+    "Chance": 17,
+    "Explore": 12,
+    "Gold": 2,
+    "Thunder": 6,
+    "God": 3
+   },
+   "neck_attrs": {
+    "Location": 40,
+    "Kind": 40
+   },
+   "neck_child_by_kind": {
+    "Chance": {
+     "DisplayName": 17,
+     "Desc": 17,
+     "CostTime": 17,
+     "SuccessChange": 17,
+     "AddModifier": 11,
+     "SuperParts": 3,
+     "QuenchingMethods": 1,
+     "FailedChangeAdd": 4,
+     "FailModifier": 1,
+     "ResourceCost": 2
+    },
+    "Explore": {
+     "DisplayName": 12,
+     "Desc": 12,
+     "ExploreValue": 12,
+     "AddModifier": 11,
+     "SuperParts": 3
+    },
+    "Gold": {
+     "DisplayName": 2,
+     "Desc": 2,
+     "AddModifier": 2
+    },
+    "Thunder": {
+     "DisplayName": 6,
+     "Desc": 6,
+     "ThunderValue": 6,
+     "NeckCountdown": 6,
+     "AddModifier": 6,
+     "SuperParts": 1,
+     "QuenchingMethods": 1
+    },
+    "God": {
+     "DisplayName": 3,
+     "Desc": 3,
+     "ThunderValue": 3,
+     "NeckCountdown": 3,
+     "AddModifier": 3
+    }
+   },
+   "neck_child_all": {
+    "DisplayName": 40,
+    "Desc": 40,
+    "CostTime": 17,
+    "SuccessChange": 17,
+    "AddModifier": 33,
+    "ExploreValue": 12,
+    "ThunderValue": 9,
+    "NeckCountdown": 9,
+    "SuperParts": 7,
+    "QuenchingMethods": 2,
+    "FailedChangeAdd": 4,
+    "FailModifier": 1,
+    "ResourceCost": 2
+   },
+   "neck_loc": {
+    "0.1": 1,
+    "0.2": 8,
+    "0.3": 3,
+    "0.4": 2,
+    "0.5": 5,
+    "0.6": 2,
+    "0.7": 1,
+    "0.8": 1,
+    "0.95": 1,
+    "1.0": 16
+   },
+   "error": [],
+   "files": [
+    "GAME/Mods/JianLaiGongFa/Settings/Practice/Gong/1766222868诗经功法数据.xml",
+    "GAME/Mods/JianLaiGongFa/Settings/Practice/Gong/Body/1766155155撼山拳功法数据.xml",
+    "GAME/Mods/诸天万法/Settings/Practice/Gong/Gong_FenJue.xml"
+   ],
+   "value_range_stats": {
+    "min": 1800,
+    "max": 6666666,
+    "count": 16
+   }
+  },
+  "workshop": {
+   "label": "workshop",
+   "file_count": 0,
+   "gong_count": 0,
+   "root_tags": {},
+   "child_tags": {},
+   "child_missing": {},
+   "gong_attrs": {},
+   "element_kind": {},
+   "gong_kind": {},
+   "practice_type": {},
+   "skill_set": {},
+   "empty_skill_set": 0,
+   "hide": {},
+   "stage_level": {},
+   "stage_level_by_gong": [],
+   "stage_name_pattern": {},
+   "stage_child_tags": {},
+   "neck_kind": {},
+   "neck_attrs": {},
+   "neck_child_by_kind": {},
+   "neck_child_all": {},
+   "neck_loc": {},
+   "error": [],
+   "files": []
+  },
+  "ours": {
+   "label": "ours",
+   "file_count": 1,
+   "gong_count": 1,
+   "root_tags": {
+    "Gongs": 1
+   },
+   "child_tags": {
+    "DisplayName": 1,
+    "Desc": 1,
+    "SelectDesc": 1,
+    "FiveBaseNeed": 1,
+    "SkillSetName": 1,
+    "ElementKind": 1,
+    "Skill": 1,
+    "Stages": 1
+   },
+   "child_missing": {
+    "GongKind": 1,
+    "Hide": 1,
+    "PracticeType": 1
+   },
+   "gong_attrs": {
+    "Name": 1
+   },
+   "element_kind": {
+    "None": 1
+   },
+   "gong_kind": {
+    "<MISSING>": 1
+   },
+   "practice_type": {
+    "<none>": 1
+   },
+   "skill_set": {
+    "<EMPTY>": 1
+   },
+   "empty_skill_set": 1,
+   "hide": {
+    "<absent>": 1
+   },
+   "stage_level": {
+    "1": 1,
+    "3": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "12": 1
+   },
+   "stage_level_by_gong": [
+    {
+     "file": "OURS/Settings/Practice/Gong/Gong_YanTian.xml",
+     "name": "WFG_Gong_YanTian",
+     "levels": [
+      "1",
+      "3",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "12"
+     ],
+     "stages": 9
+    }
+   ],
+   "stage_name_pattern": {
+    "Stage#": 9
+   },
+   "stage_child_tags": {
+    "DisplayName": 9,
+    "Desc": 9,
+    "Value": 9,
+    "Necks": 9
+   },
+   "neck_kind": {
+    "Chance": 17,
+    "Explore": 2,
+    "Gold": 1,
+    "Thunder": 1,
+    "God": 1
+   },
+   "neck_attrs": {
+    "Location": 22,
+    "Kind": 22
+   },
+   "neck_child_by_kind": {
+    "Chance": {
+     "DisplayName": 17,
+     "Desc": 17,
+     "CostTime": 17,
+     "SuccessChange": 17,
+     "FailedChangeAdd": 7,
+     "AddModifier": 9,
+     "Damages": 5
+    },
+    "Explore": {
+     "DisplayName": 2,
+     "Desc": 2,
+     "ExploreValue": 2
+    },
+    "Gold": {
+     "DisplayName": 1,
+     "Desc": 1,
+     "AddModifier": 1
+    },
+    "Thunder": {
+     "DisplayName": 1,
+     "Desc": 1,
+     "ThunderValue": 1,
+     "NeckCountdown": 1,
+     "AddModifier": 1
+    },
+    "God": {
+     "DisplayName": 1,
+     "Desc": 1,
+     "ThunderValue": 1,
+     "NeckCountdown": 1,
+     "AddModifier": 1
+    }
+   },
+   "neck_child_all": {
+    "DisplayName": 22,
+    "Desc": 22,
+    "CostTime": 17,
+    "SuccessChange": 17,
+    "FailedChangeAdd": 7,
+    "AddModifier": 12,
+    "Damages": 5,
+    "ExploreValue": 2,
+    "ThunderValue": 2,
+    "NeckCountdown": 2
+   },
+   "neck_loc": {
+    "0.3": 2,
+    "0.4": 2,
+    "0.5": 5,
+    "0.7": 2,
+    "0.8": 2,
+    "1.0": 9
+   },
+   "error": [],
+   "files": [
+    "OURS/Settings/Practice/Gong/Gong_YanTian.xml"
+   ],
+   "value_range_stats": {
+    "min": 1800,
+    "max": 70000,
+    "count": 9
+   }
+  }
+ },
+ "esoterica": {
+  "vanilla": {
+   "label": "vanilla",
+   "file_count": 12,
+   "count": 503,
+   "child_tags": {
+    "DisplayName": 503,
+    "StarLevel": 474,
+    "Difficulty": 497,
+    "Desc": 430,
+    "Element": 460,
+    "Type": 376,
+    "EffectDesc": 503,
+    "Dans": 22,
+    "Hide": 169,
+    "Places": 21,
+    "Secrets": 7,
+    "Magics": 79,
+    "Icon": 361,
+    "GLevel": 399,
+    "Skills": 18,
+    "Modifier": 321,
+    "Mutex": 42,
+    "Spells": 20,
+    "GodSoulCount": 16,
+    "PreNeed": 6,
+    "Exp": 5,
+    "MyTreasure": 3,
+    "Fabaos": 29,
+    "Buildings": 2,
+    "ZhenNodes": 27,
+    "ZhenShapes": 11
+   },
+   "type": {
+    "Dan": 21,
+    "None": 139,
+    "Skill": 36,
+    "Fabao": 70,
+    "Gong": 95,
+    "Refining": 9,
+    "Barrier": 6,
+    "<MISSING>": 127
+   },
+   "star": {
+    "1": 213,
+    "0": 81,
+    "2": 180,
+    "<MISSING>": 29
+   },
+   "glevel": {
+    "<MISSING>": 104,
+    "Qi": 64,
+    "Dan1": 91,
+    "Dan2": 98,
+    "God": 139,
+    "God2": 6,
+    "None": 1
+   },
+   "difficulty": {
+    "4": 64,
+    "2": 19,
+    "5": 39,
+    "9": 71,
+    "3": 63,
+    "10": 7,
+    "0": 24,
+    "1": 21,
+    "6": 74,
+    "8": 54,
+    "12": 17,
+    "7": 15,
+    "15": 14,
+    "999": 10,
+    "21": 1,
+    "18": 3,
+    "24": 1,
+    "<MISSING>": 6
+   },
+   "icon": {
+    "<MISSING>": 142,
+    "res/Sprs/ui/icon_shufa": 15,
+    "res/Sprs/ui/icon_jichu": 142,
+    "res/Sprs/ui/icon_zhandoufashu": 30,
+    "res/Sprs/ui/icon_yujian": 71,
+    "res/Sprs/ui/icon_lianqi": 6,
+    "res/Sprs/ui/icon_peifang": 1,
+    "res/Sprs/ui/icon_huti": 6,
+    "res/Sprs/ui/icon_liandan": 10,
+    "res/Sprs/ui/icon_shentong": 6,
+    "res/Sprs/ui/icon_yumu01": 3,
+    "res/Sprs/ui/icon_ruding01": 3,
+    "res/Sprs/ui/icon_qiuyu01": 4,
+    "res/Sprs/ui/icon_tianyan01": 3,
+    "res/Sprs/ui/icon_zhaolei01": 2,
+    "res/Sprs/ui/icon_souhun01": 8,
+    "res/Sprs/ui/icon_dinglu01": 2,
+    "res/Sprs/ui/icon_chifeng01": 2,
+    "res/Sprs/ui/icon_sheshen01": 2,
+    "res/Sprs/ui/icon_fengyue01": 2,
+    "res/Sprs/ui/icon_zhoutian01": 7,
+    "res/Sprs/ui/icon_tongxiu01": 4,
+    "res/Sprs/ui/icon_youcui01": 3,
+    "res/Sprs/ui/icon_daocui01": 1,
+    "res/Sprs/ui/icon_lingxi01": 1,
+    "res/Sprs/ui/icon_mingling01": 1,
+    "res/Sprs/ui/icon_tianyao01": 1,
+    "res/Sprs/ui/icon_tuoshan01": 1,
+    "res/Sprs/ui/icon_xixing01": 1,
+    "res/Sprs/ui/icon_huashang01": 1,
+    "res/Sprs/ui/icon_zaizao01": 1,
+    "res/Sprs/ui/icon_yinshen01": 1,
+    "res/Sprs/ui/icon_yangshen01": 1,
+    "res/Sprs/ui/icon_lianhun01": 1,
+    "res/Sprs/ui/icon_tahuazizai01": 1,
+    "res/Sprs/ui/icon_hunti01": 1,
+    "res/Sprs/ui/icon_xianji01": 1,
+    "res/Sprs/ui/icon_zhufu01": 1,
+    "res/Sprs/ui/icon_tianxin01": 1,
+    "res/Sprs/ui/icon_tianmo01": 1,
+    "res/Sprs/ui/icon_huanjian01": 1,
+    "res/Sprs/ui/icon_lingjshi01": 1,
+    "res/Sprs/ui/icon_lingjing01": 1,
+    "res/Sprs/ui/icon_dayan01": 2,
+    "res/Sprs/ui/icon_quyun01": 1,
+    "res/Sprs/ui/icon_feisha01": 1,
+    "res/Sprs/ui/icon_qizhang01": 1,
+    "res/Sprs/ui/icon_xisui01": 1,
+    "res/Sprs/ui/icon_tihu01": 1,
+    "res/Sprs/ui/icon_zaizaoxingshen01": 1,
+    "res/Sprs/ui/icon_YaoShouFengYin01": 1
+   },
+   "element": {
+    "None": 192,
+    "Huo": 72,
+    "Jin": 58,
+    "Shui": 37,
+    "Tu": 56,
+    "Mu": 45,
+    "<MISSING>": 43
+   },
+   "magics_count": {
+    "<none>": 424,
+    "1": 75,
+    "5": 2,
+    "3": 1,
+    "6": 1
+   },
+   "modifier_count": {
+    "<none>": 182,
+    "1": 321,
+    "<children 0>": 321
+   },
+   "has_magics": 79,
+   "has_modifier": 321,
+   "by_type": {
+    "Dan": {
+     "_n": 21,
+     "StarLevel": 21,
+     "Difficulty": 21,
+     "Element": 21,
+     "Desc": 21,
+     "EffectDesc": 21,
+     "Magics": 2,
+     "GLevel": 9,
+     "Icon": 8,
+     "Modifier": 7,
+     "Hide": 2
+    },
+    "None": {
+     "_n": 139,
+     "Difficulty": 133,
+     "Element": 139,
+     "Desc": 139,
+     "EffectDesc": 139,
+     "Hide": 84,
+     "StarLevel": 110,
+     "Icon": 84,
+     "GLevel": 98,
+     "Modifier": 72,
+     "Magics": 3
+    },
+    "Skill": {
+     "_n": 36,
+     "StarLevel": 36,
+     "Icon": 31,
+     "Difficulty": 36,
+     "GLevel": 36,
+     "Element": 36,
+     "Desc": 36,
+     "EffectDesc": 36,
+     "Modifier": 24,
+     "Hide": 9
+    },
+    "Fabao": {
+     "_n": 70,
+     "StarLevel": 70,
+     "Difficulty": 70,
+     "GLevel": 70,
+     "Element": 70,
+     "Modifier": 69,
+     "Desc": 70,
+     "EffectDesc": 70,
+     "Icon": 63,
+     "Hide": 30
+    },
+    "Gong": {
+     "_n": 95,
+     "StarLevel": 95,
+     "Icon": 88,
+     "Difficulty": 95,
+     "GLevel": 95,
+     "Element": 95,
+     "Modifier": 95,
+     "Desc": 95,
+     "EffectDesc": 95,
+     "Hide": 27
+    },
+    "Refining": {
+     "_n": 9,
+     "StarLevel": 9,
+     "Icon": 8,
+     "Difficulty": 9,
+     "GLevel": 9,
+     "Element": 9,
+     "Modifier": 9,
+     "Desc": 9,
+     "EffectDesc": 9,
+     "Hide": 1
+    },
+    "Barrier": {
+     "_n": 6,
+     "StarLevel": 6,
+     "Icon": 4,
+     "Difficulty": 6,
+     "GLevel": 6,
+     "Element": 6,
+     "Modifier": 5,
+     "Desc": 6,
+     "EffectDesc": 6,
+     "Hide": 2
+    },
+    "<MISSING>": {
+     "_n": 127,
+     "StarLevel": 127,
+     "Icon": 75,
+     "Difficulty": 127,
+     "GLevel": 76,
+     "Element": 84,
+     "Magics": 74,
+     "EffectDesc": 127,
+     "Hide": 14,
+     "Desc": 54,
+     "Modifier": 40
+    }
+   },
+   "errors": []
+  },
+  "ours": {
+   "label": "ours",
+   "file_count": 1,
+   "count": 9,
+   "child_tags": {
+    "DisplayName": 9,
+    "Icon": 9,
+    "StarLevel": 9,
+    "Difficulty": 9,
+    "Desc": 9,
+    "GLevel": 9,
+    "Element": 9,
+    "Type": 9,
+    "Magics": 4,
+    "EffectDesc": 9,
+    "Modifier": 1
+   },
+   "type": {
+    "Gong": 1,
+    "Skill": 8
+   },
+   "star": {
+    "2": 9
+   },
+   "glevel": {
+    "Qi": 9
+   },
+   "difficulty": {
+    "1": 9
+   },
+   "icon": {
+    "res/Sprs/ui/icon_jichu": 4,
+    "res/Sprs/ui/icon_zhoutian01": 5
+   },
+   "element": {
+    "None": 9
+   },
+   "magics_count": {
+    "1": 4,
+    "<none>": 5
+   },
+   "modifier_count": {
+    "<none>": 8,
+    "1": 1,
+    "<children 0>": 1
+   },
+   "has_magics": 4,
+   "has_modifier": 1,
+   "by_type": {
+    "Gong": {
+     "_n": 1,
+     "StarLevel": 1,
+     "Icon": 1,
+     "Difficulty": 1,
+     "GLevel": 1,
+     "Element": 1,
+     "Magics": 1,
+     "Desc": 1,
+     "EffectDesc": 1
+    },
+    "Skill": {
+     "_n": 8,
+     "StarLevel": 8,
+     "Icon": 8,
+     "Difficulty": 8,
+     "GLevel": 8,
+     "Element": 8,
+     "Magics": 3,
+     "Desc": 8,
+     "EffectDesc": 8,
+     "Modifier": 1
+    }
+   },
+   "errors": []
+  },
+  "example": {
+   "label": "example",
+   "file_count": 1,
+   "count": 1,
+   "child_tags": {
+    "DisplayName": 1,
+    "StarLevel": 1,
+    "Difficulty": 1,
+    "Desc": 1,
+    "Type": 1,
+    "GLevel": 1,
+    "Element": 1,
+    "EffectDesc": 1,
+    "Modifier": 1
+   },
+   "type": {
+    "Skill": 1
+   },
+   "star": {
+    "2": 1
+   },
+   "glevel": {
+    "Qi": 1
+   },
+   "difficulty": {
+    "8": 1
+   },
+   "icon": {
+    "<MISSING>": 1
+   },
+   "element": {
+    "None": 1
+   },
+   "magics_count": {
+    "<none>": 1
+   },
+   "modifier_count": {
+    "1": 1,
+    "<children 0>": 1
+   },
+   "has_magics": 0,
+   "has_modifier": 1,
+   "by_type": {
+    "Skill": {
+     "_n": 1,
+     "StarLevel": 1,
+     "Difficulty": 1,
+     "GLevel": 1,
+     "Element": 1,
+     "Modifier": 1,
+     "Desc": 1,
+     "EffectDesc": 1
+    }
+   },
+   "errors": []
+  },
+  "thirdparty": {
+   "label": "thirdparty",
+   "file_count": 3,
+   "count": 50,
+   "child_tags": {
+    "DisplayName": 50,
+    "Icon": 50,
+    "StarLevel": 50,
+    "Difficulty": 50,
+    "Desc": 50,
+    "GLevel": 50,
+    "Element": 50,
+    "Type": 50,
+    "EffectDesc": 37,
+    "Modifier": 35,
+    "Skills": 6,
+    "Magics": 6,
+    "Fabaos": 3,
+    "GodSoulCount": 9,
+    "Hide": 9,
+    "PreNeed": 9
+   },
+   "type": {
+    "None": 8,
+    "Gong": 27,
+    "Skill": 9,
+    "Refining": 3,
+    "Barrier": 3
+   },
+   "star": {
+    "0": 11,
+    "1": 17,
+    "2": 22
+   },
+   "glevel": {
+    "Qi": 10,
+    "Dan1": 10,
+    "Dan2": 13,
+    "God": 14,
+    "God2": 3
+   },
+   "difficulty": {
+    "1": 2,
+    "3": 10,
+    "4": 4,
+    "5": 4,
+    "2": 6,
+    "6": 3,
+    "8": 6,
+    "10": 6,
+    "12": 3,
+    "15": 3,
+    "14": 3
+   },
+   "icon": {
+    "res/Sprs/ui/icon_quyun01": 1,
+    "res/Sprs/ui/icon_feisha01": 1,
+    "res/Sprs/ui/icon_lingjshi01": 1,
+    "res/Sprs/ui/icon_jichushufa": 1,
+    "res/Sprs/ui/icon_shenguo_tian": 1,
+    "res/Sprs/ui/icon_default": 45
+   },
+   "element": {
+    "None": 5,
+    "Huo": 45
+   },
+   "magics_count": {
+    "<none>": 44,
+    "1": 6
+   },
+   "modifier_count": {
+    "1": 35,
+    "<children 0>": 35,
+    "<none>": 15
+   },
+   "has_magics": 6,
+   "has_modifier": 35,
+   "by_type": {
+    "None": {
+     "_n": 8,
+     "StarLevel": 8,
+     "Icon": 8,
+     "Difficulty": 8,
+     "GLevel": 8,
+     "Element": 8,
+     "Modifier": 8,
+     "Desc": 8,
+     "EffectDesc": 7
+    },
+    "Gong": {
+     "_n": 27,
+     "StarLevel": 27,
+     "Icon": 27,
+     "Difficulty": 27,
+     "GLevel": 27,
+     "Element": 27,
+     "Modifier": 27,
+     "Desc": 27,
+     "EffectDesc": 19,
+     "Hide": 9
+    },
+    "Skill": {
+     "_n": 9,
+     "StarLevel": 9,
+     "Icon": 9,
+     "Difficulty": 9,
+     "GLevel": 9,
+     "Element": 9,
+     "Desc": 9,
+     "EffectDesc": 7,
+     "Magics": 6
+    },
+    "Refining": {
+     "_n": 3,
+     "StarLevel": 3,
+     "Icon": 3,
+     "Difficulty": 3,
+     "GLevel": 3,
+     "Element": 3,
+     "Desc": 3,
+     "EffectDesc": 2
+    },
+    "Barrier": {
+     "_n": 3,
+     "StarLevel": 3,
+     "Icon": 3,
+     "Difficulty": 3,
+     "GLevel": 3,
+     "Element": 3,
+     "Desc": 3,
+     "EffectDesc": 2
+    }
+   },
+   "errors": []
+  }
+ },
+ "modifier": {
+  "vanilla": {
+   "label": "vanilla",
+   "file_count": 45,
+   "count": 1543,
+   "type": {
+    "Normal": 1463,
+    "New": 80
+   },
+   "has_maxstack": 1134,
+   "has_duration": 1135,
+   "has_display": 1046,
+   "maxstack_val": {
+    "0": 562,
+    "1": 489,
+    "999": 3,
+    "100": 20,
+    "9999": 7,
+    "10": 13,
+    "99": 29,
+    "50": 5,
+    "1000": 5,
+    "3": 1
+   },
+   "duration_val": {
+    "-1": 964,
+    "6000": 4,
+    "60": 1,
+    "30": 1,
+    "10": 7,
+    "120": 1,
+    "300": 15,
+    "600": 17,
+    "1": 1,
+    "200": 3,
+    "25": 3,
+    "1000": 1,
+    "1800": 7,
+    "67200": 4,
+    "1200": 14,
+    "4200": 2,
+    "8400": 1,
+    "16800": 5,
+    "18000": 2,
+    "3000": 9,
+    "100": 4,
+    "9000": 1,
+    "50": 1,
+    "30000": 1,
+    "48600": 1,
+    "150": 2,
+    "90": 1,
+    "99999": 2,
+    "598": 1,
+    "7200": 1,
+    "20": 1,
+    "2025": 1,
+    "5400": 2,
+    "6": 1,
+    "605": 20,
+    "2": 1,
+    "0.19": 1,
+    "99999999": 20,
+    "2400": 1,
+    "3600": 1,
+    "12000": 1,
+    "24000": 1,
+    "36000": 1,
+    "48000": 1,
+    "54000": 1,
+    "60000": 1,
+    "72000": 1,
+    "84000": 1,
+    "9": 1
+   },
+   "display_val": {
+    "0": 760,
+    "1": 286
+   },
+   "prop_add": {
+    "AddV": 1566,
+    "AddP": 1221,
+    "BAddP": 170,
+    "BAddV": 49
+   },
+   "prop_names": {
+    "BodyPratice_MaxZhenQi": 25,
+    "BodyPratice_RecoverZhenQi": 25,
+    "BodyPractice_SuperPartAddp_AtkPower": 23,
+    "BodyPractice_SuperPartAddp_DefPower": 20,
+    "BodyPractice_SuperPartAddp_AtkRate": 8,
+    "BodyPractice_SuperPartAddp_DefRate": 8,
+    "BodyPractice_SuperPartAddp_ArmorPenetration": 4,
+    "BodyPractice_SuperPartAddp_CatchFabao": 4,
+    "BodyPractice_SuperPartAddv_AtkRate": 27,
+    "BodyPractice_SuperPartAddv_DefRate": 26,
+    "BodyPractice_SuperPartAddv_ArmorPenetration": 18,
+    "BodyPractice_SuperPartAddv_CatchFabao": 23,
+    "NpcFight_BaseDodgeChance": 15,
+    "PainTolerance": 35,
+    "BodyPratice_BodyStrong": 23,
+    "ToleranceTMin": 74,
+    "ToleranceTMax": 75,
+    "MaxAge": 125,
+    "MoveSpeed": 34,
+    "BodyPractice_SuperPartAddv_AtkPower": 20,
+    "BodyPractice_SuperPartAddv_DefPower": 21,
+    "BodyPratice_CatchFaboValue": 16,
+    "FatigueConsumeConstant": 26,
+    "NutritionConsumeConstant": 49,
+    "WaterConsumeConstant": 22,
+    "HappyConsumeConstant": 22,
+    "NeckCountdownAddV": 7,
+    "BodyPractice_MaxFoodAddtion": 8,
+    "BodyPratice_DefenseRecoverZhenQi": 3,
+    "BodyPractice_AngerFireEffectAddp": 7,
+    "BodyPractice_AngerFireDuration": 2,
+    "BodyPratice_QuenchingSpeed": 11,
+    "BodyPractice_Other_TunaAddp": 9,
+    "BodyPractice_AngerFireNum": 1,
+    "BodyPractice_EatItemMaxRate": 5,
+    "BodyPractice_EatItemProduceRateAddp": 7,
+    "BodyPractice_EatItemProduceCountAddp": 8,
+    "BodyPratice_BodyRecover": 6,
+    "NutritionToJingYuanK": 16,
+    "BaseEmotionAddV": 18,
+    "PracticeFoodRecoveryConstant": 3,
+    "BodyPratice_SuperPartCostAddP": 1,
+    "WorldMapFlySpeedAddP": 44,
+    "AgeCostSpeed": 14,
+    "NutritionWaterAutoRecover": 39,
+    "BodyPractice_RollAddtion_Cache1": 4,
+    "BodyPractice_RollAddtion_Cache2": 4,
+    "BodyPractice_RollAddtion_Cache3": 4,
+    "BodyPractice_RollAddtion_Cache4": 4,
+    "NpcLingMaxValue": 199,
+    "NpcFight_FabaoPowerAddP": 178,
+    "NpcFight_FabaoMaxLingAddP": 114,
+    "NpcFight_FabaoLingRecoverAddP": 113,
+    "NpcFight_SpellPowerAddP": 148,
+    "NpcFight_FabaoFlySpeedAddP": 54,
+    "NpcFight_FabaoTurnSpeedAddP": 50,
+    "NpcFight_ShieldConversionRate": 66,
+    "NpcFight_ShieldResistanceToHuo": 18,
+    "NpcFight_ShieldResistanceToJin": 15,
+    "NpcFight_ShieldResistanceToShui": 17,
+    "NpcFight_ShieldResistanceToTu": 16,
+    "NpcFight_ShieldResistanceToMu": 15,
+    "AbilityLvAddV": 38,
+    "LingAbsorbSpeed": 30,
+    "NpcFight_SpellLingCostAddP": 84,
+    "YaoShou_BaseLing": 17,
+    "YaoShou_BaseAttack": 18,
+    "YaoShou_BaseFabaoNum": 6,
+    "NpcFight_FabaoLingRecoverK": 11,
+    "MindStateBaseValue": 100,
+    "GodPenaltyAddV": 13,
+    "GodCity_MaxResident": 13,
+    "GodPractice_GodPowerAddV": 7,
+    "GodCity_PracticeEffect": 3,
+    "GodCity_ThunderAddion": 1,
+    "GodCity_MaxCoreBeliever": 1,
+    "EmotionAmplificationFactor": 7,
+    "NpcFight_ShieldConversionRateAddP": 79,
+    "NpcFight_SpellCastTimeAddP": 4,
+    "NpcFight_FabaoRepelResistanceAddV": 7,
+    "NpcFight_FabaoRepelDistanceAddV": 8,
+    "RecoveryPower": 23,
+    "MagicDamageRecoveryPowerAddV": 6,
+    "SpeedOfMindStateCoefficient": 3,
+    "BodyPratice_SuperPartRecoverAddP": 1,
+    "IntelligenceSkillEXPConstant": 34,
+    "ComfyTMin": 13,
+    "ComfyTMax": 11,
+    "PracticeRateAddPFromDan": 17,
+    "DeepPracticeSpeedSpecialCoefficient": 58,
+    "GlobalEfficiency": 27,
+    "PotentialOfBasepracticeAddValue": 24,
+    "NpcFight_FabaoNum": 12,
+    "DrugProductSpeed": 5,
+    "TreatmentExpectQuality": 7,
+    "CookingSpeed": 6,
+    "ButcherSpeed": 4,
+    "ButcherYieldEfficiency": 4,
+    "StoneWorkSpeed": 4,
+    "ConstructionSpeed": 6,
+    "PlantWorkSpeed": 3,
+    "PlantHarvestSpeed": 4,
+    "PlantHarvestYieldEfficiency": 3,
+    "MiningSpeed": 6,
+    "MiningYieldEfficiency": 5,
+    "MadeQualityAddValue": 3,
+    "SmithingSpeed": 5,
+    "HandworkSpeed": 6,
+    "TailoringSpeed": 6,
+    "CuttingSpeed": 4,
+    "DisasterFightingSpeed": 5,
+    "CleanSpeed": 4,
+    "NightmareHappenPercent": 8,
+    "NiceDreamHappenPercent": 8,
+    "FatigueRecoveryConstant": 8,
+    "NutritionRecoveryConstant": 1,
+    "WaterRecoveryConstant": 1,
+    "HappyRecoveryConstant": 1,
+    "PracticeFoodConsumeConstant": 3,
+    "InspirationCoefficient": 3,
+    "FabaoMake_SpeedAddV": 10,
+    "FabaoMake_SuccessRateAddV": 25,
+    "FabaoMake_LingInheritRateAddV": 10,
+    "FabaoMake_QualityAddV": 12,
+    "FabaoMake_TwelveRateChance": 9,
+    "DanMake_SpeedAddV": 9,
+    "DanMake_SuccessRateAddV": 17,
+    "DanMake_YieldAddP": 10,
+    "NpcFight_BaseHitChance": 2,
+    "CookingSuccessChance": 1,
+    "NpcFight_FabaoTrailingLengthAddP": 7,
+    "MaxAccumulativeLingAddV": 1,
+    "GongMatch_JinAddV": 2,
+    "GongMatch_MuAddV": 2,
+    "GongMatch_ShuiAddV": 2,
+    "GongMatch_HuoAddV": 2,
+    "GongMatch_TuAddV": 2,
+    "GongMatch_NoneAddV": 1,
+    "NpcFight_FightSkillSoul": 2,
+    "NpcFight_SneakValue": 5,
+    "SmithingQualityAddValue": 1,
+    "HandworkQualityAddValue": 1,
+    "TailoringQualityAddValue": 1,
+    "NpcFight_ZhenEnginePower": 8,
+    "BasepracticeSpeedCoefficient": 11,
+    "ExperiencePrestigeAddP": 5,
+    "ExperienceFindSpeedAddV": 2,
+    "VisionRadius": 1,
+    "NpcFight_SpellCoolDownAddP": 2,
+    "SocialContactLevelAddValue": 8,
+    "SmithingInjuredChance": 6,
+    "MiningInjuredChance": 6,
+    "ConstructInjuredChance": 6,
+    "TreatSpeed": 1,
+    "ManufactureExpectQuality": 1,
+    "ExperienceNeckTimeCostCoefficient": 1,
+    "NpcFight_MoveSpeedAdd": 1,
+    "SocialInclination": 1,
+    "TreatSuccessChance": 1,
+    "TreatmentRealQualityPercentMin": 1,
+    "TreatmentRealQualityPercentMax": 1,
+    "EnvironmentDiseaseAddP": 1,
+    "DisasterFightingSuccessChance": 1,
+    "BuildingRemoveSpeed": 1,
+    "DanMake_Speed": 1,
+    "NpcFight_ZhenKeyPointNum": 1
+   },
+   "child_tags": {
+    "MaxStack": 1134,
+    "Duration": 1135,
+    "Display": 1046,
+    "Properties": 1095,
+    "DisplayName": 1036,
+    "EffectBind": 38,
+    "Desc": 971,
+    "BaseFive": 214,
+    "Sync": 242,
+    "ModScale": 12,
+    "SpecialFlags": 70,
+    "MaterialDatas": 5,
+    "LuaClassName": 14,
+    "Skills": 266,
+    "MapProperties": 3,
+    "Modifiers": 12,
+    "EndModifier": 6,
+    "UnLockGodCityBuildings": 4,
+    "UnLockGodGuards": 15,
+    "Moods": 57,
+    "AnimalBodyOnly": 6,
+    "Damages": 19,
+    "ClassName": 95,
+    "Hair": 2,
+    "GlobleModifiers": 2,
+    "NoFog": 1,
+    "BanBodyParts": 3,
+    "UnLockMagic": 2,
+    "MutationShow": 2,
+    "BanJobs": 1,
+    "WorldFlags": 2,
+    "NpcModPath": 2
+   },
+   "prop_counts": {
+    "19": 2,
+    "14": 16,
+    "7": 14,
+    "2": 186,
+    "1": 578,
+    "4": 42,
+    "3": 92,
+    "6": 18,
+    "5": 55,
+    "0": 454,
+    "11": 7,
+    "10": 12,
+    "16": 7,
+    "8": 38,
+    "9": 14,
+    "15": 2,
+    "22": 1,
+    "13": 4,
+    "17": 1
+   },
+   "errors": []
+  },
+  "ours": {
+   "label": "ours",
+   "file_count": 1,
+   "count": 9,
+   "type": {
+    "Normal": 9
+   },
+   "has_maxstack": 9,
+   "has_duration": 9,
+   "has_display": 9,
+   "maxstack_val": {
+    "1": 9
+   },
+   "duration_val": {
+    "-1": 9
+   },
+   "display_val": {
+    "1": 9
+   },
+   "prop_add": {
+    "AddP": 4,
+    "AddV": 10,
+    "BAddP": 2
+   },
+   "prop_names": {
+    "NpcLingMaxValue": 3,
+    "DeepPracticeSpeedSpecialCoefficient": 2,
+    "LingAbsorbSpeed": 2,
+    "MaxAge": 1,
+    "InspirationCoefficient": 1,
+    "NpcFight_FabaoNum": 6,
+    "NeckCountdownAddV": 1
+   },
+   "child_tags": {
+    "DisplayName": 9,
+    "Desc": 9,
+    "MaxStack": 9,
+    "Duration": 9,
+    "Display": 9,
+    "Properties": 9
+   },
+   "prop_counts": {
+    "1": 6,
+    "6": 1,
+    "2": 2
+   },
+   "errors": []
+  },
+  "example": {
+   "label": "example",
+   "file_count": 1,
+   "count": 1,
+   "type": {
+    "Normal": 1
+   },
+   "has_maxstack": 1,
+   "has_duration": 1,
+   "has_display": 1,
+   "maxstack_val": {
+    "0": 1
+   },
+   "duration_val": {
+    "0": 1
+   },
+   "display_val": {
+    "1": 1
+   },
+   "prop_add": {
+    "AddV": 1
+   },
+   "prop_names": {
+    "MoveSpeed": 1
+   },
+   "child_tags": {
+    "DisplayName": 1,
+    "Desc": 1,
+    "MaxStack": 1,
+    "Duration": 1,
+    "Display": 1,
+    "Sync": 1,
+    "Properties": 1
+   },
+   "prop_counts": {
+    "1": 1
+   },
+   "errors": []
+  },
+  "thirdparty": {
+   "label": "thirdparty",
+   "file_count": 2,
+   "count": 20,
+   "type": {
+    "Normal": 20
+   },
+   "has_maxstack": 0,
+   "has_duration": 20,
+   "has_display": 0,
+   "maxstack_val": {},
+   "duration_val": {
+    "-1": 20
+   },
+   "display_val": {},
+   "prop_add": {
+    "AddV": 37,
+    "AddP": 87,
+    "BAddV": 17,
+    "BAddP": 8
+   },
+   "prop_names": {
+    "RecoveryPower": 2,
+    "ToleranceTMin": 6,
+    "ToleranceTMax": 6,
+    "NutritionToJingYuanK": 1,
+    "BodyPractice_SuperPartDef_EquptMaxCount": 1,
+    "BodyPratice_QuenchingSpeed": 1,
+    "BodyPratice_MaxZhenQi": 13,
+    "BodyPratice_RecoverZhenQi": 11,
+    "BodyPratice_BodyRecover": 4,
+    "BodyPractice_EatItemMaxRate": 1,
+    "MaxAge": 12,
+    "NutritionConsumeConstant": 1,
+    "BodyPractice_SuperPartAddv_AtkRate": 3,
+    "BodyPractice_SuperPartAddv_DefRate": 3,
+    "BodyPractice_SuperPartAddv_DefPower": 6,
+    "BaseEmotionAddV": 4,
+    "ExperienceFindSpeedAddV": 2,
+    "WorldMapFlySpeedAddP": 2,
+    "BodyPratice_BodyStrong": 4,
+    "BodyPractice_SuperPartAddv_AtkPower": 7,
+    "AgeCostSpeed": 1,
+    "BodyPractice_SuperPartBuff_EquptMaxCount": 2,
+    "BodyPractice_AngerFireEffectAddp": 4,
+    "BodyPractice_SuperPartAddv_ArmorPenetration": 3,
+    "ExperiencePrestigeAddP": 1,
+    "BodyPratice_CatchFaboValue": 1,
+    "BodyPractice_SuperPartAtk_EquptMaxCount": 1,
+    "BodyPractice_EatItemProduceRateAddp": 1,
+    "NpcLingMaxValue": 4,
+    "LingAbsorbSpeed": 4,
+    "NpcFight_SpellLingCostAddP": 2,
+    "MindStateBaseValue": 5,
+    "DanMake_YieldAddP": 1,
+    "DanMake_SuccessRateAddV": 1,
+    "DanMake_SpeedAddV": 1,
+    "NpcFight_FabaoPowerAddP": 4,
+    "FabaoMake_TwelveRateChance": 1,
+    "FabaoMake_QualityAddV": 1,
+    "FabaoMake_LingInheritRateAddV": 1,
+    "FabaoMake_SuccessRateAddV": 1,
+    "NpcFight_FabaoMaxLingAddP": 3,
+    "DeepPracticeSpeedSpecialCoefficient": 1,
+    "SocialContactBaseSuccess": 1,
+    "ManufactureRealQualityPercentMax": 1,
+    "NpcFight_SpellCoolDownAddP": 1,
+    "NpcFight_FabaoCoolDownAddP": 2,
+    "NpcFight_FabaoFlySpeedAddP": 1,
+    "NpcFight_FabaoTurnSpeedAddP": 1,
+    "NpcFight_FabaoRepelResistanceAddV": 1,
+    "NpcFight_FabaoNum": 1,
+    "NpcFight_SpellPowerAddP": 1,
+    "NpcFight_FabaoLingRecoverAddP": 1,
+    "NpcFight_BaseHitChance": 2,
+    "NpcFight_BaseDodgeChance": 1,
+    "NeckCountdownAddV": 1
+   },
+   "child_tags": {
+    "DisplayName": 20,
+    "Desc": 20,
+    "Duration": 20,
+    "Properties": 20
+   },
+   "prop_counts": {
+    "9": 5,
+    "1": 1,
+    "6": 4,
+    "11": 3,
+    "4": 2,
+    "7": 3,
+    "3": 1,
+    "14": 1
+   },
+   "errors": []
+  }
+ },
+ "property_names": [
+  "AbilityLvAddV",
+  "AgeCostSpeed",
+  "AnimalGatherSpeed",
+  "AnimalGatherYieldEfficiency",
+  "Art",
+  "ArtRateValue",
+  "Barrier",
+  "BaseEmotionAddV",
+  "BaseWorkSpeed",
+  "BasepracticeSpeedCoefficient",
+  "BodyPractice_AngerFireDuration",
+  "BodyPractice_AngerFireEffectAddp",
+  "BodyPractice_AngerFireNum",
+  "BodyPractice_EatItemMaxRate",
+  "BodyPractice_EatItemProduceCountAddp",
+  "BodyPractice_EatItemProduceRateAddp",
+  "BodyPractice_MaxFoodAddtion",
+  "BodyPractice_Other_TunaAddp",
+  "BodyPractice_RollAddtion_Cache1",
+  "BodyPractice_RollAddtion_Cache2",
+  "BodyPractice_RollAddtion_Cache3",
+  "BodyPractice_RollAddtion_Cache4",
+  "BodyPractice_RollAddtion_Null",
+  "BodyPractice_SuperPartAddp_ArmorPenetration",
+  "BodyPractice_SuperPartAddp_AtkPower",
+  "BodyPractice_SuperPartAddp_AtkRate",
+  "BodyPractice_SuperPartAddp_CatchFabao",
+  "BodyPractice_SuperPartAddp_DefPower",
+  "BodyPractice_SuperPartAddp_DefRate",
+  "BodyPractice_SuperPartAddv_ArmorPenetration",
+  "BodyPractice_SuperPartAddv_AtkPower",
+  "BodyPractice_SuperPartAddv_AtkRate",
+  "BodyPractice_SuperPartAddv_CatchFabao",
+  "BodyPractice_SuperPartAddv_DefPower",
+  "BodyPractice_SuperPartAddv_DefRate",
+  "BodyPractice_SuperPartAtk_EquptMaxCount",
+  "BodyPractice_SuperPartBuff_EquptMaxCount",
+  "BodyPractice_SuperPartDef_EquptMaxCount",
+  "BodyPratice_BodyRecover",
+  "BodyPratice_BodyStrong",
+  "BodyPratice_CatchFaboValue",
+  "BodyPratice_DefenseRecoverZhenQi",
+  "BodyPratice_MaxZhenQi",
+  "BodyPratice_QuenchingSpeed",
+  "BodyPratice_RecoverZhenQi",
+  "BodyPratice_SuperPartCostAddP",
+  "BodyPratice_SuperPartRecoverAddP",
+  "BossComfyTMax",
+  "BossComfyTMin",
+  "BossMaxAge",
+  "BossToleranceTMax",
+  "BossToleranceTMin",
+  "Building",
+  "BuildingRemoveSpeed",
+  "ButcherSpeed",
+  "ButcherYieldEfficiency",
+  "Charisma",
+  "CharismaFriendshipAddValue",
+  "Charisma_1_1_10",
+  "Charisma_1_1_3",
+  "Charisma_1_5_25",
+  "Charisma_2_10_1",
+  "Charisma_2_25_5",
+  "Charisma_2_3_1",
+  "CleanSpeed",
+  "ComfyTMax",
+  "ComfyTMin",
+  "Consciousness",
+  "ConsciousnessEfficiency",
+  "ConstructInjuredChance",
+  "ConstructSuccessChance",
+  "ConstructionSpeed",
+  "Cooking",
+  "CookingSpeed",
+  "CookingSuccessChance",
+  "CuttingSpeed",
+  "DanMake_Speed",
+  "DanMake_SpeedAddV",
+  "DanMake_SuccessRate",
+  "DanMake_SuccessRateAddV",
+  "DanMake_Yield",
+  "DanMake_YieldAddP",
+  "DanQi",
+  "DeepPracticeSpeedSpecialCoefficient",
+  "DisasterFightingSpeed",
+  "DisasterFightingSuccessChance",
+  "DouFa",
+  "DrugProductSpeed",
+  "EmotionAmplificationFactor",
+  "EmotionEfficiency",
+  "EnvironmentDiseaseAddP",
+  "EsotericaNum",
+  "ExperienceFindSpeedAddV",
+  "ExperienceNeckTimeCostCoefficient",
+  "ExperiencePrestigeAddP",
+  "Fabao",
+  "FabaoMake_LingInheritRateAddV",
+  "FabaoMake_QualityAddV",
+  "FabaoMake_SpeedAddV",
+  "FabaoMake_SuccessRateAddV",
+  "FabaoMake_TwelveRateChance",
+  "Farming",
+  "FatigueConsumeConstant",
+  "FatigueRecoveryConstant",
+  "FavourChangeSpeedRate",
+  "Feeling",
+  "Fight",
+  "FightSkill",
+  "FightingProbabilityAddValue",
+  "FishTimes",
+  "FunctionsScore",
+  "GlobalEfficiency",
+  "GodCity_GuardEffect",
+  "GodCity_MaxCoreBeliever",
+  "GodCity_MaxResident",
+  "GodCity_PracticeEffect",
+  "GodCity_ThunderAddion",
+  "GodPenaltyAddV",
+  "GodPractice_GodPowerAddV",
+  "GodPractice_LingConvert",
+  "GongMatch_HuoAddV",
+  "GongMatch_JinAddV",
+  "GongMatch_MuAddV",
+  "GongMatch_NoneAddV",
+  "GongMatch_ShuiAddV",
+  "GongMatch_TuAddV",
+  "GrowProperty",
+  "HandworkQualityAddValue",
+  "HandworkSpeed",
+  "HappyConsumeConstant",
+  "HappyRecoveryConstant",
+  "HeaviestFish",
+  "HumanRaceBaseWorkSpeed",
+  "HumanRaceComfyTMax",
+  "HumanRaceComfyTMin",
+  "HumanRaceMaxAge",
+  "HumanRaceMaxHp",
+  "HumanRaceMoveSpeed",
+  "HumanRaceRecoveryPower",
+  "HumanRaceToleranceTMax",
+  "HumanRaceToleranceTMin",
+  "HumanRaceVisionRadius",
+  "InspirationCoefficient",
+  "Intelligence",
+  "IntelligenceSkillEXPConstant",
+  "Intelligence_1_1_10",
+  "Intelligence_1_1_3",
+  "Intelligence_1_5_25",
+  "Intelligence_2_10_1",
+  "Intelligence_2_25_5",
+  "Intelligence_2_3_1",
+  "LeadExperienceAddtion",
+  "LingAbsorbSpeed",
+  "LingShouFat",
+  "LingShouHuTi",
+  "LingShouJustice",
+  "LingShouLingZhi",
+  "LingShouNeiDan",
+  "LingShouQiGan",
+  "LingShouShuFa",
+  "LingShouStronger",
+  "LingShouToleranceTMax",
+  "LingShouToleranceTMin",
+  "LingShouVisionRadius",
+  "LsBadGood",
+  "LsDogShieldConversionRateAddP",
+  "LsDrgSpellPowerAddP",
+  "LsFabaoCoolDownAddP",
+  "LsFabaoFlySpeedAddP",
+  "LsFabaoLingRecoverAddP",
+  "LsFabaoMaxLingAddP",
+  "LsFabaoPowerAddP",
+  "LsFabaoTurnSpeedAddP",
+  "LsFat",
+  "LsFoodNeedAddP",
+  "LsFoxFabaoPowerAddP",
+  "LsFoxMoveSpeed",
+  "LsLingMaxValue",
+  "LsMoveSpeed",
+  "LsMoveSpeed_Slow",
+  "LsNutritionP",
+  "LsPandaFabaoPowerAddP",
+  "LsPandaLingMaxValue",
+  "LsPandaSpellPowerAddP",
+  "LsPhxFabaoCoolDownAddP",
+  "LsPhxFabaoPowerAddP",
+  "LsShieldConversionRateAddP",
+  "LsSpellCoolDownAddP",
+  "LsSpellLingCostAddP",
+  "LsSpellPowerAddP",
+  "LsWaterNeedAddP",
+  "LsXuanWuFabaoPowerAddP",
+  "LsXuanWuLingMaxValue",
+  "LsXuanWuMoveSpeed",
+  "LsXuanWuShieldConversionRateAddP",
+  "Luck",
+  "Luck_1_1_10",
+  "Luck_1_1_3",
+  "Luck_1_5_25",
+  "Luck_2_10_1",
+  "Luck_2_25_5",
+  "Luck_2_3_1",
+  "MadeQualityAddValue",
+  "MagicDamageRecoveryPowerAddV",
+  "MammalBaseWorkSpeed",
+  "MammalComfyTMax",
+  "MammalComfyTMin",
+  "MammalMaxAge_15",
+  "MammalMaxAge_200",
+  "MammalMaxAge_24",
+  "MammalMaxAge_45",
+  "MammalMaxHp",
+  "MammalMoveSpeed",
+  "MammalMoveSpeed_Fast",
+  "MammalMoveSpeed_NewYear",
+  "MammalMoveSpeed_Slow",
+  "MammalMoveSpeed_Slow2",
+  "MammalRecoveryPower",
+  "MammalToleranceTMax",
+  "MammalToleranceTMin",
+  "MammalVisionRadius",
+  "Manual",
+  "ManufactureExpectQuality",
+  "ManufactureRealQualityPercentMax",
+  "ManufactureRealQualityPercentMin",
+  "MaxAccumulativeLingAddV",
+  "MaxAge",
+  "MaxHp",
+  "MaxSkillAbility_Art",
+  "MaxSkillAbility_Barrier",
+  "MaxSkillAbility_Building",
+  "MaxSkillAbility_Cooking",
+  "MaxSkillAbility_DanQi",
+  "MaxSkillAbility_DouFa",
+  "MaxSkillAbility_Fabao",
+  "MaxSkillAbility_Farming",
+  "MaxSkillAbility_Fight",
+  "MaxSkillAbility_FightSkill",
+  "MaxSkillAbility_Manual",
+  "MaxSkillAbility_Medicine",
+  "MaxSkillAbility_Mining",
+  "MaxSkillAbility_Qi",
+  "MaxSkillAbility_SocialContact",
+  "MaxSkillAbility_Zhen",
+  "Medicine",
+  "Meridian",
+  "MindStateBaseValue",
+  "Mining",
+  "MiningInjuredChance",
+  "MiningSpeed",
+  "MiningYieldEfficiency",
+  "MoveSpeed",
+  "Movement",
+  "NeckCountdownAddV",
+  "NiceDreamHappenPercent",
+  "NightmareHappenPercent",
+  "NpcFight_BaseDodgeChance",
+  "NpcFight_BaseHitChance",
+  "NpcFight_FabaoCoolDownAddP",
+  "NpcFight_FabaoFlySpeedAddP",
+  "NpcFight_FabaoLingRecoverAddP",
+  "NpcFight_FabaoLingRecoverK",
+  "NpcFight_FabaoMaxLingAddP",
+  "NpcFight_FabaoNum",
+  "NpcFight_FabaoPowerAddP",
+  "NpcFight_FabaoRepelDistanceAddV",
+  "NpcFight_FabaoRepelResistanceAddV",
+  "NpcFight_FabaoTrailingLengthAddP",
+  "NpcFight_FabaoTurnSpeedAddP",
+  "NpcFight_FightSkillSoul",
+  "NpcFight_MoveSpeedAdd",
+  "NpcFight_ShieldConversionEquipAdd",
+  "NpcFight_ShieldConversionRate",
+  "NpcFight_ShieldConversionRateAddP",
+  "NpcFight_ShieldResistanceToHuo",
+  "NpcFight_ShieldResistanceToJin",
+  "NpcFight_ShieldResistanceToMu",
+  "NpcFight_ShieldResistanceToShui",
+  "NpcFight_ShieldResistanceToTu",
+  "NpcFight_SneakValue",
+  "NpcFight_SpellCastTimeAddP",
+  "NpcFight_SpellCoolDownAddP",
+  "NpcFight_SpellLingCostAddP",
+  "NpcFight_SpellPowerAddP",
+  "NpcFight_ZhenEnginePower",
+  "NpcFight_ZhenKeyPointNum",
+  "NpcLingMaxValue",
+  "NutritionConsumeConstant",
+  "NutritionRecoveryConstant",
+  "NutritionToJingYuanK",
+  "NutritionWaterAutoRecover",
+  "Operation",
+  "PainTolerance",
+  "Perception",
+  "Perception_1_1_10",
+  "Perception_1_1_3",
+  "Perception_1_5_25",
+  "Perception_1_5_75",
+  "Perception_2_10_1",
+  "Perception_2_25_5",
+  "Perception_2_3_1",
+  "Physique",
+  "Physique_1_1_10",
+  "Physique_1_1_3",
+  "Physique_1_5_25",
+  "Physique_2_10_1",
+  "Physique_2_25_5",
+  "Physique_2_3_1",
+  "PlantHarvestSpeed",
+  "PlantHarvestYieldEfficiency",
+  "PlantWorkSpeed",
+  "PoikilothermBaseWorkSpeed",
+  "PoikilothermComfyTMax",
+  "PoikilothermComfyTMin",
+  "PoikilothermMaxAge_50",
+  "PoikilothermMaxHp",
+  "PoikilothermMoveSpeed",
+  "PoikilothermMoveSpeed_Snake",
+  "PoikilothermRecoveryPower",
+  "PoikilothermToleranceTMax",
+  "PoikilothermToleranceTMin",
+  "PoikilothermVisionRadius",
+  "PotentialOfBasepracticeAddValue",
+  "PracticeFoodConsumeConstant",
+  "PracticeFoodRecoveryConstant",
+  "PracticeRateAddPFromDan",
+  "PuppetRaceBaseWorkSpeed",
+  "PuppetRaceComfyTMax",
+  "PuppetRaceComfyTMin",
+  "PuppetRaceMaxAge",
+  "PuppetRaceMaxHp",
+  "PuppetRaceMoveSpeed",
+  "PuppetRaceRecoveryPower",
+  "PuppetRaceToleranceTMax",
+  "PuppetRaceToleranceTMin",
+  "PuppetRaceVisionRadius",
+  "Qi",
+  "Qi_1_5_25",
+  "RecoveryPower",
+  "SkillAbility_Art",
+  "SkillAbility_Barrier",
+  "SkillAbility_Building",
+  "SkillAbility_Cooking",
+  "SkillAbility_DanQi",
+  "SkillAbility_DouFa",
+  "SkillAbility_Fabao",
+  "SkillAbility_Farming",
+  "SkillAbility_Fight",
+  "SkillAbility_FightSkill",
+  "SkillAbility_Manual",
+  "SkillAbility_Medicine",
+  "SkillAbility_Mining",
+  "SkillAbility_Qi",
+  "SkillAbility_SocialContact",
+  "SkillAbility_Zhen",
+  "SmithingInjuredChance",
+  "SmithingQualityAddValue",
+  "SmithingSpeed",
+  "SocialContact",
+  "SocialContactBaseSuccess",
+  "SocialContactLevelAddValue",
+  "SocialInclination",
+  "SpeedOfMindStateCoefficient",
+  "SpeedOfMindStateCoefficientByMoods",
+  "SpeedOfMindStateCoefficientByMoods_Easy",
+  "StoneWorkSpeed",
+  "TailoringQualityAddValue",
+  "TailoringSpeed",
+  "TameSuccessChance",
+  "TestProperty1",
+  "TestProperty11",
+  "ToleranceTMax",
+  "ToleranceTMin",
+  "TreatSpeed",
+  "TreatSuccessChance",
+  "TreatmentExpectQuality",
+  "TreatmentRealQualityPercentMax",
+  "TreatmentRealQualityPercentMin",
+  "VisionRadius",
+  "WaterConsumeConstant",
+  "WaterRecoveryConstant",
+  "WeightCarryLossSpeedRate",
+  "WorkKindEXPContent_ActualCombatPractice",
+  "WorkKindEXPContent_Art",
+  "WorkKindEXPContent_Build",
+  "WorkKindEXPContent_Cook",
+  "WorkKindEXPContent_FightSkillPractice",
+  "WorkKindEXPContent_Harvest",
+  "WorkKindEXPContent_LargeCircle",
+  "WorkKindEXPContent_Make",
+  "WorkKindEXPContent_Mining",
+  "WorkKindEXPContent_Pharmacy",
+  "WorkKindEXPContent_Research",
+  "WorkKindEXPContent_Slaughter",
+  "WorkKindEXPContent_SmallCircle",
+  "WorkKindEXPContent_Sow",
+  "WorkKindEXPContent_StoneProcessing",
+  "WorkKindEXPContent_Treat",
+  "WorkKindEXPValue_Art_MakeArt",
+  "WorkKindEXPValue_DeepTalk",
+  "WorkKindEXPValue_Encourage",
+  "WorkKindEXPValue_Hit",
+  "WorkKindEXPValue_Kill",
+  "WorkKindEXPValue_Love",
+  "WorkKindEXPValue_Manual_MakeArt",
+  "WorkKindEXPValue_NewFood",
+  "WorkKindEXPValue_SayHi",
+  "WorkKindEXPValue_Talk",
+  "WorldMapFlySpeed",
+  "WorldMapFlySpeedAddP",
+  "YaoShou_BaseAttack",
+  "YaoShou_BaseFabaoNum",
+  "YaoShou_BaseLing",
+  "Zhen",
+  "_SPECIAL_NOADD_NpcLingMaxValue"
+ ],
+ "property_file_count": 21,
+ "field_diff": {
+  "ours_fields": [
+   "Desc",
+   "DisplayName",
+   "ElementKind",
+   "FiveBaseNeed",
+   "SelectDesc",
+   "Skill",
+   "SkillSetName",
+   "Stages"
+  ],
+  "baseline_fields": [
+   "Desc",
+   "DisplayName",
+   "ElementKind",
+   "Empty",
+   "FiveBaseNeed",
+   "GodGuards",
+   "GongKind",
+   "Hide",
+   "IllustratedHandLabel",
+   "Magic",
+   "QuenchingMethods",
+   "SelectDesc",
+   "Skill",
+   "SkillSetName",
+   "Stages",
+   "SuperParts",
+   "YinYang"
+  ],
+  "ours_only": [],
+  "baseline_only": [
+   "Empty",
+   "GodGuards",
+   "GongKind",
+   "Hide",
+   "IllustratedHandLabel",
+   "Magic",
+   "QuenchingMethods",
+   "SuperParts",
+   "YinYang"
+  ]
+ },
+ "tree": {
+  "vanilla": {
+   "label": "vanilla",
+   "file_count": 14,
+   "nodes": 578,
+   "child_tags": {
+    "Esoterica": 472,
+    "DisplayName": 472,
+    "Level": 578,
+    "Index": 439,
+    "Line": 439,
+    "PreUnit": 348,
+    "MutexUnit": 313,
+    "FiveBase": 333,
+    "Skills": 333,
+    "LingMax": 333,
+    "GoldLevel": 333,
+    "GodCount": 333,
+    "Layers": 99,
+    "Depth": 34
+   },
+   "level": {
+    "Qi": 76,
+    "Dan1": 108,
+    "None": 139,
+    "Dan2": 131,
+    "God": 96,
+    "God2": 28
+   },
+   "index": {
+    "0": 40,
+    "1": 38,
+    "4": 51,
+    "5": 38,
+    "6": 31,
+    "7": 38,
+    "8": 49,
+    "2": 32,
+    "3": 36,
+    "<MISSING>": 139,
+    "9": 35,
+    "10": 27,
+    "11": 24
+   },
+   "line_len": {
+    "8": 439
+   },
+   "dao_hang": {
+    "<MISSING>": 578
+   },
+   "depth": {
+    "<MISSING>": 544,
+    "1": 34
+   },
+   "gong_ref": {
+    "Gong_1_Shui": 44,
+    "Gong_10_Huo": 33,
+    "Gong_11_Tu": 52,
+    "Gong_12_None": 31,
+    "Gong_2_Mu": 37,
+    "Gong_3_Jin": 41,
+    "Gong_4_None": 49,
+    "Gong_5_Tu": 41,
+    "Gong_6_Huo": 46,
+    "Gong_7_Huo": 38,
+    "Gong_8_Jin": 48,
+    "Gong_9_Mu": 50,
+    "Gong_13_None": 68
+   },
+   "attrs": {
+    "Name": 578,
+    "Gong": 578
+   }
+  },
+  "ours": {
+   "label": "ours",
+   "file_count": 1,
+   "nodes": 9,
+   "child_tags": {
+    "Esoterica": 9,
+    "DisplayName": 9,
+    "Level": 9,
+    "Index": 9,
+    "Line": 9,
+    "PreUnit": 9,
+    "MutexUnit": 9,
+    "FiveBase": 9,
+    "Skills": 9,
+    "LingMax": 9,
+    "GoldLevel": 9,
+    "GodCount": 9,
+    "DaoHang": 9,
+    "Depth": 9
+   },
+   "level": {
+    "Qi": 4,
+    "Dan1": 2,
+    "Dan2": 2,
+    "God": 1
+   },
+   "index": {
+    "0": 4,
+    "1": 3,
+    "2": 1,
+    "3": 1
+   },
+   "line_len": {
+    "8": 9
+   },
+   "dao_hang": {
+    "0": 9
+   },
+   "depth": {
+    "0": 9
+   },
+   "gong_ref": {
+    "WFG_Gong_YanTian": 9
+   },
+   "attrs": {
+    "Name": 9,
+    "Gong": 9
+   }
+  },
+  "thirdparty": {
+   "label": "thirdparty",
+   "file_count": 2,
+   "nodes": 59,
+   "child_tags": {
+    "Esoterica": 59,
+    "DisplayName": 59,
+    "Level": 59,
+    "Index": 59,
+    "Line": 59,
+    "FiveBase": 59,
+    "LingMax": 59,
+    "GoldLevel": 59,
+    "GodCount": 59,
+    "Skills": 2,
+    "PreUnit": 3
+   },
+   "level": {
+    "Qi": 11,
+    "Dan1": 14,
+    "Dan2": 15,
+    "God": 15,
+    "God2": 4
+   },
+   "index": {
+    "0": 9,
+    "1": 7,
+    "2": 8,
+    "3": 5,
+    "4": 4,
+    "5": 5,
+    "6": 5,
+    "7": 5,
+    "8": 4,
+    "9": 2,
+    "10": 2,
+    "11": 3
+   },
+   "line_len": {
+    "8": 59
+   },
+   "dao_hang": {
+    "<MISSING>": 59
+   },
+   "depth": {
+    "<MISSING>": 59
+   },
+   "gong_ref": {
+    "ShiJin": 44,
+    "Gong_FenJue": 15
+   },
+   "attrs": {
+    "Name": 59,
+    "Gong": 59
+   }
+  },
+  "example": {
+   "label": "example",
+   "file_count": 1,
+   "nodes": 1,
+   "child_tags": {
+    "Esoterica": 1,
+    "DisplayName": 1,
+    "Level": 1,
+    "Index": 1,
+    "Line": 1,
+    "PreUnit": 1,
+    "FiveBase": 1,
+    "LingMax": 1,
+    "GoldLevel": 1,
+    "GodCount": 1
+   },
+   "level": {
+    "Qi": 1
+   },
+   "index": {
+    "0": 1
+   },
+   "line_len": {
+    "8": 1
+   },
+   "dao_hang": {
+    "<MISSING>": 1
+   },
+   "depth": {
+    "<MISSING>": 1
+   },
+   "gong_ref": {
+    "ModTest_Gong": 1
+   },
+   "attrs": {
+    "Name": 1,
+    "Gong": 1
+   }
+  }
+ },
+ "our_prop_samples": {
+  "DeepPracticeSpeedSpecialCoefficient": {
+   "AddP=0.3": 2,
+   "AddP=2": 6,
+   "BAddV=0.1": 2,
+   "BAddV=0.2": 1,
+   "AddP=0.15": 2,
+   "AddP=0.4": 2,
+   "AddP=0.2": 3,
+   "AddP=1.5": 1,
+   "AddP=0.5": 4,
+   "AddP=-0.5": 3,
+   "AddP=0.75": 1,
+   "AddP=-1": 13,
+   "AddP=4": 1,
+   "AddV=-0.2": 1,
+   "AddV=0.05": 1,
+   "AddP=0.25": 2,
+   "AddP=-0.25": 1,
+   "AddP=-0.8": 1,
+   "AddV=-100": 1,
+   "AddP=1": 4,
+   "AddP=-0.1": 2,
+   "AddP=-0.05": 2,
+   "AddP=0.05": 1,
+   "AddP=0.01": 1
+  },
+  "InspirationCoefficient": {
+   "AddP=0.25": 1,
+   "AddP=0.5": 1,
+   "AddP=0.01": 1
+  },
+  "LingAbsorbSpeed": {
+   "AddP=60": 3,
+   "AddP=600": 1,
+   "AddP=20": 1,
+   "AddP=5": 2,
+   "AddP=15": 2,
+   "AddP=8": 1,
+   "AddP=25": 1,
+   "AddP=12": 1,
+   "AddP=4": 1,
+   "BAddP=0.1": 1,
+   "AddP=6": 1,
+   "AddP=0.75": 1,
+   "AddP=2": 4,
+   "AddP=-0.75": 1,
+   "AddP=-2": 1,
+   "AddP=-5": 1,
+   "AddP=0.1": 1,
+   "AddP=0.2": 2,
+   "AddP=0.5": 1,
+   "AddP=1": 3
+  },
+  "MaxAge": {
+   "AddV=300": 6,
+   "AddV=50": 12,
+   "AddV=100": 9,
+   "AddV=800": 4,
+   "AddV=3000": 1,
+   "AddV=0.1": 2,
+   "AddV=30": 24,
+   "AddV=20": 7,
+   "AddV=80": 3,
+   "AddV=150": 1,
+   "AddV=-100": 2,
+   "AddV=-60": 1,
+   "AddV=-3": 5,
+   "AddV=180": 3,
+   "AddV=200": 2,
+   "AddV=500": 4,
+   "AddV=256": 1,
+   "AddV=490": 2,
+   "AddV=99": 2,
+   "AddV=3": 1,
+   "AddV=10": 6,
+   "AddV=-20": 1,
+   "AddV=-9": 1,
+   "AddV=60": 6,
+   "AddV=120": 4,
+   "AddV=240": 2,
+   "AddV=250": 1,
+   "AddV=160": 1,
+   "AddP=5": 1,
+   "AddV=450": 1,
+   "AddV=-120": 2,
+   "AddV=640": 1,
+   "AddV=360": 1,
+   "AddV=-10": 1,
+   "AddV=-30": 1,
+   "AddV=-80": 1,
+   "AddV=35": 1,
+   "AddV=400": 1
+  },
+  "NeckCountdownAddV": {
+   "AddV=3000": 1,
+   "AddV=29400": 1,
+   "AddV=64800": 1,
+   "AddV=16200": 1,
+   "AddV=120000": 1,
+   "AddV=18000": 1,
+   "AddV=604800": 1
+  },
+  "NpcFight_FabaoNum": {
+   "AddV=1": 5,
+   "AddV=-10": 1,
+   "AddV=2": 1,
+   "AddV=-2": 1,
+   "AddP=1": 2,
+   "AddP=0.5": 1,
+   "AddP=1.5": 1
+  },
+  "NpcLingMaxValue": {
+   "AddP=100": 2,
+   "AddP=5000": 3,
+   "AddP=15000": 3,
+   "AddP=20": 2,
+   "AddV=180000": 1,
+   "AddV=1800000": 1,
+   "AddP=10000": 2,
+   "AddP=25000": 1,
+   "AddV=250000": 2,
+   "AddP=20000": 1,
+   "AddP=30000": 1,
+   "AddV=40000": 5,
+   "AddV=30000": 20,
+   "AddV=20000": 6,
+   "AddV=80000": 2,
+   "AddV=60000": 3,
+   "AddV=70000": 1,
+   "AddV=100000": 2,
+   "AddV=-80000": 1,
+   "AddV=25000": 1,
+   "AddP=10": 3,
+   "AddV=100": 3,
+   "BAddP=0.5": 1,
+   "AddV=600": 1,
+   "AddP=0.3": 4,
+   "BAddV=-50": 1,
+   "BAddV=50": 1,
+   "BAddP=0.1": 4,
+   "BAddV=-10": 1,
+   "BAddV=250": 2,
+   "BAddV=25": 8,
+   "BAddP=0.3": 1,
+   "BAddP=1": 11,
+   "BAddV=5000": 1,
+   "BAddV=10000": 1,
+   "BAddV=15000": 1,
+   "BAddV=40000": 1,
+   "BAddV=25000": 1,
+   "BAddV=20000": 1,
+   "BAddV=90000": 1,
+   "BAddV=60000": 1,
+   "AddV=999": 2,
+   "AddP=2.5": 1,
+   "AddP=6": 1,
+   "AddP=12": 2,
+   "AddP=24": 1,
+   "AddP=40": 4,
+   "AddP=2.4": 1,
+   "AddP=-0.8": 1,
+   "AddP=-1.6": 1,
+   "AddP=4.5": 1,
+   "AddP=-1.5": 1,
+   "AddP=-3": 1,
+   "AddP=13.5": 1,
+   "AddP=-4.5": 1,
+   "AddP=-9": 1,
+   "AddP=28.5": 1,
+   "AddP=-9.5": 1,
+   "AddP=-19": 1,
+   "AddP=52.5": 1,
+   "AddP=-17.5": 1,
+   "AddP=-35": 1,
+   "AddP=94.5": 1,
+   "AddP=-31.5": 1,
+   "AddP=5": 2,
+   "BAddP=0.2": 1,
+   "AddP=0.1": 3,
+   "AddP=15": 1,
+   "AddP=0.5": 4,
+   "BAddV=100": 1,
+   "AddP=1": 3,
+   "AddP=25": 4,
+   "BAddV=35": 1,
+   "BAddV=40": 1,
+   "AddP=0.75": 3,
+   "BAddP=-0.1": 1,
+   "BAddV=150": 2,
+   "BAddV=15": 2,
+   "AddV=15000": 1,
+   "AddV=1000": 2,
+   "AddP=8": 1,
+   "BAddV=500": 1,
+   "BAddV=120": 1,
+   "AddV=120000": 1,
+   "AddP=0.2": 2,
+   "AddP=0.4": 1,
+   "AddP=30": 1,
+   "AddP=0.7": 1,
+   "AddP=-0.5": 1,
+   "AddP=-0.75": 1,
+   "BAddV=75": 1,
+   "BAddV=-75": 1,
+   "BAddV=64": 1,
+   "BAddV=300": 1,
+   "AddV=-100": 1,
+   "BAddV=-100": 1,
+   "BAddP=0.02": 1,
+   "BAddP=0.25": 1,
+   "AddV=500": 3,
+   "AddV=1000000": 1,
+   "AddV=1500000": 3,
+   "AddP=150": 3,
+   "AddV=800": 1,
+   "AddV=500000": 1,
+   "AddP=50": 1,
+   "AddP=-0.1": 1,
+   "BAddP=-0.01": 1,
+   "BAddP=-0.9": 3,
+   "BAddP=0.002": 1
+  }
+ }
+}

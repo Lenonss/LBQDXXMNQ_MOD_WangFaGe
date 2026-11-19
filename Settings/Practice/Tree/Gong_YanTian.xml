@@ -1,0 +1,297 @@
+<SkillTree><List>
+
+	<!--
+		衍天诀参悟树
+		- Level 只决定「显示在第几行」：Qi=练气 / Dan1=结丹 / Dan2=金丹 / God=元神
+		  每行 12 格，Index 是「本行内」的格子序号（0 起），不是全树序号。
+		- 学习门槛由秘籍自身的 GLevel 决定；节点 Level 与秘籍 GLevel 保持一致：
+		  总纲 Qi；本命法宝 / 自愈 / 解析 / 创造 / 炼石 / 御剑 / 灵盾 / 器谱 Dan1；精研 / 周天 / 锋锐 / 不灭 Dan2；避天机 God。
+		- 每个节点必须挂一个独立的 Esoterica，绝不能多个节点共用同一本秘籍：
+		  共用会导致「学一个、三个一起变已学」，看起来像界面出错。
+	-->
+	<Node Name="WFG_Tree_YanTian_A0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Gong</Esoterica>
+		<DisplayName>衍天诀·总纲</DisplayName>
+		<Level>Qi</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_B0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Heal</Esoterica>
+		<DisplayName>自愈程序</DisplayName>
+		<Level>Dan1</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_B1" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_HealPlus</Esoterica>
+		<DisplayName>自愈·精研</DisplayName>
+		<Level>Dan2</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>WFG_Tree_YanTian_B0</li>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_C0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Derive</Esoterica>
+		<DisplayName>衍天·解析</DisplayName>
+		<Level>Dan1</Level>
+		<Index>2</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_C1" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Create</Esoterica>
+		<DisplayName>衍天·创造</DisplayName>
+		<Level>Dan1</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_D0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Fabao</Esoterica>
+		<DisplayName>本命法宝</DisplayName>
+		<Level>Dan1</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_E0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Guard</Esoterica>
+		<DisplayName>避天机程序</DisplayName>
+		<Level>God</Level>
+		<Index>0</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_F0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_LingStone</Esoterica>
+		<DisplayName>衍天·炼石</DisplayName>
+		<Level>Dan1</Level>
+		<Index>4</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>WFG_Tree_YanTian_C0</li>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_G0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Sword</Esoterica>
+		<DisplayName>御剑</DisplayName>
+		<Level>Dan1</Level>
+		<Index>5</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_G1" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Shield</Esoterica>
+		<DisplayName>灵盾</DisplayName>
+		<Level>Dan1</Level>
+		<Index>6</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_G2" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Codex</Esoterica>
+		<DisplayName>器谱</DisplayName>
+		<Level>Dan1</Level>
+		<Index>7</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_H0" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Cycle</Esoterica>
+		<DisplayName>周天</DisplayName>
+		<Level>Dan2</Level>
+		<Index>1</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>WFG_Tree_YanTian_G2</li>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_H1" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Edge</Esoterica>
+		<DisplayName>锋锐</DisplayName>
+		<Level>Dan2</Level>
+		<Index>2</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>WFG_Tree_YanTian_G0</li>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+	<Node Name="WFG_Tree_YanTian_H2" Gong="WFG_Gong_YanTian">
+		<Esoterica>WFG_Eso_YanTian_Undying</Esoterica>
+		<DisplayName>不灭</DisplayName>
+		<Level>Dan2</Level>
+		<Index>3</Index>
+		<Line>0,0,0,0,0,0,0,0</Line>
+		<PreUnit>
+			<li>WFG_Tree_YanTian_G1</li>
+		</PreUnit>
+		<MutexUnit>
+		</MutexUnit>
+		<FiveBase>0,0,0,0,0</FiveBase>
+		<Skills>
+		</Skills>
+		<LingMax>0</LingMax>
+		<GoldLevel>0</GoldLevel>
+		<GodCount>0</GodCount>
+		<DaoHang>0</DaoHang>
+		<Depth>0</Depth>
+	</Node>
+
+</List></SkillTree>

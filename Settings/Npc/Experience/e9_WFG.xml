@@ -1,0 +1,27 @@
+<Experiences><List>
+
+	<!-- ================= 万法阁 · 开局初始经历 =================
+	     Group="G1" 为原版「功法传承」互斥组，与太一门六峰并列，只能择其一。
+	     第二个经历不分组，可自由勾选，用于开局物资。 -->
+
+	<Experience Name="WFG_Exp_GongYanTian" Group="G1">
+		<DisplayName>万法阁·衍天传人</DisplayName>
+		<Desc>你并非太一门弟子。灭门之夜前，一位云游的老者在你眉心点了一指，留下一卷无字天书与一句话：「不修五行，不借天地，只以自身灵气温养出一个『灵子』来。」\n老者走后，那卷无字天书自行化入你的识海——其名《衍天诀》。\n\n\n[size=10]解锁功法：[color=#D06508]《衍天诀》[/color]\n此功不依赖五行根骨，任何资质皆可入门；初境温养缓慢，灵子飞升之后寿元、灵气与天赋远超同阶。\n灵体之后可修「自愈程序」「衍天解析」「避天机」，最终自行决定是否飞升成仙。\n\n解锁奇观：[color=#D06508]衍天数据中心、衍天能源中心[/color]\n选择本经历后自动解锁，可在「建造 → 奇观」中建造（各需衍天珠 ×9 与任意金属锭 ×999）。[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>WFG_Gong_YanTian</li>
+		</Gongs>
+	</Experience>
+
+	<Experience Name="WFG_Exp_StarterLingStone">
+		<DisplayName>万法阁·衍天遗泽</DisplayName>
+		<Desc>老者在你的行囊里留下了些许「灵子结晶」。它们本是天地间游离的灵子凝成的石头，寻常修士只当是货币，衍天诀的传人却能将其中的灵子抽出、分解为万物的构造。\n\n\n[size=10]初始增加物资：[color=#D06508]灵石 ×300[/color]。\n（衍天解析需要消耗大量灵气，灵石可在前期应急补充。）[/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Items>
+			<li Name="Item_LingStone" Count="300"/>
+		</Items>
+	</Experience>
+
+</List></Experiences>

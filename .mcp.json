@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "codegraph": {
+      "command": "codegraph",
+      "args": [
+        "serve",
+        "--mcp",
+        "--path",
+        "D:/Work/MOD_Dev/了不起的修仙模拟器/万法阁"
+      ],
+      "toolCallTimeoutMs": 120000,
+      "reconnect": {
+        "enabled": true
+      }
+    }
+  }
+}

@@ -1,0 +1,370 @@
+==============================================================================
+AC​S 功法字段调研 · 自动统计
+==============================================================================
+
+### vanilla : files=24 gongs=24
+  root_tags: {'Gongs': 24}
+  child_tags: {'DisplayName': 24, 'Desc': 24, 'SelectDesc': 24, 'FiveBaseNeed': 24, 'ElementKind': 24, 'Stages': 24, 'Hide': 19, 'SkillSetName': 17, 'Skill': 16, 'GongKind': 7, 'Magic': 7, 'SuperParts': 4, 'QuenchingMethods': 4, 'IllustratedHandLabel': 4, 'GodGuards': 3, 'YinYang': 1, 'Empty': 1}
+  gong_attrs: {'Name': 24}
+  child_missing: {'SkillSetName': 7, 'Skill': 8, 'PracticeType': 24, 'GongKind': 17, 'Hide': 5}
+  ElementKind: {'None': 14, 'Shui': 1, 'Huo': 3, 'Tu': 2, 'Mu': 2, 'Jin': 2}
+  GongKind: {'Body': 4, 'God': 3, '<MISSING>': 17}
+  PracticeType: {'<none>': 24}
+  SkillSetName: {'<MISSING>': 7, '<EMPTY>': 17} (empty=17)
+  Hide: {'1': 12, '2': 3, '<absent>': 5, '3': 4}
+  Stage.Level: {'1': 5, '10': 7, '11': 6, '12': 24, '2': 4, '3': 23, '4': 4, '5': 8, '6': 23, '7': 9, '8': 6, '9': 23}
+  StageNamePattern: {'Stage#': 142}
+  StageChildTags: {'DisplayName': 142, 'Value': 142, 'Necks': 142, 'Desc': 104}
+  NeckKind: {'Chance': 161, 'God': 17, 'GodCity': 3, 'Die': 8, 'Explore': 14, 'Gold': 13, 'Thunder': 7, 'Work': 4, 'FuPractice': 5}
+  NeckAttrs: {'Location': 232, 'Kind': 232}
+  NeckChildAll: {'DisplayName': 232, 'Desc': 194, 'SuccessChange': 166, 'CostTime': 133, 'AddModifier': 117, 'FailedChangeAdd': 47, 'ThunderValue': 27, 'NeckCountdown': 24, 'ResourceCost': 24, 'ItemCost': 17, 'ExploreValue': 14, 'QuenchingMethods': 12, 'SuperParts': 12, 'Damages': 11, 'Esoterocas': 1}
+    NeckKind[Chance] -> {'DisplayName': 161, 'SuccessChange': 161, 'Desc': 128, 'CostTime': 128, 'AddModifier': 65, 'FailedChangeAdd': 47, 'ResourceCost': 24, 'ItemCost': 15, 'QuenchingMethods': 12, 'SuperParts': 12, 'Damages': 11}
+    NeckKind[God] -> {'DisplayName': 17, 'Desc': 17, 'ThunderValue': 17, 'NeckCountdown': 17, 'AddModifier': 13}
+    NeckKind[GodCity] -> {'AddModifier': 6, 'DisplayName': 3, 'Desc': 3}
+    NeckKind[Die] -> {'DisplayName': 8, 'Desc': 3, 'ThunderValue': 3}
+    NeckKind[Explore] -> {'DisplayName': 14, 'Desc': 14, 'ExploreValue': 14, 'AddModifier': 9}
+    NeckKind[Gold] -> {'DisplayName': 13, 'Desc': 13, 'AddModifier': 13, 'ItemCost': 2, 'Esoterocas': 1}
+    NeckKind[Thunder] -> {'DisplayName': 7, 'Desc': 7, 'ThunderValue': 7, 'NeckCountdown': 7, 'AddModifier': 6}
+    NeckKind[Work] -> {'DisplayName': 4, 'Desc': 4, 'AddModifier': 4}
+    NeckKind[FuPractice] -> {'DisplayName': 5, 'Desc': 5, 'CostTime': 5, 'SuccessChange': 5, 'AddModifier': 1}
+  Value: {'min': 1, 'max': 50000000, 'count': 142}
+  PerGongStages: [('Body_Gong_1', ['3', '6', '9', '12']), ('Body_Gong_2', ['3', '6', '9', '12']), ('Body_Gong_3', ['3', '6', '9', '12']), ('Body_Gong_5', ['3', '6', '9', '12']), ('God_Gong_1', ['3', '6', '7', '8', '9', '12']), ('God_Gong_2', ['3', '6', '7', '8', '9', '12']), ('God_Gong_3', ['3', '6', '9', '12']), ('Gong_1_Shui', ['3', '6', '9', '12']), ('Gong_10_Huo', ['3', '6', '9', '12']), ('Gong_11_Tu', ['3', '6', '9', '12']), ('Gong_12_None', ['3', '5', '6', '9', '12']), ('Gong_13_None', ['3', '5', '6', '9', '12']), ('Gong_2_Mu', ['3', '6', '7', '9', '12']), ('Gong_3_Jin', ['3', '5', '6', '7', '9', '11', '12']), ('Gong_4_None', ['3', '4', '6', '9', '11', '12']), ('Gong_5_Tu', ['3', '6', '9', '11', '12']), ('Gong_6_Huo', ['1', '3', '5', '6', '7', '8', '9', '10', '12']), ('Gong_7_Huo', ['3', '6', '9', '10', '12']), ('Gong_8_Jin', ['2', '3', '5', '6', '9', '10', '12']), ('Gong_9_Mu', ['3', '6', '7', '9', '10', '12']), ('Gong_DaNeng', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']), ('Gong_LingShou', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']), ('Gong_LOST', ['1', '12']), ('Gong_YaoShou', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'])]
+
+### example : files=1 gongs=1
+  root_tags: {'Gongs': 1}
+  child_tags: {'DisplayName': 1, 'Desc': 1, 'FiveBaseNeed': 1, 'SkillSetName': 1, 'ElementKind': 1, 'Stages': 1}
+  gong_attrs: {'Name': 1}
+  child_missing: {'SelectDesc': 1, 'Skill': 1, 'GongKind': 1, 'Hide': 1, 'PracticeType': 1}
+  ElementKind: {'None': 1}
+  GongKind: {'<MISSING>': 1}
+  PracticeType: {'<none>': 1}
+  SkillSetName: {'<EMPTY>': 1} (empty=1)
+  Hide: {'<absent>': 1}
+  Stage.Level: {'1': 1, '10': 1, '11': 1, '12': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1}
+  StageNamePattern: {'Stage#': 12}
+  StageChildTags: {'DisplayName': 12, 'Desc': 12, 'Value': 12, 'Necks': 2}
+  NeckKind: {'Chance': 4}
+  NeckAttrs: {'Location': 4, 'Kind': 4}
+  NeckChildAll: {'DisplayName': 4, 'Desc': 4, 'CostTime': 4, 'AddModifier': 4, 'ConversionRate': 3, 'ItemCost': 3, 'ResourceCost': 2, 'DynamicChanceType': 2, 'SuccessChange': 1, 'FailedChangeAdd': 1, 'Damages': 1}
+    NeckKind[Chance] -> {'DisplayName': 4, 'Desc': 4, 'CostTime': 4, 'AddModifier': 4, 'ConversionRate': 3, 'ItemCost': 3, 'ResourceCost': 2, 'DynamicChanceType': 2, 'SuccessChange': 1, 'FailedChangeAdd': 1, 'Damages': 1}
+  Value: {'min': 10000, 'max': 10000, 'count': 12}
+  PerGongStages: [('ModTest_Gong', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'])]
+
+### thirdparty : files=3 gongs=3
+  root_tags: {'Gongs': 3}
+  child_tags: {'DisplayName': 3, 'Desc': 3, 'SelectDesc': 3, 'FiveBaseNeed': 3, 'ElementKind': 3, 'Stages': 3, 'SkillSetName': 2, 'Skill': 2, 'Hide': 2, 'GongKind': 1, 'SuperParts': 1, 'QuenchingMethods': 1, 'Magic': 1}
+  gong_attrs: {'Name': 3, 'PracticeType': 1}
+  child_missing: {'GongKind': 2, 'PracticeType': 3, 'SkillSetName': 1, 'Skill': 1, 'Hide': 1}
+  ElementKind: {'None': 2, 'Huo': 1}
+  GongKind: {'<MISSING>': 2, 'Body': 1}
+  PracticeType: {'仙修': 1, '<none>': 2}
+  SkillSetName: {'<EMPTY>': 2, '<MISSING>': 1} (empty=2)
+  Hide: {'-1': 2, '<absent>': 1}
+  Stage.Level: {'10': 1, '11': 1, '12': 3, '3': 3, '6': 3, '7': 1, '8': 1, '9': 3}
+  StageNamePattern: {'Stage#': 16}
+  StageChildTags: {'DisplayName': 16, 'Desc': 16, 'Value': 16, 'Necks': 16}
+  NeckKind: {'Chance': 17, 'Explore': 12, 'Gold': 2, 'Thunder': 6, 'God': 3}
+  NeckAttrs: {'Location': 40, 'Kind': 40}
+  NeckChildAll: {'DisplayName': 40, 'Desc': 40, 'AddModifier': 33, 'CostTime': 17, 'SuccessChange': 17, 'ExploreValue': 12, 'ThunderValue': 9, 'NeckCountdown': 9, 'SuperParts': 7, 'FailedChangeAdd': 4, 'QuenchingMethods': 2, 'ResourceCost': 2, 'FailModifier': 1}
+    NeckKind[Chance] -> {'DisplayName': 17, 'Desc': 17, 'CostTime': 17, 'SuccessChange': 17, 'AddModifier': 11, 'FailedChangeAdd': 4, 'SuperParts': 3, 'ResourceCost': 2, 'QuenchingMethods': 1, 'FailModifier': 1}
+    NeckKind[Explore] -> {'DisplayName': 12, 'Desc': 12, 'ExploreValue': 12, 'AddModifier': 11, 'SuperParts': 3}
+    NeckKind[Gold] -> {'DisplayName': 2, 'Desc': 2, 'AddModifier': 2}
+    NeckKind[Thunder] -> {'DisplayName': 6, 'Desc': 6, 'ThunderValue': 6, 'NeckCountdown': 6, 'AddModifier': 6, 'SuperParts': 1, 'QuenchingMethods': 1}
+    NeckKind[God] -> {'DisplayName': 3, 'Desc': 3, 'ThunderValue': 3, 'NeckCountdown': 3, 'AddModifier': 3}
+  Value: {'min': 1800, 'max': 6666666, 'count': 16}
+  PerGongStages: [('ShiJin', ['3', '6', '7', '8', '9', '10', '11', '12']), ('Body_HanShanQuan', ['3', '6', '9', '12']), ('Gong_FenJue', ['3', '6', '9', '12'])]
+
+### workshop : files=0 gongs=0
+  root_tags: {}
+  child_tags: {}
+  gong_attrs: {}
+  child_missing: {}
+  ElementKind: {}
+  GongKind: {}
+  PracticeType: {}
+  SkillSetName: {} (empty=0)
+  Hide: {}
+  Stage.Level: {}
+  StageNamePattern: {}
+  StageChildTags: {}
+  NeckKind: {}
+  NeckAttrs: {}
+  NeckChildAll: {}
+  Value: None
+  PerGongStages: []
+
+### ours : files=1 gongs=1
+  root_tags: {'Gongs': 1}
+  child_tags: {'DisplayName': 1, 'Desc': 1, 'SelectDesc': 1, 'FiveBaseNeed': 1, 'SkillSetName': 1, 'ElementKind': 1, 'Skill': 1, 'Stages': 1}
+  gong_attrs: {'Name': 1}
+  child_missing: {'GongKind': 1, 'Hide': 1, 'PracticeType': 1}
+  ElementKind: {'None': 1}
+  GongKind: {'<MISSING>': 1}
+  PracticeType: {'<none>': 1}
+  SkillSetName: {'<EMPTY>': 1} (empty=1)
+  Hide: {'<absent>': 1}
+  Stage.Level: {'1': 1, '10': 1, '12': 1, '3': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1}
+  StageNamePattern: {'Stage#': 9}
+  StageChildTags: {'DisplayName': 9, 'Desc': 9, 'Value': 9, 'Necks': 9}
+  NeckKind: {'Chance': 17, 'Explore': 2, 'Gold': 1, 'Thunder': 1, 'God': 1}
+  NeckAttrs: {'Location': 22, 'Kind': 22}
+  NeckChildAll: {'DisplayName': 22, 'Desc': 22, 'CostTime': 17, 'SuccessChange': 17, 'AddModifier': 12, 'FailedChangeAdd': 7, 'Damages': 5, 'ExploreValue': 2, 'ThunderValue': 2, 'NeckCountdown': 2}
+    NeckKind[Chance] -> {'DisplayName': 17, 'Desc': 17, 'CostTime': 17, 'SuccessChange': 17, 'AddModifier': 9, 'FailedChangeAdd': 7, 'Damages': 5}
+    NeckKind[Explore] -> {'DisplayName': 2, 'Desc': 2, 'ExploreValue': 2}
+    NeckKind[Gold] -> {'DisplayName': 1, 'Desc': 1, 'AddModifier': 1}
+    NeckKind[Thunder] -> {'DisplayName': 1, 'Desc': 1, 'ThunderValue': 1, 'NeckCountdown': 1, 'AddModifier': 1}
+    NeckKind[God] -> {'DisplayName': 1, 'Desc': 1, 'ThunderValue': 1, 'NeckCountdown': 1, 'AddModifier': 1}
+  Value: {'min': 1800, 'max': 70000, 'count': 9}
+  PerGongStages: [('WFG_Gong_YanTian', ['1', '3', '5', '6', '7', '8', '9', '10', '12'])]
+
+### Esoterica vanilla : files=12 count=503
+  tags: {'DisplayName': 503, 'EffectDesc': 503, 'Difficulty': 497, 'StarLevel': 474, 'Element': 460, 'Desc': 430, 'GLevel': 399, 'Type': 376, 'Icon': 361, 'Modifier': 321, 'Hide': 169, 'Magics': 79, 'Mutex': 42, 'Fabaos': 29, 'ZhenNodes': 27, 'Dans': 22, 'Places': 21, 'Spells': 20, 'Skills': 18, 'GodSoulCount': 16, 'ZhenShapes': 11, 'Secrets': 7, 'PreNeed': 6, 'Exp': 5, 'MyTreasure': 3, 'Buildings': 2}
+  Type={'Dan': 21, 'None': 139, 'Skill': 36, 'Fabao': 70, 'Gong': 95, 'Refining': 9, 'Barrier': 6, '<MISSING>': 127}
+  StarLevel={'1': 213, '0': 81, '2': 180, '<MISSING>': 29}
+  GLevel={'<MISSING>': 104, 'Qi': 64, 'Dan1': 91, 'Dan2': 98, 'God': 139, 'God2': 6, 'None': 1}
+  Difficulty={'4': 64, '2': 19, '5': 39, '9': 71, '3': 63, '10': 7, '0': 24, '1': 21, '6': 74, '8': 54, '12': 17, '7': 15, '15': 14, '999': 10, '21': 1, '18': 3, '24': 1, '<MISSING>': 6}
+  Icon(unique=51)=[('<MISSING>', 142), ('res/Sprs/ui/icon_shufa', 15), ('res/Sprs/ui/icon_jichu', 142), ('res/Sprs/ui/icon_zhandoufashu', 30), ('res/Sprs/ui/icon_yujian', 71), ('res/Sprs/ui/icon_lianqi', 6), ('res/Sprs/ui/icon_peifang', 1), ('res/Sprs/ui/icon_huti', 6), ('res/Sprs/ui/icon_liandan', 10), ('res/Sprs/ui/icon_shentong', 6), ('res/Sprs/ui/icon_yumu01', 3), ('res/Sprs/ui/icon_ruding01', 3)]
+  Element={'None': 192, 'Huo': 72, 'Jin': 58, 'Shui': 37, 'Tu': 56, 'Mu': 45, '<MISSING>': 43}
+  MagicsCount={'<none>': 424, 1: 75, 5: 2, 3: 1, 6: 1}
+  ModifierCount={'<none>': 182, 1: 321, '<children 0>': 321}
+    Type[None] n=139 字段覆盖率: {'Difficulty': '133/139', 'Element': '139/139', 'Desc': '139/139', 'EffectDesc': '139/139', 'Hide': '84/139', 'StarLevel': '110/139', 'Icon': '84/139', 'GLevel': '98/139', 'Modifier': '72/139', 'Magics': '3/139'}
+    Type[<MISSING>] n=127 字段覆盖率: {'StarLevel': '127/127', 'Icon': '75/127', 'Difficulty': '127/127', 'GLevel': '76/127', 'Element': '84/127', 'Magics': '74/127', 'EffectDesc': '127/127', 'Hide': '14/127', 'Desc': '54/127', 'Modifier': '40/127'}
+    Type[Gong] n=95 字段覆盖率: {'StarLevel': '95/95', 'Icon': '88/95', 'Difficulty': '95/95', 'GLevel': '95/95', 'Element': '95/95', 'Modifier': '95/95', 'Desc': '95/95', 'EffectDesc': '95/95', 'Hide': '27/95'}
+    Type[Fabao] n=70 字段覆盖率: {'StarLevel': '70/70', 'Difficulty': '70/70', 'GLevel': '70/70', 'Element': '70/70', 'Modifier': '69/70', 'Desc': '70/70', 'EffectDesc': '70/70', 'Icon': '63/70', 'Hide': '30/70'}
+    Type[Skill] n=36 字段覆盖率: {'StarLevel': '36/36', 'Icon': '31/36', 'Difficulty': '36/36', 'GLevel': '36/36', 'Element': '36/36', 'Desc': '36/36', 'EffectDesc': '36/36', 'Modifier': '24/36', 'Hide': '9/36'}
+    Type[Dan] n=21 字段覆盖率: {'StarLevel': '21/21', 'Difficulty': '21/21', 'Element': '21/21', 'Desc': '21/21', 'EffectDesc': '21/21', 'Magics': '2/21', 'GLevel': '9/21', 'Icon': '8/21', 'Modifier': '7/21', 'Hide': '2/21'}
+    Type[Refining] n=9 字段覆盖率: {'StarLevel': '9/9', 'Icon': '8/9', 'Difficulty': '9/9', 'GLevel': '9/9', 'Element': '9/9', 'Modifier': '9/9', 'Desc': '9/9', 'EffectDesc': '9/9', 'Hide': '1/9'}
+    Type[Barrier] n=6 字段覆盖率: {'StarLevel': '6/6', 'Icon': '4/6', 'Difficulty': '6/6', 'GLevel': '6/6', 'Element': '6/6', 'Modifier': '5/6', 'Desc': '6/6', 'EffectDesc': '6/6', 'Hide': '2/6'}
+
+### Esoterica example : files=1 count=1
+  tags: {'DisplayName': 1, 'StarLevel': 1, 'Difficulty': 1, 'Desc': 1, 'Type': 1, 'GLevel': 1, 'Element': 1, 'EffectDesc': 1, 'Modifier': 1}
+  Type={'Skill': 1}
+  StarLevel={'2': 1}
+  GLevel={'Qi': 1}
+  Difficulty={'8': 1}
+  Icon(unique=1)=[('<MISSING>', 1)]
+  Element={'None': 1}
+  MagicsCount={'<none>': 1}
+  ModifierCount={1: 1, '<children 0>': 1}
+    Type[Skill] n=1 字段覆盖率: {'StarLevel': '1/1', 'Difficulty': '1/1', 'GLevel': '1/1', 'Element': '1/1', 'Modifier': '1/1', 'Desc': '1/1', 'EffectDesc': '1/1'}
+
+### Esoterica thirdparty : files=3 count=50
+  tags: {'DisplayName': 50, 'Icon': 50, 'StarLevel': 50, 'Difficulty': 50, 'Desc': 50, 'GLevel': 50, 'Element': 50, 'Type': 50, 'EffectDesc': 37, 'Modifier': 35, 'GodSoulCount': 9, 'Hide': 9, 'PreNeed': 9, 'Skills': 6, 'Magics': 6, 'Fabaos': 3}
+  Type={'None': 8, 'Gong': 27, 'Skill': 9, 'Refining': 3, 'Barrier': 3}
+  StarLevel={'0': 11, '1': 17, '2': 22}
+  GLevel={'Qi': 10, 'Dan1': 10, 'Dan2': 13, 'God': 14, 'God2': 3}
+  Difficulty={'1': 2, '3': 10, '4': 4, '5': 4, '2': 6, '6': 3, '8': 6, '10': 6, '12': 3, '15': 3, '14': 3}
+  Icon(unique=6)=[('res/Sprs/ui/icon_quyun01', 1), ('res/Sprs/ui/icon_feisha01', 1), ('res/Sprs/ui/icon_lingjshi01', 1), ('res/Sprs/ui/icon_jichushufa', 1), ('res/Sprs/ui/icon_shenguo_tian', 1), ('res/Sprs/ui/icon_default', 45)]
+  Element={'None': 5, 'Huo': 45}
+  MagicsCount={'<none>': 44, 1: 6}
+  ModifierCount={1: 35, '<children 0>': 35, '<none>': 15}
+    Type[Gong] n=27 字段覆盖率: {'StarLevel': '27/27', 'Icon': '27/27', 'Difficulty': '27/27', 'GLevel': '27/27', 'Element': '27/27', 'Modifier': '27/27', 'Desc': '27/27', 'EffectDesc': '19/27', 'Hide': '9/27'}
+    Type[Skill] n=9 字段覆盖率: {'StarLevel': '9/9', 'Icon': '9/9', 'Difficulty': '9/9', 'GLevel': '9/9', 'Element': '9/9', 'Desc': '9/9', 'EffectDesc': '7/9', 'Magics': '6/9'}
+    Type[None] n=8 字段覆盖率: {'StarLevel': '8/8', 'Icon': '8/8', 'Difficulty': '8/8', 'GLevel': '8/8', 'Element': '8/8', 'Modifier': '8/8', 'Desc': '8/8', 'EffectDesc': '7/8'}
+    Type[Refining] n=3 字段覆盖率: {'StarLevel': '3/3', 'Icon': '3/3', 'Difficulty': '3/3', 'GLevel': '3/3', 'Element': '3/3', 'Desc': '3/3', 'EffectDesc': '2/3'}
+    Type[Barrier] n=3 字段覆盖率: {'StarLevel': '3/3', 'Icon': '3/3', 'Difficulty': '3/3', 'GLevel': '3/3', 'Element': '3/3', 'Desc': '3/3', 'EffectDesc': '2/3'}
+
+### Esoterica ours : files=1 count=9
+  tags: {'DisplayName': 9, 'Icon': 9, 'StarLevel': 9, 'Difficulty': 9, 'Desc': 9, 'GLevel': 9, 'Element': 9, 'Type': 9, 'EffectDesc': 9, 'Magics': 4, 'Modifier': 1}
+  Type={'Gong': 1, 'Skill': 8}
+  StarLevel={'2': 9}
+  GLevel={'Qi': 9}
+  Difficulty={'1': 9}
+  Icon(unique=2)=[('res/Sprs/ui/icon_jichu', 4), ('res/Sprs/ui/icon_zhoutian01', 5)]
+  Element={'None': 9}
+  MagicsCount={1: 4, '<none>': 5}
+  ModifierCount={'<none>': 8, 1: 1, '<children 0>': 1}
+    Type[Skill] n=8 字段覆盖率: {'StarLevel': '8/8', 'Icon': '8/8', 'Difficulty': '8/8', 'GLevel': '8/8', 'Element': '8/8', 'Magics': '3/8', 'Desc': '8/8', 'EffectDesc': '8/8', 'Modifier': '1/8'}
+    Type[Gong] n=1 字段覆盖率: {'StarLevel': '1/1', 'Icon': '1/1', 'Difficulty': '1/1', 'GLevel': '1/1', 'Element': '1/1', 'Magics': '1/1', 'Desc': '1/1', 'EffectDesc': '1/1'}
+
+### Modifier vanilla : files=45 count=1543
+  tags: {'Duration': 1135, 'MaxStack': 1134, 'Properties': 1095, 'Display': 1046, 'DisplayName': 1036, 'Desc': 971, 'Skills': 266, 'Sync': 242, 'BaseFive': 214, 'ClassName': 95, 'SpecialFlags': 70, 'Moods': 57, 'EffectBind': 38, 'Damages': 19, 'UnLockGodGuards': 15, 'LuaClassName': 14, 'ModScale': 12, 'Modifiers': 12, 'EndModifier': 6, 'AnimalBodyOnly': 6, 'MaterialDatas': 5, 'UnLockGodCityBuildings': 4, 'MapProperties': 3, 'BanBodyParts': 3, 'Hair': 2, 'GlobleModifiers': 2, 'UnLockMagic': 2, 'MutationShow': 2, 'WorldFlags': 2, 'NpcModPath': 2, 'NoFog': 1, 'BanJobs': 1}
+  Type={'Normal': 1463, 'New': 80}
+  MaxStack=1134 Duration=1135 Display=1046
+  PropAdd={'AddV': 1566, 'AddP': 1221, 'BAddP': 170, 'BAddV': 49}
+  PropNameCount=166
+  PropCountsPerModifier={19: 2, 14: 16, 7: 14, 2: 186, 1: 578, 4: 42, 3: 92, 6: 18, 5: 55, 0: 454, 11: 7, 10: 12, 16: 7, 8: 38, 9: 14, 15: 2, 22: 1, 13: 4, 17: 1}
+  MaxStack值={'0': 562, '1': 489, '999': 3, '100': 20, '9999': 7, '10': 13, '99': 29, '50': 5, '1000': 5, '3': 1}
+  Duration值={'-1': 964, '6000': 4, '60': 1, '30': 1, '10': 7, '120': 1, '300': 15, '600': 17, '1': 1, '200': 3, '25': 3, '1000': 1, '1800': 7, '67200': 4, '1200': 14, '4200': 2, '8400': 1, '16800': 5, '18000': 2, '3000': 9, '100': 4, '9000': 1, '50': 1, '30000': 1, '48600': 1, '150': 2, '90': 1, '99999': 2, '598': 1, '7200': 1, '20': 1, '2025': 1, '5400': 2, '6': 1, '605': 20, '2': 1, '0.19': 1, '99999999': 20, '2400': 1, '3600': 1, '12000': 1, '24000': 1, '36000': 1, '48000': 1, '54000': 1, '60000': 1, '72000': 1, '84000': 1, '9': 1}
+  Display值={'0': 760, '1': 286}
+
+### Modifier example : files=1 count=1
+  tags: {'DisplayName': 1, 'Desc': 1, 'MaxStack': 1, 'Duration': 1, 'Display': 1, 'Sync': 1, 'Properties': 1}
+  Type={'Normal': 1}
+  MaxStack=1 Duration=1 Display=1
+  PropAdd={'AddV': 1}
+  PropNameCount=1
+  PropCountsPerModifier={1: 1}
+  MaxStack值={'0': 1}
+  Duration值={'0': 1}
+  Display值={'1': 1}
+
+### Modifier thirdparty : files=2 count=20
+  tags: {'DisplayName': 20, 'Desc': 20, 'Duration': 20, 'Properties': 20}
+  Type={'Normal': 20}
+  MaxStack=0 Duration=20 Display=0
+  PropAdd={'AddV': 37, 'AddP': 87, 'BAddV': 17, 'BAddP': 8}
+  PropNameCount=55
+  PropCountsPerModifier={9: 5, 1: 1, 6: 4, 11: 3, 4: 2, 7: 3, 3: 1, 14: 1}
+  MaxStack值={}
+  Duration值={'-1': 20}
+  Display值={}
+
+### Modifier ours : files=1 count=9
+  tags: {'DisplayName': 9, 'Desc': 9, 'MaxStack': 9, 'Duration': 9, 'Display': 9, 'Properties': 9}
+  Type={'Normal': 9}
+  MaxStack=9 Duration=9 Display=9
+  PropAdd={'AddP': 4, 'AddV': 10, 'BAddP': 2}
+  PropNameCount=7
+  PropCountsPerModifier={1: 6, 6: 1, 2: 2}
+  MaxStack值={'1': 9}
+  Duration值={'-1': 9}
+  Display值={'1': 9}
+
+### Property names: files=21 unique=415
+  AbilityLvAddV, AgeCostSpeed, AnimalGatherSpeed, AnimalGatherYieldEfficiency, Art, ArtRateValue, Barrier, BaseEmotionAddV, BaseWorkSpeed, BasepracticeSpeedCoefficient, BodyPractice_AngerFireDuration, BodyPractice_AngerFireEffectAddp, BodyPractice_AngerFireNum, BodyPractice_EatItemMaxRate, BodyPractice_EatItemProduceCountAddp, BodyPractice_EatItemProduceRateAddp, BodyPractice_MaxFoodAddtion, BodyPractice_Other_TunaAddp, BodyPractice_RollAddtion_Cache1, BodyPractice_RollAddtion_Cache2, BodyPractice_RollAddtion_Cache3, BodyPractice_RollAddtion_Cache4, BodyPractice_RollAddtion_Null, BodyPractice_SuperPartAddp_ArmorPenetration, BodyPractice_SuperPartAddp_AtkPower, BodyPractice_SuperPartAddp_AtkRate, BodyPractice_SuperPartAddp_CatchFabao, BodyPractice_SuperPartAddp_DefPower, BodyPractice_SuperPartAddp_DefRate, BodyPractice_SuperPartAddv_ArmorPenetration, BodyPractice_SuperPartAddv_AtkPower, BodyPractice_SuperPartAddv_AtkRate, BodyPractice_SuperPartAddv_CatchFabao, BodyPractice_SuperPartAddv_DefPower, BodyPractice_SuperPartAddv_DefRate, BodyPractice_SuperPartAtk_EquptMaxCount, BodyPractice_SuperPartBuff_EquptMaxCount, BodyPractice_SuperPartDef_EquptMaxCount, BodyPratice_BodyRecover, BodyPratice_BodyStrong, BodyPratice_CatchFaboValue, BodyPratice_DefenseRecoverZhenQi, BodyPratice_MaxZhenQi, BodyPratice_QuenchingSpeed, BodyPratice_RecoverZhenQi, BodyPratice_SuperPartCostAddP, BodyPratice_SuperPartRecoverAddP, BossComfyTMax, BossComfyTMin, BossMaxAge, BossToleranceTMax, BossToleranceTMin, Building, BuildingRemoveSpeed, ButcherSpeed, ButcherYieldEfficiency, Charisma, CharismaFriendshipAddValue, Charisma_1_1_10, Charisma_1_1_3, Charisma_1_5_25, Charisma_2_10_1, Charisma_2_25_5, Charisma_2_3_1, CleanSpeed, ComfyTMax, ComfyTMin, Consciousness, ConsciousnessEfficiency, ConstructInjuredChance, ConstructSuccessChance, ConstructionSpeed, Cooking, CookingSpeed, CookingSuccessChance, CuttingSpeed, DanMake_Speed, DanMake_SpeedAddV, DanMake_SuccessRate, DanMake_SuccessRateAddV, DanMake_Yield, DanMake_YieldAddP, DanQi, DeepPracticeSpeedSpecialCoefficient, DisasterFightingSpeed, DisasterFightingSuccessChance, DouFa, DrugProductSpeed, EmotionAmplificationFactor, EmotionEfficiency, EnvironmentDiseaseAddP, EsotericaNum, ExperienceFindSpeedAddV, ExperienceNeckTimeCostCoefficient, ExperiencePrestigeAddP, Fabao, FabaoMake_LingInheritRateAddV, FabaoMake_QualityAddV, FabaoMake_SpeedAddV, FabaoMake_SuccessRateAddV, FabaoMake_TwelveRateChance, Farming, FatigueConsumeConstant, FatigueRecoveryConstant, FavourChangeSpeedRate, Feeling, Fight, FightSkill, FightingProbabilityAddValue, FishTimes, FunctionsScore, GlobalEfficiency, GodCity_GuardEffect, GodCity_MaxCoreBeliever, GodCity_MaxResident, GodCity_PracticeEffect, GodCity_ThunderAddion, GodPenaltyAddV, GodPractice_GodPowerAddV, GodPractice_LingConvert, GongMatch_HuoAddV, GongMatch_JinAddV, GongMatch_MuAddV, GongMatch_NoneAddV, GongMatch_ShuiAddV, GongMatch_TuAddV, GrowProperty, HandworkQualityAddValue, HandworkSpeed, HappyConsumeConstant, HappyRecoveryConstant, HeaviestFish, HumanRaceBaseWorkSpeed, HumanRaceComfyTMax, HumanRaceComfyTMin, HumanRaceMaxAge, HumanRaceMaxHp, HumanRaceMoveSpeed, HumanRaceRecoveryPower, HumanRaceToleranceTMax, HumanRaceToleranceTMin, HumanRaceVisionRadius, InspirationCoefficient, Intelligence, IntelligenceSkillEXPConstant, Intelligence_1_1_10, Intelligence_1_1_3, Intelligence_1_5_25, Intelligence_2_10_1, Intelligence_2_25_5, Intelligence_2_3_1, LeadExperienceAddtion, LingAbsorbSpeed, LingShouFat, LingShouHuTi, LingShouJustice, LingShouLingZhi, LingShouNeiDan, LingShouQiGan, LingShouShuFa, LingShouStronger, LingShouToleranceTMax, LingShouToleranceTMin, LingShouVisionRadius, LsBadGood, LsDogShieldConversionRateAddP, LsDrgSpellPowerAddP, LsFabaoCoolDownAddP, LsFabaoFlySpeedAddP, LsFabaoLingRecoverAddP, LsFabaoMaxLingAddP, LsFabaoPowerAddP, LsFabaoTurnSpeedAddP, LsFat, LsFoodNeedAddP, LsFoxFabaoPowerAddP, LsFoxMoveSpeed, LsLingMaxValue, LsMoveSpeed, LsMoveSpeed_Slow, LsNutritionP, LsPandaFabaoPowerAddP, LsPandaLingMaxValue, LsPandaSpellPowerAddP, LsPhxFabaoCoolDownAddP, LsPhxFabaoPowerAddP, LsShieldConversionRateAddP, LsSpellCoolDownAddP, LsSpellLingCostAddP, LsSpellPowerAddP, LsWaterNeedAddP, LsXuanWuFabaoPowerAddP, LsXuanWuLingMaxValue, LsXuanWuMoveSpeed, LsXuanWuShieldConversionRateAddP, Luck, Luck_1_1_10, Luck_1_1_3, Luck_1_5_25, Luck_2_10_1, Luck_2_25_5, Luck_2_3_1, MadeQualityAddValue, MagicDamageRecoveryPowerAddV, MammalBaseWorkSpeed, MammalComfyTMax, MammalComfyTMin, MammalMaxAge_15, MammalMaxAge_200, MammalMaxAge_24, MammalMaxAge_45, MammalMaxHp, MammalMoveSpeed, MammalMoveSpeed_Fast, MammalMoveSpeed_NewYear, MammalMoveSpeed_Slow, MammalMoveSpeed_Slow2, MammalRecoveryPower, MammalToleranceTMax, MammalToleranceTMin, MammalVisionRadius, Manual, ManufactureExpectQuality, ManufactureRealQualityPercentMax, ManufactureRealQualityPercentMin, MaxAccumulativeLingAddV, MaxAge, MaxHp, MaxSkillAbility_Art, MaxSkillAbility_Barrier, MaxSkillAbility_Building, MaxSkillAbility_Cooking, MaxSkillAbility_DanQi, MaxSkillAbility_DouFa, MaxSkillAbility_Fabao, MaxSkillAbility_Farming, MaxSkillAbility_Fight, MaxSkillAbility_FightSkill, MaxSkillAbility_Manual, MaxSkillAbility_Medicine, MaxSkillAbility_Mining, MaxSkillAbility_Qi, MaxSkillAbility_SocialContact, MaxSkillAbility_Zhen, Medicine, Meridian, MindStateBaseValue, Mining, MiningInjuredChance, MiningSpeed, MiningYieldEfficiency, MoveSpeed, Movement, NeckCountdownAddV, NiceDreamHappenPercent, NightmareHappenPercent, NpcFight_BaseDodgeChance, NpcFight_BaseHitChance, NpcFight_FabaoCoolDownAddP, NpcFight_FabaoFlySpeedAddP, NpcFight_FabaoLingRecoverAddP, NpcFight_FabaoLingRecoverK, NpcFight_FabaoMaxLingAddP, NpcFight_FabaoNum, NpcFight_FabaoPowerAddP, NpcFight_FabaoRepelDistanceAddV, NpcFight_FabaoRepelResistanceAddV, NpcFight_FabaoTrailingLengthAddP, NpcFight_FabaoTurnSpeedAddP, NpcFight_FightSkillSoul, NpcFight_MoveSpeedAdd, NpcFight_ShieldConversionEquipAdd, NpcFight_ShieldConversionRate, NpcFight_ShieldConversionRateAddP, NpcFight_ShieldResistanceToHuo, NpcFight_ShieldResistanceToJin, NpcFight_ShieldResistanceToMu, NpcFight_ShieldResistanceToShui, NpcFight_ShieldResistanceToTu, NpcFight_SneakValue, NpcFight_SpellCastTimeAddP, NpcFight_SpellCoolDownAddP, NpcFight_SpellLingCostAddP, NpcFight_SpellPowerAddP, NpcFight_ZhenEnginePower, NpcFight_ZhenKeyPointNum, NpcLingMaxValue, NutritionConsumeConstant, NutritionRecoveryConstant, NutritionToJingYuanK, NutritionWaterAutoRecover, Operation, PainTolerance, Perception, Perception_1_1_10, Perception_1_1_3, Perception_1_5_25, Perception_1_5_75, Perception_2_10_1, Perception_2_25_5, Perception_2_3_1, Physique, Physique_1_1_10, Physique_1_1_3, Physique_1_5_25, Physique_2_10_1, Physique_2_25_5, Physique_2_3_1, PlantHarvestSpeed, PlantHarvestYieldEfficiency, PlantWorkSpeed, PoikilothermBaseWorkSpeed, PoikilothermComfyTMax, PoikilothermComfyTMin, PoikilothermMaxAge_50, PoikilothermMaxHp, PoikilothermMoveSpeed, PoikilothermMoveSpeed_Snake, PoikilothermRecoveryPower, PoikilothermToleranceTMax, PoikilothermToleranceTMin, PoikilothermVisionRadius, PotentialOfBasepracticeAddValue, PracticeFoodConsumeConstant, PracticeFoodRecoveryConstant, PracticeRateAddPFromDan, PuppetRaceBaseWorkSpeed, PuppetRaceComfyTMax, PuppetRaceComfyTMin, PuppetRaceMaxAge, PuppetRaceMaxHp, PuppetRaceMoveSpeed, PuppetRaceRecoveryPower, PuppetRaceToleranceTMax, PuppetRaceToleranceTMin, PuppetRaceVisionRadius, Qi, Qi_1_5_25, RecoveryPower, SkillAbility_Art, SkillAbility_Barrier, SkillAbility_Building, SkillAbility_Cooking, SkillAbility_DanQi, SkillAbility_DouFa, SkillAbility_Fabao, SkillAbility_Farming, SkillAbility_Fight, SkillAbility_FightSkill, SkillAbility_Manual, SkillAbility_Medicine, SkillAbility_Mining, SkillAbility_Qi, SkillAbility_SocialContact, SkillAbility_Zhen, SmithingInjuredChance, SmithingQualityAddValue, SmithingSpeed, SocialContact, SocialContactBaseSuccess, SocialContactLevelAddValue, SocialInclination, SpeedOfMindStateCoefficient, SpeedOfMindStateCoefficientByMoods, SpeedOfMindStateCoefficientByMoods_Easy, StoneWorkSpeed, TailoringQualityAddValue, TailoringSpeed, TameSuccessChance, TestProperty1, TestProperty11, ToleranceTMax, ToleranceTMin, TreatSpeed, TreatSuccessChance, TreatmentExpectQuality, TreatmentRealQualityPercentMax, TreatmentRealQualityPercentMin, VisionRadius, WaterConsumeConstant, WaterRecoveryConstant, WeightCarryLossSpeedRate, WorkKindEXPContent_ActualCombatPractice, WorkKindEXPContent_Art, WorkKindEXPContent_Build, WorkKindEXPContent_Cook, WorkKindEXPContent_FightSkillPractice, WorkKindEXPContent_Harvest, WorkKindEXPContent_LargeCircle, WorkKindEXPContent_Make, WorkKindEXPContent_Mining, WorkKindEXPContent_Pharmacy, WorkKindEXPContent_Research, WorkKindEXPContent_Slaughter, WorkKindEXPContent_SmallCircle, WorkKindEXPContent_Sow, WorkKindEXPContent_StoneProcessing, WorkKindEXPContent_Treat, WorkKindEXPValue_Art_MakeArt, WorkKindEXPValue_DeepTalk, WorkKindEXPValue_Encourage, WorkKindEXPValue_Hit, WorkKindEXPValue_Kill, WorkKindEXPValue_Love, WorkKindEXPValue_Manual_MakeArt, WorkKindEXPValue_NewFood, WorkKindEXPValue_SayHi, WorkKindEXPValue_Talk, WorldMapFlySpeed, WorldMapFlySpeedAddP, YaoShou_BaseAttack, YaoShou_BaseFabaoNum, YaoShou_BaseLing, Zhen, _SPECIAL_NOADD_NpcLingMaxValue
+
+### Field diff (ours vs vanilla)
+  ours_fields: ['Desc', 'DisplayName', 'ElementKind', 'FiveBaseNeed', 'SelectDesc', 'Skill', 'SkillSetName', 'Stages']
+  baseline_fields: ['Desc', 'DisplayName', 'ElementKind', 'Empty', 'FiveBaseNeed', 'GodGuards', 'GongKind', 'Hide', 'IllustratedHandLabel', 'Magic', 'QuenchingMethods', 'SelectDesc', 'Skill', 'SkillSetName', 'Stages', 'SuperParts', 'YinYang']
+  ours_only: []
+  baseline_only: ['Empty', 'GodGuards', 'GongKind', 'Hide', 'IllustratedHandLabel', 'Magic', 'QuenchingMethods', 'SuperParts', 'YinYang']
+
+### 参悟树 vanilla : files=14 nodes=578
+  node_attrs={'Name': 578, 'Gong': 578}
+  child_tags={'Level': 578, 'Esoterica': 472, 'DisplayName': 472, 'Index': 439, 'Line': 439, 'PreUnit': 348, 'FiveBase': 333, 'Skills': 333, 'LingMax': 333, 'GoldLevel': 333, 'GodCount': 333, 'MutexUnit': 313, 'Layers': 99, 'Depth': 34}
+  Level={'Qi': 76, 'Dan1': 108, 'None': 139, 'Dan2': 131, 'God': 96, 'God2': 28}
+  Index={0: 40, 1: 38, 4: 51, 5: 38, 6: 31, 7: 38, 8: 49, 2: 32, 3: 36, '<MISSING>': 139, 9: 35, 10: 27, 11: 24}
+  Line字段数={8: 439}
+  DaoHang={'<MISSING>': 578}
+  Depth={'<MISSING>': 544, '1': 34}
+
+### 参悟树 example : files=1 nodes=1
+  node_attrs={'Name': 1, 'Gong': 1}
+  child_tags={'Esoterica': 1, 'DisplayName': 1, 'Level': 1, 'Index': 1, 'Line': 1, 'PreUnit': 1, 'FiveBase': 1, 'LingMax': 1, 'GoldLevel': 1, 'GodCount': 1}
+  Level={'Qi': 1}
+  Index={0: 1}
+  Line字段数={8: 1}
+  DaoHang={'<MISSING>': 1}
+  Depth={'<MISSING>': 1}
+
+### 参悟树 thirdparty : files=2 nodes=59
+  node_attrs={'Name': 59, 'Gong': 59}
+  child_tags={'Esoterica': 59, 'DisplayName': 59, 'Level': 59, 'Index': 59, 'Line': 59, 'FiveBase': 59, 'LingMax': 59, 'GoldLevel': 59, 'GodCount': 59, 'PreUnit': 3, 'Skills': 2}
+  Level={'Qi': 11, 'Dan1': 14, 'Dan2': 15, 'God': 15, 'God2': 4}
+  Index={0: 9, 1: 7, 2: 8, 3: 5, 4: 4, 5: 5, 6: 5, 7: 5, 8: 4, 9: 2, 10: 2, 11: 3}
+  Line字段数={8: 59}
+  DaoHang={'<MISSING>': 59}
+  Depth={'<MISSING>': 59}
+
+### 参悟树 ours : files=1 nodes=9
+  node_attrs={'Name': 9, 'Gong': 9}
+  child_tags={'Esoterica': 9, 'DisplayName': 9, 'Level': 9, 'Index': 9, 'Line': 9, 'PreUnit': 9, 'MutexUnit': 9, 'FiveBase': 9, 'Skills': 9, 'LingMax': 9, 'GoldLevel': 9, 'GodCount': 9, 'DaoHang': 9, 'Depth': 9}
+  Level={'Qi': 4, 'Dan1': 2, 'Dan2': 2, 'God': 1}
+  Index={0: 4, 1: 3, 2: 1, 3: 1}
+  Line字段数={8: 9}
+  DaoHang={'0': 9}
+  Depth={'0': 9}
+
+### 我们 Modifier 属性在原版中的取值样本
+  DeepPracticeSpeedSpecialCoefficient -> {'AddP=0.3': 2, 'AddP=2': 6, 'BAddV=0.1': 2, 'BAddV=0.2': 1, 'AddP=0.15': 2, 'AddP=0.4': 2, 'AddP=0.2': 3, 'AddP=1.5': 1, 'AddP=0.5': 4, 'AddP=-0.5': 3, 'AddP=0.75': 1, 'AddP=-1': 13, 'AddP=4': 1, 'AddV=-0.2': 1, 'AddV=0.05': 1, 'AddP=0.25': 2, 'AddP=-0.25': 1, 'AddP=-0.8': 1, 'AddV=-100': 1, 'AddP=1': 4, 'AddP=-0.1': 2, 'AddP=-0.05': 2, 'AddP=0.05': 1, 'AddP=0.01': 1}
+  InspirationCoefficient -> {'AddP=0.25': 1, 'AddP=0.5': 1, 'AddP=0.01': 1}
+  LingAbsorbSpeed -> {'AddP=60': 3, 'AddP=600': 1, 'AddP=20': 1, 'AddP=5': 2, 'AddP=15': 2, 'AddP=8': 1, 'AddP=25': 1, 'AddP=12': 1, 'AddP=4': 1, 'BAddP=0.1': 1, 'AddP=6': 1, 'AddP=0.75': 1, 'AddP=2': 4, 'AddP=-0.75': 1, 'AddP=-2': 1, 'AddP=-5': 1, 'AddP=0.1': 1, 'AddP=0.2': 2, 'AddP=0.5': 1, 'AddP=1': 3}
+  MaxAge -> {'AddV=300': 6, 'AddV=50': 12, 'AddV=100': 9, 'AddV=800': 4, 'AddV=3000': 1, 'AddV=0.1': 2, 'AddV=30': 24, 'AddV=20': 7, 'AddV=80': 3, 'AddV=150': 1, 'AddV=-100': 2, 'AddV=-60': 1, 'AddV=-3': 5, 'AddV=180': 3, 'AddV=200': 2, 'AddV=500': 4, 'AddV=256': 1, 'AddV=490': 2, 'AddV=99': 2, 'AddV=3': 1, 'AddV=10': 6, 'AddV=-20': 1, 'AddV=-9': 1, 'AddV=60': 6, 'AddV=120': 4, 'AddV=240': 2, 'AddV=250': 1, 'AddV=160': 1, 'AddP=5': 1, 'AddV=450': 1, 'AddV=-120': 2, 'AddV=640': 1, 'AddV=360': 1, 'AddV=-10': 1, 'AddV=-30': 1, 'AddV=-80': 1, 'AddV=35': 1, 'AddV=400': 1}
+  NeckCountdownAddV -> {'AddV=3000': 1, 'AddV=29400': 1, 'AddV=64800': 1, 'AddV=16200': 1, 'AddV=120000': 1, 'AddV=18000': 1, 'AddV=604800': 1}
+  NpcFight_FabaoNum -> {'AddV=1': 5, 'AddV=-10': 1, 'AddV=2': 1, 'AddV=-2': 1, 'AddP=1': 2, 'AddP=0.5': 1, 'AddP=1.5': 1}
+  NpcLingMaxValue -> {'AddP=100': 2, 'AddP=5000': 3, 'AddP=15000': 3, 'AddP=20': 2, 'AddV=180000': 1, 'AddV=1800000': 1, 'AddP=10000': 2, 'AddP=25000': 1, 'AddV=250000': 2, 'AddP=20000': 1, 'AddP=30000': 1, 'AddV=40000': 5, 'AddV=30000': 20, 'AddV=20000': 6, 'AddV=80000': 2, 'AddV=60000': 3, 'AddV=70000': 1, 'AddV=100000': 2, 'AddV=-80000': 1, 'AddV=25000': 1, 'AddP=10': 3, 'AddV=100': 3, 'BAddP=0.5': 1, 'AddV=600': 1, 'AddP=0.3': 4, 'BAddV=-50': 1, 'BAddV=50': 1, 'BAddP=0.1': 4, 'BAddV=-10': 1, 'BAddV=250': 2, 'BAddV=25': 8, 'BAddP=0.3': 1, 'BAddP=1': 11, 'BAddV=5000': 1, 'BAddV=10000': 1, 'BAddV=15000': 1, 'BAddV=40000': 1, 'BAddV=25000': 1, 'BAddV=20000': 1, 'BAddV=90000': 1, 'BAddV=60000': 1, 'AddV=999': 2, 'AddP=2.5': 1, 'AddP=6': 1, 'AddP=12': 2, 'AddP=24': 1, 'AddP=40': 4, 'AddP=2.4': 1, 'AddP=-0.8': 1, 'AddP=-1.6': 1, 'AddP=4.5': 1, 'AddP=-1.5': 1, 'AddP=-3': 1, 'AddP=13.5': 1, 'AddP=-4.5': 1, 'AddP=-9': 1, 'AddP=28.5': 1, 'AddP=-9.5': 1, 'AddP=-19': 1, 'AddP=52.5': 1, 'AddP=-17.5': 1, 'AddP=-35': 1, 'AddP=94.5': 1, 'AddP=-31.5': 1, 'AddP=5': 2, 'BAddP=0.2': 1, 'AddP=0.1': 3, 'AddP=15': 1, 'AddP=0.5': 4, 'BAddV=100': 1, 'AddP=1': 3, 'AddP=25': 4, 'BAddV=35': 1, 'BAddV=40': 1, 'AddP=0.75': 3, 'BAddP=-0.1': 1, 'BAddV=150': 2, 'BAddV=15': 2, 'AddV=15000': 1, 'AddV=1000': 2, 'AddP=8': 1, 'BAddV=500': 1, 'BAddV=120': 1, 'AddV=120000': 1, 'AddP=0.2': 2, 'AddP=0.4': 1, 'AddP=30': 1, 'AddP=0.7': 1, 'AddP=-0.5': 1, 'AddP=-0.75': 1, 'BAddV=75': 1, 'BAddV=-75': 1, 'BAddV=64': 1, 'BAddV=300': 1, 'AddV=-100': 1, 'BAddV=-100': 1, 'BAddP=0.02': 1, 'BAddP=0.25': 1, 'AddV=500': 3, 'AddV=1000000': 1, 'AddV=1500000': 3, 'AddP=150': 3, 'AddV=800': 1, 'AddV=500000': 1, 'AddP=50': 1, 'AddP=-0.1': 1, 'BAddP=-0.01': 1, 'BAddP=-0.9': 3, 'BAddP=0.002': 1}
+
+==============================================================================
+附：我们 4 个文件的关键节点 + 行号（差异表引用源）
+==============================================================================
+
+--- OURS/Settings/Esoterica/Esoterica_YanTian.xml (125 lines)
+  L3 <Esoterica {'Name': 'WFG_Eso_YanTian_Gong'}> {'StarLevel': (6, '2', 0), 'GLevel': (9, 'Qi', 0), 'Difficulty': (7, '1', 0), 'Type': (11, 'Gong', 0), 'Icon': (5, 'res/Sprs/ui/icon_jichu', 0), 'Element': (10, 'None', 0), 'Magics': (12, '', 1), 'EffectDesc': (15, '[size=10][color=#D06508]习得功法：衍天诀[/color]', 0)}
+  L18 <Esoterica {'Name': 'WFG_Eso_YanTian_Heal'}> {'StarLevel': (21, '2', 0), 'GLevel': (24, 'Qi', 0), 'Difficulty': (22, '1', 0), 'Type': (26, 'Skill', 0), 'Icon': (20, 'res/Sprs/ui/icon_zhoutian01', 0), 'Element': (25, 'None', 0), 'Magics': (27, '', 1), 'EffectDesc': (30, '[size=10][color=#D06508]习得神通：自愈程序\\n灵子飞升后', 0)}
+  L33 <Esoterica {'Name': 'WFG_Eso_YanTian_HealPlus'}> {'StarLevel': (36, '2', 0), 'GLevel': (39, 'Qi', 0), 'Difficulty': (37, '1', 0), 'Type': (41, 'Skill', 0), 'Icon': (35, 'res/Sprs/ui/icon_zhoutian01', 0), 'Element': (40, 'None', 0), 'EffectDesc': (42, '[size=10][color=#D06508]自愈程序的回复效率提高[/col', 0)}
+  L45 <Esoterica {'Name': 'WFG_Eso_YanTian_Derive'}> {'StarLevel': (48, '2', 0), 'GLevel': (51, 'Qi', 0), 'Difficulty': (49, '1', 0), 'Type': (53, 'Skill', 0), 'Icon': (47, 'res/Sprs/ui/icon_zhoutian01', 0), 'Element': (52, 'None', 0), 'Magics': (54, '', 1), 'EffectDesc': (57, '[size=10][color=#D06508]习得神通：衍天·解析\\n对一件物', 0)}
+  L60 <Esoterica {'Name': 'WFG_Eso_YanTian_Create'}> {'StarLevel': (63, '2', 0), 'GLevel': (66, 'Qi', 0), 'Difficulty': (64, '1', 0), 'Type': (68, 'Skill', 0), 'Icon': (62, 'res/Sprs/ui/icon_zhoutian01', 0), 'Element': (67, 'None', 0), 'EffectDesc': (69, '[size=10][color=#D06508]习得神通：衍天·创造\\n消耗灵气', 0)}
+  L72 <Esoterica {'Name': 'WFG_Eso_YanTian_Fabao'}> {'StarLevel': (75, '2', 0), 'GLevel': (78, 'Qi', 0), 'Difficulty': (76, '1', 0), 'Type': (80, 'Skill', 0), 'Icon': (74, 'res/Sprs/ui/icon_jichu', 0), 'Element': (79, 'None', 0), 'EffectDesc': (81, '[size=10][color=#D06508]解锁本命法宝体系\\n衍天诀修士可', 0)}
+  L84 <Esoterica {'Name': 'WFG_Eso_YanTian_HallMat'}> {'StarLevel': (87, '2', 0), 'GLevel': (90, 'Qi', 0), 'Difficulty': (88, '1', 0), 'Type': (92, 'Skill', 0), 'Icon': (86, 'res/Sprs/ui/icon_jichu', 0), 'Element': (91, 'None', 0), 'EffectDesc': (93, '[size=10][color=#D06508]解锁建筑：万法素材总库\\n炼制终', 0)}
+  L96 <Esoterica {'Name': 'WFG_Eso_YanTian_HallEng'}> {'StarLevel': (99, '2', 0), 'GLevel': (102, 'Qi', 0), 'Difficulty': (100, '1', 0), 'Type': (104, 'Skill', 0), 'Icon': (98, 'res/Sprs/ui/icon_jichu', 0), 'Element': (103, 'None', 0), 'EffectDesc': (105, '[size=10][color=#D06508]解锁建筑：万法能源核心\\n炼制终', 0)}
+  L108 <Esoterica {'Name': 'WFG_Eso_YanTian_Guard'}> {'StarLevel': (111, '2', 0), 'GLevel': (114, 'Qi', 0), 'Difficulty': (112, '1', 0), 'Type': (116, 'Skill', 0), 'Icon': (110, 'res/Sprs/ui/icon_zhoutian01', 0), 'Element': (115, 'None', 0), 'Modifier': (117, 'WFG_Mod_YanTian_Guard', 0), 'Magics': (118, '', 1), 'EffectDesc': (121, '[size=10][color=#D06508]习得神通：避天机\\n学会后不再有', 0)}
+
+--- OURS/Settings/Modifiers/Modifier_YanTian.xml (116 lines)
+  L4 <Modifier {'Name': 'WFG_Mod_YanTian_S1', 'Type': 'Normal'}> {'MaxStack': (7, '1'), 'Duration': (8, '-1'), 'Display': (9, '1')}
+        L11 li {'Name': 'NpcLingMaxValue', 'AddP': '10'}
+  L15 <Modifier {'Name': 'WFG_Mod_YanTian_S2', 'Type': 'Normal'}> {'MaxStack': (18, '1'), 'Duration': (19, '-1'), 'Display': (20, '1')}
+        L22 li {'Name': 'DeepPracticeSpeedSpecialCoefficient', 'AddV': '0.15'}
+  L26 <Modifier {'Name': 'WFG_Mod_YanTian_S3', 'Type': 'Normal'}> {'MaxStack': (29, '1'), 'Duration': (30, '-1'), 'Display': (31, '1')}
+        L33 li {'Name': 'LingAbsorbSpeed', 'AddP': '30'}
+  L38 <Modifier {'Name': 'WFG_Mod_YanTian_Fly', 'Type': 'Normal'}> {'MaxStack': (41, '1'), 'Duration': (42, '-1'), 'Display': (43, '1')}
+        L45 li {'Name': 'MaxAge', 'BAddP': '300'}
+        L46 li {'Name': 'NpcLingMaxValue', 'BAddP': '200'}
+        L47 li {'Name': 'DeepPracticeSpeedSpecialCoefficient', 'AddV': '2'}
+        L48 li {'Name': 'InspirationCoefficient', 'AddV': '1'}
+        L49 li {'Name': 'LingAbsorbSpeed', 'AddP': '100'}
+        L50 li {'Name': 'NpcFight_FabaoNum', 'AddV': '1'}
+  L55 <Modifier {'Name': 'WFG_Mod_YanTian_L7', 'Type': 'Normal'}> {'MaxStack': (58, '1'), 'Duration': (59, '-1'), 'Display': (60, '1')}
+        L62 li {'Name': 'NpcFight_FabaoNum', 'AddV': '1'}
+  L66 <Modifier {'Name': 'WFG_Mod_YanTian_L8', 'Type': 'Normal'}> {'MaxStack': (69, '1'), 'Duration': (70, '-1'), 'Display': (71, '1')}
+        L73 li {'Name': 'NpcFight_FabaoNum', 'AddV': '1'}
+  L78 <Modifier {'Name': 'WFG_Mod_YanTian_Derive', 'Type': 'Normal'}> {'MaxStack': (81, '1'), 'Duration': (82, '-1'), 'Display': (83, '1')}
+        L85 li {'Name': 'NpcLingMaxValue', 'AddP': '50'}
+        L86 li {'Name': 'NpcFight_FabaoNum', 'AddV': '1'}
+  L91 <Modifier {'Name': 'WFG_Mod_YanTian_Guard', 'Type': 'Normal'}> {'MaxStack': (94, '1'), 'Duration': (95, '-1'), 'Display': (96, '1')}
+        L98 li {'Name': 'NeckCountdownAddV', 'AddV': '99999999'}
+        L99 li {'Name': 'NpcFight_FabaoNum', 'AddV': '1'}
+  L104 <Modifier {'Name': 'WFG_Mod_YanTian_Final', 'Type': 'Normal'}> {'MaxStack': (107, '1'), 'Duration': (108, '-1'), 'Display': (109, '1')}
+        L111 li {'Name': 'NpcFight_FabaoNum', 'AddV': '1'}
+
+--- OURS/Settings/Practice/Gong/Gong_YanTian.xml (266 lines)
+  L2 <Gong {'Name': 'WFG_Gong_YanTian'}>
+  L3 <DisplayName> = 衍天诀
+  L4 <Desc> = 万法阁首部真传。此法不炼五行、不借天地，只以自身灵气温养出「灵子」，待灵子充盈，便可舍去凡胎、化为灵体。\n灵体之后，体
+  L5 <SelectDesc> = 衍天诀以灵气温养为基，进境缓慢，但飞升之后寿元与灵气远超同阶，且可解析万物、以灵气造物。是否要选择修习此功法？
+  L6 <FiveBaseNeed> = -1, -1, -1, -1, -1
+  L7 <SkillSetName>None 空=True
+  L8 <ElementKind> = None
+  L9 <Skill> children=7
+  L21 Stage@Level=1 Name=Stage1 Value=1800 Necks=2
+        L26 Neck Kind=Chance Location=0.5
+        L33 Neck Kind=Chance Location=1
+  L44 Stage@Level=3 Name=Stage2 Value=2600 Necks=2
+        L49 Neck Kind=Chance Location=0.5
+        L59 Neck Kind=Chance Location=1
+  L70 Stage@Level=5 Name=Stage3 Value=3600 Necks=3
+        L75 Neck Kind=Explore Location=0.4
+        L80 Neck Kind=Chance Location=0.8
+        L86 Neck Kind=Chance Location=1
+  L97 Stage@Level=6 Name=Stage4 Value=5000 Necks=3
+        L102 Neck Kind=Chance Location=0.3
+        L112 Neck Kind=Chance Location=0.7
+        L118 Neck Kind=Chance Location=1
+  L129 Stage@Level=7 Name=Stage5 Value=7000 Necks=2
+        L134 Neck Kind=Chance Location=0.5
+        L141 Neck Kind=Chance Location=1
+  L152 Stage@Level=8 Name=Stage6 Value=9500 Necks=3
+        L157 Neck Kind=Chance Location=0.4
+        L168 Neck Kind=Explore Location=0.8
+        L173 Neck Kind=Gold Location=1
+  L182 Stage@Level=9 Name=Stage7 Value=13000 Necks=2
+        L187 Neck Kind=Chance Location=0.5
+        L197 Neck Kind=Chance Location=1
+  L208 Stage@Level=10 Name=Stage8 Value=30000 Necks=3
+        L213 Neck Kind=Thunder Location=0.3
+        L220 Neck Kind=Chance Location=0.7
+        L230 Neck Kind=Chance Location=1
+  L241 Stage@Level=12 Name=Stage9 Value=70000 Necks=2
+        L246 Neck Kind=Chance Location=0.5
+        L253 Neck Kind=God Location=1
+
+--- OURS/Settings/Practice/Tree/Gong_YanTian.xml (193 lines)
+  L12 <Node {'Name': 'WFG_Tree_YanTian_A0', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (15, 'Qi'), 'Index': (16, '0'), 'DaoHang': (28, '0'), 'Depth': (29, '0'), 'Esoterica': (13, 'WFG_Eso_YanTian_Gong'), 'Line': (17, '0,0,0,0,0,0,0,0'), 'DisplayName': (14, '衍天诀·总纲')}
+  L32 <Node {'Name': 'WFG_Tree_YanTian_B0', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (35, 'Qi'), 'Index': (36, '1'), 'DaoHang': (48, '0'), 'Depth': (49, '0'), 'Esoterica': (33, 'WFG_Eso_YanTian_Heal'), 'Line': (37, '0,0,0,0,0,0,0,0'), 'DisplayName': (34, '自愈程序')}
+  L52 <Node {'Name': 'WFG_Tree_YanTian_C0', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (55, 'Qi'), 'Index': (56, '2'), 'DaoHang': (68, '0'), 'Depth': (69, '0'), 'Esoterica': (53, 'WFG_Eso_YanTian_Derive'), 'Line': (57, '0,0,0,0,0,0,0,0'), 'DisplayName': (54, '衍天·解析')}
+  L72 <Node {'Name': 'WFG_Tree_YanTian_C1', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (75, 'Qi'), 'Index': (76, '3'), 'DaoHang': (88, '0'), 'Depth': (89, '0'), 'Esoterica': (73, 'WFG_Eso_YanTian_Create'), 'Line': (77, '0,0,0,0,0,0,0,0'), 'DisplayName': (74, '衍天·创造')}
+  L92 <Node {'Name': 'WFG_Tree_YanTian_D0', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (95, 'Dan1'), 'Index': (96, '0'), 'DaoHang': (108, '0'), 'Depth': (109, '0'), 'Esoterica': (93, 'WFG_Eso_YanTian_Fabao'), 'Line': (97, '0,0,0,0,0,0,0,0'), 'DisplayName': (94, '本命法宝')}
+  L112 <Node {'Name': 'WFG_Tree_YanTian_B1', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (115, 'Dan1'), 'Index': (116, '1'), 'DaoHang': (128, '0'), 'Depth': (129, '0'), 'Esoterica': (113, 'WFG_Eso_YanTian_HealPlus'), 'Line': (117, '0,0,0,0,0,0,0,0'), 'DisplayName': (114, '自愈·精研')}
+  L132 <Node {'Name': 'WFG_Tree_YanTian_D1', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (135, 'Dan2'), 'Index': (136, '0'), 'DaoHang': (148, '0'), 'Depth': (149, '0'), 'Esoterica': (133, 'WFG_Eso_YanTian_HallMat'), 'Line': (137, '0,0,0,0,0,0,0,0'), 'DisplayName': (134, '共享素材库')}
+  L152 <Node {'Name': 'WFG_Tree_YanTian_D2', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (155, 'Dan2'), 'Index': (156, '1'), 'DaoHang': (168, '0'), 'Depth': (169, '0'), 'Esoterica': (153, 'WFG_Eso_YanTian_HallEng'), 'Line': (157, '0,0,0,0,0,0,0,0'), 'DisplayName': (154, '共享能源核心')}
+  L172 <Node {'Name': 'WFG_Tree_YanTian_E0', 'Gong': 'WFG_Gong_YanTian'}> {'Level': (175, 'God'), 'Index': (176, '0'), 'DaoHang': (188, '0'), 'Depth': (189, '0'), 'Esoterica': (173, 'WFG_Eso_YanTian_Guard'), 'Line': (177, '0,0,0,0,0,0,0,0'), 'DisplayName': (174, '避天机程序')}

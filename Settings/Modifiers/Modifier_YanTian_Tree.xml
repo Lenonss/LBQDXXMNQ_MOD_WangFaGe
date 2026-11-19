@@ -1,0 +1,86 @@
+<ModifierDefs><List>
+
+	<!-- ============ 衍天诀：技能树扩充（乙方案） ============ -->
+
+	<Modifier Name="WFG_Mod_YanTian_Sword" Type="Normal">
+		<DisplayName>御剑</DisplayName>
+		<Desc>以灵子御使本命飞剑，法宝威力与飞行、转向速度提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="0.3"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Shield" Type="Normal">
+		<DisplayName>灵盾</DisplayName>
+		<Desc>将灵子外放为护体灵盾，护盾转化、气血与恢复提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddP="0.3"/>
+			<li Name="MaxHp" AddP="0.1"/>
+			<li Name="RecoveryPower" AddP="0.2"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Codex" Type="Normal">
+		<DisplayName>器谱</DisplayName>
+		<Desc>衍天器谱，载炼器火候与灵性传承之法。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="0.3"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.1"/>
+			<li Name="FabaoMake_QualityAddV" AddV="0.05"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Cycle" Type="Normal">
+		<DisplayName>周天</DisplayName>
+		<Desc>灵子周天运转，修炼、悟性与灵气吸纳提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="0.5"/>
+			<li Name="InspirationCoefficient" AddV="0.3"/>
+			<li Name="LingAbsorbSpeed" AddP="0.3"/>
+			<li Name="MindStateBaseValue" AddV="30"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Edge" Type="Normal">
+		<DisplayName>锋锐</DisplayName>
+		<Desc>灵子凝锋，法宝与术法威能更盛。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="0.8"/>
+			<li Name="NpcFight_SpellPowerAddP" AddV="0.4"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddV="0.5"/>
+			<li Name="NpcFight_FabaoCoolDownAddP" AddV="-0.15"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Undying" Type="Normal">
+		<DisplayName>不灭</DisplayName>
+		<Desc>灵子不灭，气血与护体生生不息。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MaxHp" AddP="0.25"/>
+			<li Name="RecoveryPower" AddP="0.4"/>
+			<li Name="NpcFight_ShieldConversionRate" AddP="0.25"/>
+		</Properties>
+	</Modifier>
+
+</List></ModifierDefs>

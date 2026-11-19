@@ -1,0 +1,118 @@
+<ThingDefs><List>
+
+	<!-- 衍天诀 · 衍天数据中心（奇观：应天台形制） -->
+	<ThingDef Type="Building" Name="WFG_Build_HallMat" Parent="OrnamentBase">
+		<TexPath>res\Sprs\buildingnew\building_jianlingtai01a</TexPath>
+		<TexScale>1</TexScale>
+		<ThingName>衍天数据中心</ThingName>
+		<Desc>以应天台形制筑成的奇观。衍天诀修士解析物品后，素材会自动汇入共享总库，供全派创造取用。选择「万法阁·衍天传人」经历后自动解锁；建造需衍天珠 ×9 与任意金属锭 ×999。</Desc>
+		<Rate>6</Rate>
+		<Beauty>25</Beauty>
+		<MaxHitPoints>3000</MaxHitPoints>
+		<NoElementKind>1</NoElementKind>
+		<BlockLight>0</BlockLight>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.5</y>
+		</ShadowSize>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1],
+			[1,3],
+			</Data>
+			<OffsetGroup>
+				<li><x>0.5</x><y>-0.05</y></li>  <!-- 后 -->
+				<li><x>-0.17</x><y>-0.35</y></li>     <!-- 右 -->
+				<li><x>-0.5</x><y>0.95</y></li>     <!-- 前 -->
+				<li><x>0.17</x><y>0.65</y></li>     <!-- 左 -->
+			</OffsetGroup>
+		</Collider>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Building>
+			<Orientation>F,R</Orientation>
+			<AutoUnLock>0</AutoUnLock>
+			<BeMade>
+				<WorkToMake>3000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name="MetalBlock"/>
+				</StuffCategories>
+				<CostStuffCount>999</CostStuffCount>
+				<CostItems>
+					<Item name="WFG_Item_YanTianZhu" count="9"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.6</x>
+				<y>3.55</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<StoryBnts>
+			<li Name="管理" Desc="查看衍天数据中心收录的共享素材。" Script="WFG.ui.hallMat:Open(bind)" Appoint="0" Scope="0" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<!-- 衍天诀 · 衍天能源中心（奇观：灵玉峰形制） -->
+	<ThingDef Type="Building" Name="WFG_Build_HallEng" Parent="OrnamentBase">
+		<TexPath>Spr\Object\wfg_building_lingyufeng.png</TexPath>
+		<TexScale>1</TexScale>
+		<ThingName>衍天能源中心</ThingName>
+		<Desc>以灵玉峰形制筑成的奇观，可蓄大量灵气供衍天诀修士存取。点击建筑上的「管理」选择交互角色，即可管理该角色自己的取用参数。选择「万法阁·衍天传人」经历后自动解锁；建造需衍天珠 ×9 与任意金属锭 ×999。</Desc>
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<MaxHitPoints>3000</MaxHitPoints>
+		<NoElementKind>1</NoElementKind>
+		<BlockLight>0</BlockLight>
+		<ShadowSize>
+			<x>1</x>
+			<y>1.2</y>
+		</ShadowSize>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[1,1,1,1,1],
+			[1,1,3,1,1],
+			[1,1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>  <!-- 后 -->
+				<li><x>0</x><y>0</y></li>     <!-- 右 -->
+				<li><x>0</x><y>3.85</y></li>     <!-- 前 -->
+				<li><x>0</x><y>0</y></li>     <!-- 左 -->
+			</OffsetGroup>
+		</Collider>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Building>
+			<!-- 灵玉峰形制本身不可转向；不要写 Orientation，否则引擎会给贴图追加 _F/_R 后缀，自定义 PNG 找不到。 -->
+			<AutoUnLock>0</AutoUnLock>
+			<BeMade>
+				<WorkToMake>6000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name="MetalBlock"/>
+				</StuffCategories>
+				<CostStuffCount>999</CostStuffCount>
+				<CostItems>
+					<Item name="WFG_Item_YanTianZhu" count="9"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.6</x>
+				<y>3.9</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<StoryBnts>
+			<li Name="管理" Desc="选择一名角色，管理其与衍天能源中心的灵气存取参数。" Script="WFG.ui.hallEng:SelectNpc(bind)" Appoint="0" Scope="0" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+</List></ThingDefs>

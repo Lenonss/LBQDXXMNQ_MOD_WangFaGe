@@ -1,0 +1,251 @@
+<ModifierDefs><List>
+
+	<!-- ============ 衍天诀：小境界增益 ============ -->
+	<Modifier Name="WFG_Mod_YanTian_S1" Type="Normal">
+		<DisplayName>引灵入体</DisplayName>
+		<Desc>灵息初入丹田，灵气上限提升一成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_S2" Type="Normal">
+		<DisplayName>灵息初生</DisplayName>
+		<Desc>灵息自行运转，修行速度提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="0.15"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_S3" Type="Normal">
+		<DisplayName>灵息圆满</DisplayName>
+		<Desc>灵息充盈，吸纳天地灵气的速度提升三成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="0.3"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：灵子飞升（核心） ============ -->
+	<Modifier Name="WFG_Mod_YanTian_Fly" Type="Normal">
+		<DisplayName>灵体</DisplayName>
+		<Desc>舍凡胎而化灵体。寿元增至四倍，根本灵气增至三倍，修行与悟性皆大幅提升，并开启第一格本命法宝位。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MaxAge" BAddP="2"/>
+			<li Name="NpcLingMaxValue" BAddP="2"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="2"/>
+			<li Name="InspirationCoefficient" AddV="1"/>
+			<li Name="LingAbsorbSpeed" AddP="1"/>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：法宝格（飞升后每境一格） ============ -->
+	<Modifier Name="WFG_Mod_YanTian_L7" Type="Normal">
+		<DisplayName>本命法宝格</DisplayName>
+		<Desc>灵体凝形，可多炼一件本命法宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_L8" Type="Normal">
+		<DisplayName>本命法宝格</DisplayName>
+		<Desc>灵体固本，可多炼一件本命法宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：衍天境 ============ -->
+	<Modifier Name="WFG_Mod_YanTian_Derive" Type="Normal">
+		<DisplayName>衍天境</DisplayName>
+		<Desc>神识可推演万物构造，根本灵气再增五成，并解锁一格本命法宝位。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="2"/>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：避天机 ============ -->
+	<Modifier Name="WFG_Mod_YanTian_Guard" Type="Normal">
+		<DisplayName>避天机</DisplayName>
+		<Desc>天机尽掩，飞升之劫不再逼近。何时渡劫，由你自己决定。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="604800"/>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：天门 ============ -->
+	<Modifier Name="WFG_Mod_YanTian_Final" Type="Normal">
+		<DisplayName>天门</DisplayName>
+		<Desc>灵体圆满，天门已开。再得一格本命法宝位，去留只在一念之间。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+
+	<!-- ============ 衍天诀：自愈程序（持续状态） ============ -->
+	<Modifier Name="WFG_Mod_YanTian_Heal" Type="Normal">
+		<DisplayName>自愈程序</DisplayName>
+		<Desc>灵子程序在体内循环不止：气血与灵气持续回复，数值随境界提升，精研本额外 +50%。灵气未满时优先回灵，灵气满后溢出部分转为气血。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier>
+
+	<!-- ============ 衍天诀：本命法宝 · 灵析剑 ============ -->
+	<Modifier Name="WFG_Mod_YanTian_FabaoMat" Type="Normal">
+		<DisplayName>灵析剑</DisplayName>
+		<Desc>本命飞剑以解析之律铸成。佩者气血、灵气、寿元、身法与修行悟性全面提升，并大幅降低法宝吸灵，代价是攻击之力平平。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MaxHp" AddP="3"/>
+			<li Name="NpcLingMaxValue" AddP="10"/>
+			<li Name="MaxAge" AddV="500"/>
+			<li Name="MoveSpeed" AddV="10"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="2"/>
+			<li Name="InspirationCoefficient" AddP="2"/>
+			<li Name="LingAbsorbSpeed" AddP="2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddP="3"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="3"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.2"/>
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="-1.75"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：本命法宝 · 灵源剑 ============ -->
+	<Modifier Name="WFG_Mod_YanTian_FabaoEng" Type="Normal">
+		<DisplayName>灵源剑</DisplayName>
+		<Desc>本命飞剑以能源核心铸成。佩者气血、灵气、寿元与身法大幅提升，飞剑攻击、术法与飞行威能暴涨，同时吸灵与冷却大幅降低。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MaxHp" AddP="3"/>
+			<li Name="NpcLingMaxValue" AddP="10"/>
+			<li Name="MaxAge" AddV="300"/>
+			<li Name="MoveSpeed" AddV="10"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/>
+			<li Name="InspirationCoefficient" AddP="1"/>
+			<li Name="LingAbsorbSpeed" AddP="1"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="2.5"/>
+			<li Name="NpcFight_SpellPowerAddP" AddV="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddV="0.9"/>
+			<li Name="NpcFight_FabaoCoolDownAddP" AddV="-0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="-1.75"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.75"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.75"/>
+			<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="5"/>
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="5"/>
+			<li Name="NpcFight_ShieldConversionRate" AddP="3"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="3"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.2"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：衍天珠 · 服用标记 ============ -->
+	<!-- 每次服用叠一层；module 每秒结算后清空，并转为永久加成 -->
+	<Modifier Name="WFG_Mod_YanTian_ZhuUse" Type="Normal">
+		<DisplayName>衍天珠·药力</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+	</Modifier>
+
+	<!-- ============ 衍天诀：衍天珠 · 根本灵气（最多 4 层） ============ -->
+	<Modifier Name="WFG_Mod_YanTian_ZhuLing1" Type="Normal">
+		<DisplayName>衍天珠·根本灵气一</DisplayName>
+		<Desc>服用衍天珠后，根本灵气提高 25%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.25"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_ZhuLing2" Type="Normal">
+		<DisplayName>衍天珠·根本灵气二</DisplayName>
+		<Desc>服用衍天珠后，根本灵气提高 25%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.25"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_ZhuLing3" Type="Normal">
+		<DisplayName>衍天珠·根本灵气三</DisplayName>
+		<Desc>服用衍天珠后，根本灵气提高 25%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.25"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_ZhuLing4" Type="Normal">
+		<DisplayName>衍天珠·根本灵气四</DisplayName>
+		<Desc>服用衍天珠后，根本灵气提高 25%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.25"/>
+		</Properties>
+	</Modifier>
+
+	<!-- ============ 衍天诀：衍天珠 · 佩带心境 ============ -->
+	<Modifier Name="WFG_Mod_YanTian_ZhuEquip" Type="Normal">
+		<DisplayName>衍天珠</DisplayName>
+		<Desc>佩带衍天珠，心境 +100。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="100"/>
+		</Properties>
+	</Modifier>
+</List></ModifierDefs>

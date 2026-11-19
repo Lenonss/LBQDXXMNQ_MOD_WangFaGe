@@ -1,0 +1,16 @@
+# 本机构建产物
+dist/
+*.zip
+
+# 代码图谱与编辑器缓存
+.codegraph/
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# 本机日志与临时文件
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store

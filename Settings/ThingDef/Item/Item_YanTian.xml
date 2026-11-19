@@ -1,0 +1,134 @@
+<ThingDefs><List>
+
+	<!-- 衍天诀 · 终端法宝：共享素材库 -->
+	<ThingDef Type="Item" Name="WFG_Item_HallMatFabao" Parent="MiBaoBase">
+		<ThingName>灵析剑</ThingName>
+		<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>
+		<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>
+		<Desc>衍天诀修士以自身素材库为引炼成的本命飞剑。佩之，个人素材库与衍天数据中心每秒自动双向并集同步：自己解析的素材会汇入总库，总库中他人所录之物也会补入个人库。唯修衍天诀者可用；卸下后，仅从总库借来的条目会自动移出，自己解析的素材保留。</Desc>
+		<ElementKind>None</ElementKind>
+		<Item Kind="Equipment">
+			<PhysicalLables>
+				<li>SmallThing</li>
+				<li>GreatThing_Ling</li>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMade>
+				<CostItems>
+					<Item name="WFG_Item_YanTianZhu" count="3"/>
+					<Item name="Item_LingStone" count="10"/>
+				</CostItems>
+			</BeMade>
+			<Fabao>
+				<ActiveCondition>
+					<Condition eventid="Other" des="修行衍天诀" needcount="1"/>
+				</ActiveCondition>
+			</Fabao>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+
+	<!-- 衍天诀 · 终端法宝：共享能源核心 -->
+	<ThingDef Type="Item" Name="WFG_Item_HallEngFabao" Parent="MiBaoBase">
+		<ThingName>灵源剑</ThingName>
+		<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>
+		<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>
+		<Desc>以灵石为基、灵子为脉炼成的本命飞剑，与衍天能源中心同气连枝。佩之可把自身灵气存入总核心，亦可从中取用；取用方式可自行设定。唯修衍天诀者可用。</Desc>
+		<ElementKind>None</ElementKind>
+		<Item Kind="Equipment">
+			<PhysicalLables>
+				<li>SmallThing</li>
+				<li>GreatThing_Ling</li>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMade>
+				<CostItems>
+					<Item name="WFG_Item_YanTianZhu" count="9"/>
+					<Item name="Item_LingStone" count="100"/>
+				</CostItems>
+			</BeMade>
+			<Fabao>
+				<ActiveCondition>
+					<Condition eventid="Other" des="修行衍天诀" needcount="1"/>
+				</ActiveCondition>
+			</Fabao>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+
+
+	<!-- 衍天诀 · 凝练素材：衍天珠 -->
+	<ThingDef Type="Item" Name="WFG_Item_YanTianZhu" Parent="DanBase">
+		<ThingName>衍天珠</ThingName>
+		<TexPath>Spr\Object\wfg_item_yantianzhu.png</TexPath>
+		<Desc>衍天诀修士以自身灵气凝练而成的灵珠。服用可瞬间恢复一成最大灵气，并从根本上提高 25% 灵气上限（最多生效 4 次）；佩带可令心境 +100。置于 5×5 范围内（游戏内「范围」显示为半径 2），聚灵效果与最顶级的聚灵物相当。它也是炼制灵析剑、灵源剑的核心材料，每颗需 500 灵气方能凝练。</Desc>
+		<MaxStack>99</MaxStack>
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Modifier>WFG_Mod_YanTian_ZhuUse</Modifier>
+			</Elixir>
+			<Equip>
+				<ToolModifier>WFG_Mod_YanTian_ZhuEquip</ToolModifier>
+			</Equip>
+		</Item>
+		<Ling>
+			<AddionLing>200</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>0.95</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+	</ThingDef>
+
+	<!-- 衍天诀 · 衍天佩（手工台装备，按已学技能解锁增幅） -->
+	<ThingDef Type="Item" Name="WFG_Item_YanTianPei" Parent="ToolBase">
+		<ThingName>衍天佩</ThingName>
+		<TexPath>Spr\Object\wfg_item_yantianpei.png</TexPath>
+		<Desc>衍天诀修士以衍天珠为核、灵木为匣炼成的护身玉佩。佩戴后，已学的衍天诀技能会逐项解锁对应增幅：总纲、自愈、精研、避天机、御剑、灵盾、器谱、周天、锋锐、不灭的原有效果各翻一倍；解析/创造耗灵减半；本命法宝节点原本只解锁配方，佩版额外给 +100% 法宝威力；炼石解锁主动神通「衍天·炼石（佩）」，点击后每 10 秒一枚。未学会的技能不生效；卸下后所有加成消失。手工台制作：1 衍天珠 + 10 任意木料。</Desc>
+		<MaxStack>1</MaxStack>
+		<Rate>1</Rate>
+		<Beauty>15</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Tool" Kind="Equipment">
+			<BeMade>
+				<WorkToMake>300</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name="Wood"/>
+					<Stuff name="WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>10</CostStuffCount>
+				<CostItems>
+					<Item name="WFG_Item_YanTianZhu" count="1"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<ProduceMode>
+			<ProduceBuildings>
+				<li>
+					<Building>HandWorkTable</Building>
+					<Count>1</Count>
+				</li>
+			</ProduceBuildings>
+		</ProduceMode>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+</List></ThingDefs>

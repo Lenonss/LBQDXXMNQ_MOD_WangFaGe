@@ -1,0 +1,21 @@
+<FabaoFormulas><List>
+
+	<!-- 衍天诀 · 共享素材库（终端法宝） -->
+	<Fabao Name="WFG_Formula_HallMat">
+		<Normal>0</Normal>
+		<ItemName>WFG_Item_HallMatFabao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+	<!-- 衍天诀 · 共享能源核心（终端法宝） -->
+	<Fabao Name="WFG_Formula_HallEng">
+		<Normal>0</Normal>
+		<ItemName>WFG_Item_HallEngFabao</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+</List></FabaoFormulas>

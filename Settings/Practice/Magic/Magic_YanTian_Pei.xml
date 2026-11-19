@@ -1,0 +1,14 @@
+<Magics><List>
+
+	<!-- 衍天佩 · 主动神通：只提供按钮，不自动施放 -->
+	<Magic Name="WFG_Magic_LingStoneMake_Pei">
+		<DisplayName>衍天·炼石（佩）</DisplayName>
+		<Desc>主动神通：点击后开始炼石，每 10 秒凝结一枚灵石，每枚消耗 5000 灵气；需当前灵气≥5000。停止施法或灵气不足时结束。不会自动施放。</Desc>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<Param1>10</Param1>
+		<CostLing>5000</CostLing>
+		<CostAge>0</CostAge>
+		<CMD>AbsorbGong_11</CMD>
+	</Magic>
+
+</List></Magics>

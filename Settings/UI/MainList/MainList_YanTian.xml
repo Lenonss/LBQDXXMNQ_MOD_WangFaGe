@@ -1,0 +1,11 @@
+<MainList><List>
+
+	<!-- 载入器只扫描 Settings/UI/MainList/ 目录（UILogicMgr.LoadXmlDefs("Settings/UI/MainList")），
+	     文件必须放在本目录下；放在 Settings/UI/MainList.xml 不会被读取。 -->
+
+	<!-- 衍天诀 · 两座奇观：由「万法阁·衍天传人」经历经 Lua 解锁（SchoolMgr.UnLockBuilding），
+	     因此 Unlock=0、AutoUnLock=0，只受解锁列表控制；不要设门派等级门槛。 -->
+	<Data Kind="Builds" Unlock="0" Type="奇观" CMDType="Build" Name="WFG_Build_HallMat"/>
+	<Data Kind="Builds" Unlock="0" Type="奇观" CMDType="Build" Name="WFG_Build_HallEng"/>
+
+</List></MainList>

@@ -1,0 +1,228 @@
+<Esotericas><List>
+
+	<Esoterica Name="WFG_Eso_YanTian_Gong">
+		<DisplayName>衍天诀</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>万法阁首部真传，以灵气温养出灵子，舍凡胎而化灵体。全篇共九境，飞升之后所载皆为灵子程序之术。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<Magics>
+			<li>WFG_Magic_Panel</li>
+			<li>WFG_Magic_NingZhu</li>
+		</Magics>
+		<EffectDesc>[size=10][color=#D06508]习得功法：衍天诀[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Heal">
+		<DisplayName>自愈程序</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>以灵子编写的自我修复程序，可在灵体受损时自行运转。持续提高灵气回复速度（人物面板灵气条右侧可查看 +X/秒），灵气充盈后再回复血肉。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Magics>
+			<li>WFG_Magic_HealOff</li>
+		</Magics>
+		<EffectDesc>[size=10][color=#D06508]习得神通：自愈程序\n灵子飞升后可用。体内灵子程序持续运转，灵气与气血按帧少量回复（状态栏常驻「自愈程序」，神通按钮随开关显示「·开启 / ·关闭」），接近上限时自动截断、不会溢出浪费。灵气未满时优先回灵，灵气满后溢出部分转为气血。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_HealPlus">
+		<DisplayName>自愈程序·精研</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>在自愈程序的基础上重写灵子逻辑，使修复效率再进一步。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]自愈程序的回复效率提高[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Derive">
+		<DisplayName>衍天·解析</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>以神识解析器物的构造之理，将之刻入自身素材库。解析愈深，日后复刻愈易。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Magics>
+			<li>WFG_Magic_Derive</li>
+		</Magics>
+		<EffectDesc>[size=10][color=#D06508]习得神通：衍天·解析\n对一件物品使用，消耗灵气解析其构造，成功后记入素材库。物品等阶越高，所需境界与灵气越多。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Create">
+		<DisplayName>衍天·创造</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>依素材库中所录构造，以灵气重铸实物。所造之物与原件一般无二，唯品相随神识而定。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：衍天·创造\n消耗灵气，从素材库中创造已解析的物品，可批量。[/color][/size]</EffectDesc>
+			<Magics>
+			<li>WFG_Magic_Create</li>
+		</Magics>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Fabao">
+		<DisplayName>本命法宝·总纲</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>灵体修士以自身灵子炼就本命法宝之法。灵体每进一步，可多炼一件。总纲载有两柄本命飞剑：灵析剑司素材，灵源剑司能源。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Fabaos>
+			<li>WFG_Formula_HallMat</li>
+			<li>WFG_Formula_HallEng</li>
+		</Fabaos>
+		<EffectDesc>[size=10][color=#D06508]解锁官方法宝炼制配方：灵析剑、灵源剑。炼成后装入本命法宝格并完成认主，才会开启对应功能：灵析剑自动同步个人素材库与衍天数据中心；灵源剑可存取衍天能源中心的灵气。两剑只对衍天诀修士生效，佩带后大幅提升各项属性；法宝格随境界提升。\n共享素材库与共享能源核心的管理入口在两座奇观建筑上，点击建筑上的「管理」即可打开。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Guard">
+		<DisplayName>避天机程序</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>以灵子程序遮蔽自身天机，使天道无从推算飞升之期。自此天劫不再倒逼，何时渡劫，全凭己心。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Modifier>WFG_Mod_YanTian_Guard</Modifier>
+		<Magics>
+			<li>WFG_Magic_Ascend</li>
+		</Magics>
+		<EffectDesc>[size=10][color=#D06508]习得神通：避天机\n学会后不再有天劫倒计时，是否飞升成仙由你自行决定。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_LingStone">
+		<DisplayName>衍天·炼石</DisplayName>
+		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>以灵气凝结灵石。每 5000 灵气可凝一枚，需当前灵气充足方可运转。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Magics>
+			<li>WFG_Magic_LingStoneMake</li>
+		</Magics>
+		<EffectDesc>[size=10][color=#D06508]习得神通：衍天·炼石\n每 20 秒凝结 1 枚灵石，每枚消耗 5000 灵气；当前灵气不足 5000 时自动结束。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Sword">
+		<DisplayName>御剑</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>以灵子御使本命飞剑，法宝威力与飞行、转向速度提升。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Modifier>WFG_Mod_YanTian_Sword</Modifier>
+		<EffectDesc>[size=10][color=#D06508]法宝威力 +30%，飞行速度 +20%，转向速度 +20%。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Shield">
+		<DisplayName>灵盾</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>将灵子外放为护体灵盾，护盾转化、气血与恢复提升。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Modifier>WFG_Mod_YanTian_Shield</Modifier>
+		<EffectDesc>[size=10][color=#D06508]护盾转化 +30%，气血上限 +10%，回复效率 +20%。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Codex">
+		<DisplayName>器谱</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>衍天器谱，载炼器火候与灵性传承之法。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Modifier>WFG_Mod_YanTian_Codex</Modifier>
+		<EffectDesc>[size=10][color=#D06508]炼器速度 +30%，成功率 +10%，品质 +5%，灵性传承 +20%。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Cycle">
+		<DisplayName>周天</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>灵子周天运转，修炼、悟性与灵气吸纳提升。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Modifier>WFG_Mod_YanTian_Cycle</Modifier>
+		<EffectDesc>[size=10][color=#D06508]深度修炼速度 +50%，悟性系数 +30%，灵气吸收 +30%，心境 +30。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Edge">
+		<DisplayName>锋锐</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>灵子凝锋，法宝与术法威能更盛。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Modifier>WFG_Mod_YanTian_Edge</Modifier>
+		<EffectDesc>[size=10][color=#D06508]法宝威力 +80%，术法威力 +40%，法宝灵气回复 +50%，法宝冷却 -15%。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_Undying">
+		<DisplayName>不灭</DisplayName>
+		<Icon>res/Sprs/ui/icon_zhoutian01</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>灵子不灭，气血与护体生生不息。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Modifier>WFG_Mod_YanTian_Undying</Modifier>
+		<EffectDesc>[size=10][color=#D06508]气血上限 +25%，回复效率 +40%，护盾转化 +25%。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+
+	<!-- 旧版「共享素材库 / 共享能源核心」秘籍：已从参悟树移除，不再有获取入口；保留定义仅为旧存档已学记录兼容（删除会让 EsotericaFinish 取不到 def 而报错），Hide=1 不出现在秘籍列表。 -->
+	<Esoterica Name="WFG_Eso_YanTian_HallMat">
+		<DisplayName>共享素材库</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>旧版秘籍，已废弃。衍天数据中心现由万法阁经历解锁，不再需要学习。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Hide>1</Hide>
+		<EffectDesc>[size=10][color=#D06508]旧版内容已废弃：衍天数据中心改为奇观建筑，选择万法阁经历后自动解锁。[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="WFG_Eso_YanTian_HallEng">
+		<DisplayName>共享能源核心</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>旧版秘籍，已废弃。衍天能源中心现由万法阁经历解锁，不再需要学习。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>Skill</Type>
+		<Hide>1</Hide>
+		<EffectDesc>[size=10][color=#D06508]旧版内容已废弃：衍天能源中心改为奇观建筑，选择万法阁经历后自动解锁。[/color][/size]</EffectDesc>
+	</Esoterica>
+</List></Esotericas>

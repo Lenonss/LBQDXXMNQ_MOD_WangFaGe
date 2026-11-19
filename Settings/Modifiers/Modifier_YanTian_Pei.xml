@@ -1,0 +1,120 @@
+<ModifierDefs><List>
+
+	<!-- ============ 衍天诀 · 衍天佩：按已学技能解锁的增幅 ============ -->
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Gong" Type="Normal">
+		<DisplayName>衍天佩 · 总纲</DisplayName>
+		<Desc>衍天佩与总纲共鸣，灵气上限增幅翻倍。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Fabao" Type="Normal">
+		<DisplayName>衍天佩 · 本命法宝</DisplayName>
+		<Desc>衍天佩温养本命法宝，法宝威力翻倍。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Guard" Type="Normal">
+		<DisplayName>衍天佩 · 避天机</DisplayName>
+		<Desc>衍天佩遮蔽天机，劫数再延七日，并多容纳一件法宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="604800"/>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Sword" Type="Normal">
+		<DisplayName>衍天佩 · 御剑</DisplayName>
+		<Desc>衍天佩助御飞剑，法宝威力与飞行、转向速度再提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="0.3"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.2"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Shield" Type="Normal">
+		<DisplayName>衍天佩 · 灵盾</DisplayName>
+		<Desc>衍天佩护持灵盾，护盾转化、气血与恢复再提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddP="0.3"/>
+			<li Name="MaxHp" AddP="0.1"/>
+			<li Name="RecoveryPower" AddP="0.2"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Codex" Type="Normal">
+		<DisplayName>衍天佩 · 器谱</DisplayName>
+		<Desc>衍天佩映照器谱，炼器速度、成功率、品质与灵性传承再提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="FabaoMake_SpeedAddV" AddV="0.3"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="0.1"/>
+			<li Name="FabaoMake_QualityAddV" AddV="0.05"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="0.2"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Cycle" Type="Normal">
+		<DisplayName>衍天佩 · 周天</DisplayName>
+		<Desc>衍天佩引动周天，修炼、悟性、吸收与心境再提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="0.5"/>
+			<li Name="InspirationCoefficient" AddV="0.3"/>
+			<li Name="LingAbsorbSpeed" AddP="0.3"/>
+			<li Name="MindStateBaseValue" AddV="30"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Edge" Type="Normal">
+		<DisplayName>衍天佩 · 锋锐</DisplayName>
+		<Desc>衍天佩淬炼锋芒，法宝与术法威力、法宝回灵再提升，冷却再缩短。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="0.8"/>
+			<li Name="NpcFight_SpellPowerAddP" AddV="0.4"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddV="0.5"/>
+			<li Name="NpcFight_FabaoCoolDownAddP" AddV="-0.15"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="WFG_Mod_YanTian_Pei_Undying" Type="Normal">
+		<DisplayName>衍天佩 · 不灭</DisplayName>
+		<Desc>衍天佩护住生机，气血、回复与护盾转化再提升。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MaxHp" AddP="0.25"/>
+			<li Name="RecoveryPower" AddP="0.4"/>
+			<li Name="NpcFight_ShieldConversionRate" AddP="0.25"/>
+		</Properties>
+	</Modifier>
+
+</List></ModifierDefs>

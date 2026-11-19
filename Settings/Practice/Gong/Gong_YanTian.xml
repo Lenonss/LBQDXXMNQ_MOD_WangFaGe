@@ -1,0 +1,267 @@
+<Gongs><List>
+	<Gong Name="WFG_Gong_YanTian">
+		<DisplayName>衍天诀</DisplayName>
+		<Desc>万法阁首部真传。此法不炼五行、不借天地，只以自身灵气温养出「灵子」，待灵子充盈，便可舍去凡胎、化为灵体。\n灵体之后，体内可运行灵子程序：或自愈回元，或解析万物，或避过天机、将飞升之期握于己手。\n共分九境，越往后越是玄妙。</Desc>
+		<SelectDesc>衍天诀以灵气温养为基，进境缓慢，但飞升之后寿元与灵气远超同阶，且可解析万物、以灵气造物。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>-1, -1, -1, -1, -1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<!-- 灵子属木：仅作五行相性标记，不影响「不炼五行、不借天地」的设定。
+		     填 None 会让飞升成灵体后的世界模型取 Color.black（GameDefine.GetElementColor 硬编码），故用 Mu。 -->
+		<ElementKind>Mu</ElementKind>
+		<Skill>
+			<li>chumo</li>
+			<li>jiangdao</li>
+			<li>guanding</li>
+			<li>ciqi</li>
+			<li>kaiguang</li>
+			<li>cuiti</li>
+			<li>bihu</li>
+		</Skill>
+		<Stages>
+
+			<!-- 第 1 境 -->
+			<Stage Name="Stage1" Level="1">
+				<DisplayName>引灵入体</DisplayName>
+				<Desc>以自身气息为引，感受天地间游离的灵息，缓缓纳入体内，是为衍天诀第一境。</Desc>
+				<Value>1800</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>感灵</DisplayName>
+						<Desc>静坐之中，第一次感知到灵息的存在。[color=#D06508]\n此瓶颈气感越低，越难突破。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>Qi_1_5_25</SuccessChange>
+						<FailedChangeAdd>0.1</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>纳灵</DisplayName>
+						<Desc>将第一缕灵息纳入丹田，灵子自此在体内生根。</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_S1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 2 境 -->
+			<Stage Name="Stage2" Level="3">
+				<DisplayName>灵息初生</DisplayName>
+				<Desc>灵息在丹田中渐成气候，如泉水初涌，可自行运转小周天。</Desc>
+				<Value>2600</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>温养</DisplayName>
+						<Desc>以灵息反复冲洗经脉，使其更耐承载。[color=#D06508]\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>120</CostTime>
+						<SuccessChange>Physique_1_5_25</SuccessChange>
+						<FailedChangeAdd>0.1</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.3"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>小周天</DisplayName>
+						<Desc>灵息循环无滞，一日可运转三十六周天。</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_S2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 3 境 -->
+			<Stage Name="Stage3" Level="5">
+				<DisplayName>灵息圆满</DisplayName>
+				<Desc>灵息充盈四肢百骸，隐隐有溢出之势，只差一线便可破体化灵。</Desc>
+				<Value>3600</Value>
+				<Necks>
+					<Neck Location="0.4" Kind="Explore">
+						<DisplayName>寻灵脉</DisplayName>
+						<Desc>外出游历，寻一处灵脉，借其灵息洗炼自身。</Desc>
+						<ExploreValue>1.2</ExploreValue>
+					</Neck>
+					<Neck Location="0.8" Kind="Chance">
+						<DisplayName>充盈</DisplayName>
+						<Desc>灵息涨满，肉身如满弦之弓。[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>Intelligence_1_5_25</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>溢体</DisplayName>
+						<Desc>灵息自毛孔溢出，如水满则溢。</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_S3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 4 境：灵子飞升 -->
+			<Stage Name="Stage4" Level="6">
+				<DisplayName>灵子飞升</DisplayName>
+				<Desc>舍弃凡胎，以灵子重塑形体。此境一过，仙凡两别。</Desc>
+				<Value>5000</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>凝灵子</DisplayName>
+						<Desc>将周身灵息压缩为一枚灵子，如怀珠在腹。[color=#D06508]\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.6</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.5"/>
+						</Damages>
+					</Neck>
+					<Neck Location="0.7" Kind="Chance">
+						<DisplayName>离尘</DisplayName>
+						<Desc>灵子脱去尘埃，肉身沉重之感渐渐远去。</Desc>
+						<CostTime>400</CostTime>
+						<SuccessChange>0.6</SuccessChange>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>飞升</DisplayName>
+						<Desc>灵子破体而出，凡人血肉尽数化为灵质，是为灵体。</Desc>
+						<CostTime>600</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_Fly</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 5 境 -->
+			<Stage Name="Stage5" Level="7">
+				<DisplayName>灵体·凝形</DisplayName>
+				<Desc>灵体初成，尚不稳固，需以灵息反复凝练其形。</Desc>
+				<Value>7000</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>定形</DisplayName>
+						<Desc>灵体轮廓渐渐清晰，不再如烟似雾。[color=#D06508]\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>Physique_1_5_25</SuccessChange>
+						<FailedChangeAdd>0.1</FailedChangeAdd>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>凝实</DisplayName>
+						<Desc>灵体凝实如真身，可触可感。</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_L7</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 6 境 -->
+			<Stage Name="Stage6" Level="8">
+				<DisplayName>灵体·固本</DisplayName>
+				<Desc>灵体既成，须固本培元。此境金丹自凝，道基始立。</Desc>
+				<Value>9500</Value>
+				<Necks>
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>培元</DisplayName>
+						<Desc>以灵息滋养灵体本源，使寿元绵长。[color=#D06508]\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>0.7</SuccessChange>
+						<FailedChangeAdd>0.15</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Organ" Name="VisceralRupture" Rate="0.4"/>
+						</Damages>
+						<AddModifier>WFG_Mod_YanTian_L8</AddModifier>
+					</Neck>
+					<Neck Location="0.8" Kind="Explore">
+						<DisplayName>游神</DisplayName>
+						<Desc>以神识出游离体，观山河之形，悟天地之理。</Desc>
+						<ExploreValue>1.0</ExploreValue>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>凝丹</DisplayName>
+						<Desc>灵体之中精气神合一，凝为一粒灵丹，道基自此永固。</Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 7 境：衍天 -->
+			<Stage Name="Stage7" Level="9">
+				<DisplayName>衍天境</DisplayName>
+				<Desc>神识大成，可窥万物构造之理。此法门至此，方有「衍天」之名。</Desc>
+				<Value>13000</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>洞微</DisplayName>
+						<Desc>神识细入毫芒，能见石中纹理、木里年轮。[color=#D06508]\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>500</CostTime>
+						<SuccessChange>0.6</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.5"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>衍天</DisplayName>
+						<Desc>神识可推演万物生灭之序，自此可解析器物构造、以灵气重铸。</Desc>
+						<CostTime>600</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_Derive</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 8 境：避天机 -->
+			<Stage Name="Stage8" Level="10">
+				<DisplayName>避天机</DisplayName>
+				<Desc>纯阳灵体将成，天道察觉，飞升之劫进入倒计时。此境可修「避天机」之术，将天机遮蔽。</Desc>
+				<Value>30000</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Thunder">
+						<DisplayName>初劫</DisplayName>
+						<Desc>灵体初具纯阳之相，天降雷劫以阻成道。</Desc>
+						<ThunderValue>10000</ThunderValue>
+						<NeckCountdown>4900</NeckCountdown>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					<Neck Location="0.7" Kind="Chance">
+						<DisplayName>遮天</DisplayName>
+						<Desc>以灵子程序遮蔽自身天机，使天道不可察。[color=#D06508]\n突破失败可能会受伤。[/color]</Desc>
+						<CostTime>800</CostTime>
+						<SuccessChange>0.5</SuccessChange>
+						<FailedChangeAdd>0.2</FailedChangeAdd>
+						<Damages>
+							<li PartKind="Meridian" Name="ElixirFieldShock" Rate="0.5"/>
+						</Damages>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>藏机</DisplayName>
+						<Desc>天机尽掩，飞升之劫不再逼近，何时渡劫，只看己心。</Desc>
+						<CostTime>800</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_Guard</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+			<!-- 第 9 境：天门 -->
+			<Stage Name="Stage9" Level="12">
+				<DisplayName>天门</DisplayName>
+				<Desc>灵体圆满，天门已开。渡过此劫即证「在世仙人」，此后留下行道还是登仙离世，皆在一念之间。</Desc>
+				<Value>70000</Value>
+				<Necks>
+					<Neck Location="0.5" Kind="Chance">
+						<DisplayName>叩门</DisplayName>
+						<Desc>以神识叩问天门，门后仙光隐现。[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+						<CostTime>900</CostTime>
+						<SuccessChange>0.5</SuccessChange>
+						<AddModifier>WFG_Mod_YanTian_Final</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="God">
+						<DisplayName>飞升</DisplayName>
+						<Desc>飞升之劫降临。度之则仙途坦荡，败之则灵体崩散。</Desc>
+						<ThunderValue>520000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+
+		</Stages>
+	</Gong>
+</List></Gongs>

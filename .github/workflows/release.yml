@@ -1,0 +1,50 @@
+name: Release
+
+# 打 tag（v2.0.0）即自动打包并发布 Release；也可以在 Actions 页手动跑一次只出构建产物。
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 取源码
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 双端静态体检
+        run: python tools/check_compat.py
+
+      - name: 打包（tag 触发）
+        if: startsWith(github.ref, 'refs/tags/')
+        run: python tools/package_release.py --version "${GITHUB_REF_NAME}" --out dist
+
+      - name: 打包（手动触发）
+        if: "!startsWith(github.ref, 'refs/tags/')"
+        run: python tools/package_release.py --out dist
+
+      - name: 留存构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: mod-package
+          path: dist/
+
+      - name: 发布 Release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            dist/*.zip dist/SHA256SUMS.txt \
+            --title "万法阁 ${GITHUB_REF_NAME}" \
+            --generate-notes
