@@ -308,8 +308,8 @@ function C:Render()
 			col(C_DIM, string.format("（%d × %d）", n, COST))))
 	end
 
-	setTitle(w.LHint1, col(C_LABEL, "服用：立刻恢复 10% 最大灵气；永久 +25% 根本灵气（最多 4 次）"))
-	setTitle(w.LHint2, col(C_LABEL, "佩带：心境 +100　｜　炼制灵析剑 / 灵源剑的核心材料"))
+	setTitle(w.LHint1, col(C_LABEL, "服用：回 10% 灵气；永久 +25% 根本灵气（最多 4 次）；未入门 +1 万筑基"))
+	setTitle(w.LHint2, col(C_LABEL, "佩带：心境 +100、缓慢恢复伤势与气血灵气；两剑核心材料"))
 
 	local zhu = zhuCount(self.npc)
 	setTitle(w.LZhu, string.format("%s：%s",

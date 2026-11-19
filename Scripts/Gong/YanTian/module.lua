@@ -25,6 +25,9 @@ local ningSynced = {}   -- npcId -> true，不入档
 
 local ZHU_MAX = 4
 local ZHU_USE = "WFG_Mod_YanTian_ZhuUse"
+local ZHU_EQUIP = "WFG_Mod_YanTian_ZhuEquip"
+local ZHU_WEAR_HP = 0.003   -- 佩带：每秒回复最大气血的 0.3%
+local ZHU_WEAR_LING = 0.01  -- 佩带：每秒回复最大灵气的 1%
 
 -- 法宝激活：槽位与旧档补条件缓存（均不入档）
 -- 秘宝 Lable=Treasure 由 CheckEquipCell 的 default 分支放进道具槽 Tool1..Tool6（1001..1006）。
@@ -190,6 +193,16 @@ function M:EnsureHallUnlock(npc)
 	if done == #all then hallUnlock[id] = true end
 end
 
+-- GetModifierStack 只注册在 NpcLuaHelper 上，原始 Npc 没有这个方法；
+-- 直接 npc:GetModifierStack 会抛「方法不存在」并被 pcall 吞掉，结果永远是 0。
+local function zhuStack(npc, name)
+	local h = WFG.npc:Helper(npc)
+	if h == nil then return 0 end
+	local ok, v = pcall(function() return h:GetModifierStack(name) end)
+	if not ok or type(v) ~= "number" then return 0 end
+	return math.floor(v)
+end
+
 -- 衍天珠：4 段永久根本灵气，按 c.zhu 逐层补齐/移除
 function M:SyncZhuMods(npc, c)
 	if npc == nil or c == nil then return end
@@ -215,9 +228,7 @@ end
 -- 衍天珠：结算服用标记。每次服用恢复 10% 最大灵气；前 4 次各永久 +25% 根本灵气
 function M:TickZhu(npc)
 	if npc == nil then return end
-	local stack = 0
-	local ok = pcall(function() stack = npc:GetModifierStack(ZHU_USE) or 0 end)
-	if not ok then return end
+	local stack = zhuStack(npc, ZHU_USE)
 
 	local c = self:Char(npc, false)
 	if stack > 0 then
@@ -245,6 +256,29 @@ function M:TickZhu(npc)
 
 	c = c or self:Char(npc, false)
 	if c ~= nil then self:SyncZhuMods(npc, c) end
+end
+
+-- 衍天珠：佩带时的缓慢恢复。伤势交给引擎（Modifier 里的 RecoveryPower 走自然恢复），
+-- 这里只补引擎没有的两项：持续回气血、持续回灵气。
+function M:TickZhuWear(npc)
+	if npc == nil then return end
+	if zhuStack(npc, ZHU_EQUIP) <= 0 then return end
+	local dead = false
+	pcall(function() dead = npc.IsDeath == true end)
+	if dead then return end
+
+	local maxHp = WFG:Prop(npc, "MaxHp", 0)
+	local hp = WFG:Prop(npc, "Hp", 0)
+	if maxHp > 0 and hp < maxHp - 0.01 then
+		local add = maxHp * ZHU_WEAR_HP
+		if add > maxHp - hp then add = maxHp - hp end
+		if add > 0 then pcall(function() npc:AddHealth(add) end) end
+	end
+
+	local maxLing = WFG:MaxLing(npc) or 0
+	if maxLing > 0 then
+		pcall(function() npc:AddLing(maxLing * ZHU_WEAR_LING) end)
+	end
 end
 
 -- 取法宝槽里的物品（槽位不存在时返回 nil）
@@ -427,6 +461,7 @@ function M:OnSecond()
 		self:EnsureHallUnlock(list[i])
 		self:EnsureNingMagic(list[i])
 		self:TickZhu(list[i])
+		self:TickZhuWear(list[i])
 		self:EnsureFabaoCond(list[i])
 		self:TickFabao(list[i])
 		self:EnsureEnergyButton(list[i])

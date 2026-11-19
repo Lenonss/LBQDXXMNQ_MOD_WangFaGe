@@ -67,14 +67,14 @@
 	<ThingDef Type="Item" Name="WFG_Item_YanTianZhu" Parent="DanBase">
 		<ThingName>衍天珠</ThingName>
 		<TexPath>Spr\Object\wfg_item_yantianzhu.png</TexPath>
-		<Desc>衍天诀修士以自身灵气凝练而成的灵珠。服用可瞬间恢复一成最大灵气，并从根本上提高 25% 灵气上限（最多生效 4 次）；佩带可令心境 +100。置于 5×5 范围内（游戏内「范围」显示为半径 2），聚灵效果与最顶级的聚灵物相当。它也是炼制灵析剑、灵源剑的核心材料，每颗需 500 灵气方能凝练。</Desc>
+		<Desc>衍天诀修士以自身灵气凝练而成的灵珠。服用可瞬间恢复一成最大灵气，并从根本上提高 25% 灵气上限（最多生效 4 次）；尚未入门的智慧生灵服用，还能增加筑基值。佩带可令心境 +100，并缓慢恢复伤势、气血与灵气。置于 5×5 范围内（游戏内「范围」显示为半径 2），聚灵效果与最顶级的聚灵物相当。它也是炼制灵析剑、灵源剑的核心材料，每颗需 500 灵气方能凝练。</Desc>
 		<MaxStack>99</MaxStack>
 		<Rate>12</Rate>
 		<Beauty>25</Beauty>
 		<ElementKind>None</ElementKind>
 		<Item Lable="Dan">
 			<Elixir>
-				<DiscipleOnly>1</DiscipleOnly>
+				<ZhuJi>10000</ZhuJi>
 				<Modifier>WFG_Mod_YanTian_ZhuUse</Modifier>
 			</Elixir>
 			<Equip>

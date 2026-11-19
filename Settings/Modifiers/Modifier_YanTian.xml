@@ -183,11 +183,12 @@
 	</Modifier>
 
 	<!-- ============ 衍天诀：衍天珠 · 服用标记 ============ -->
-	<!-- 每次服用叠一层；module 每秒结算后清空，并转为永久加成 -->
+	<!-- 每次服用叠一层（MaxStack>0 才会登记进 m_lisModifiers，否则读不到层数）；
+	     module 每秒按层数结算并清空标记，转为永久加成 -->
 	<Modifier Name="WFG_Mod_YanTian_ZhuUse" Type="Normal">
 		<DisplayName>衍天珠·药力</DisplayName>
 		<Desc></Desc>
-		<MaxStack>0</MaxStack>
+		<MaxStack>99</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 	</Modifier>
@@ -237,15 +238,16 @@
 		</Properties>
 	</Modifier>
 
-	<!-- ============ 衍天诀：衍天珠 · 佩带心境 ============ -->
+	<!-- ============ 衍天诀：衍天珠 · 佩带心境与恢复 ============ -->
 	<Modifier Name="WFG_Mod_YanTian_ZhuEquip" Type="Normal">
 		<DisplayName>衍天珠</DisplayName>
-		<Desc>佩带衍天珠，心境 +100。</Desc>
+		<Desc>佩带衍天珠：心境 +100，缓慢恢复伤势，并持续回复气血与灵气。</Desc>
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
 			<li Name="MindStateBaseValue" AddV="100"/>
+			<li Name="RecoveryPower" AddP="0.5"/>
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
