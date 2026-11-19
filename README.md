@@ -4,7 +4,7 @@
 
 ## 下载与安装
 
-到 [Releases](https://github.com/Lenonss/LBQDXXMNQ_MOD_WangFaGe/releases) 下载最新的 `万法阁_vX.Y.Z.zip`，解压得到 `万法阁/` 文件夹，整份放进游戏的 Mods 目录，进游戏「模组」勾选后**重启游戏**。
+到 [Releases](https://github.com/Lenonss/LBQDXXMNQ_MOD_WangFaGe/releases) 下载最新的 `WangFaGe_vX.Y.Z.zip`（资源包文件名是 ASCII，解压后仍是 `万法阁/` 文件夹），整份放进游戏的 Mods 目录，进游戏「模组」勾选后**重启游戏**。
 
 - **PC**：`...\Steam\steamapps\common\AmazingCultivationSimulator\Mods\万法阁\`
 - **安卓**：`/storage/emulated/0/Android/data/com.GSQ.XiaWorld.googleplay/files/Mods/万法阁/`
@@ -141,7 +141,7 @@
 
 ```bash
 python tools/check_compat.py          # 双端静态体检：编码/BOM、反斜杠路径、资源大小写、触屏风险清单
-python tools/package_release.py       # 打 dist/万法阁_vX.Y.Z.zip 与 dist/SHA256SUMS.txt
+python tools/package_release.py       # 打 dist/WangFaGe_vX.Y.Z.zip 与 dist/SHA256SUMS.txt
 python tools/bump_version.py 2.1.0    # 改版本号（Info.json Version=210）
 python tools/deploy.py                # 开发期覆盖同步到本机游戏 Mods
 python tools/verify_deploy.py         # 逐文件 SHA-256 比对

@@ -7,7 +7,8 @@
 
 产物：
     dist/万法阁/                 # 与游戏 Mods 目录内结构一致的展开目录
-    dist/万法阁_v2.0.0.zip       # 解压后得到 万法阁/ 目录，直接丢进 Mods
+    dist/WangFaGe_v2.0.0.zip    # 解压后得到 万法阁/ 目录，直接丢进 Mods
+                                # （外层文件名为纯 ASCII，GitHub 上传不会丢字符）
     dist/SHA256SUMS.txt          # 每个产物的 SHA-256
 
 只打游戏运行所需内容（与 tools/deploy.py 的 PAYLOAD 一致），docs/tools/res 不进包。
@@ -22,6 +23,9 @@ import zipfile
 
 SRC_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAYLOAD = ["Info.json", "Preview.png", "README.md", "Settings", "Scripts", "Resources"]
+
+# Release 资产文件名必须是纯 ASCII：gh 在 C locale 的 runner 上传时会吞掉非 ASCII 字符
+ZIP_PREFIX = "WangFaGe"
 
 
 def read_info():
@@ -81,7 +85,7 @@ def main():
         shutil.copy2(full, dst)
         count += 1
 
-    zip_path = os.path.join(out_dir, "%s_%s.zip" % (mod_name, tag))
+    zip_path = os.path.join(out_dir, "%s_%s.zip" % (ZIP_PREFIX, tag))
     if os.path.exists(zip_path):
         os.remove(zip_path)
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
