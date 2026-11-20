@@ -59,7 +59,7 @@
 
 	<!-- 衍天诀 · 衍天能源中心（奇观：灵玉峰形制） -->
 	<ThingDef Type="Building" Name="WFG_Build_HallEng" Parent="OrnamentBase">
-		<TexPath>Spr\Object\wfg_building_lingyufeng.png</TexPath>
+		<TexPath>Spr\Object\wfg_building_halleng.png</TexPath>
 		<TexScale>1</TexScale>
 		<ThingName>衍天能源中心</ThingName>
 		<Desc>以灵玉峰形制筑成的奇观，可蓄大量灵气供衍天诀修士存取。点击建筑上的「管理」选择交互角色，即可管理该角色自己的取用参数。选择「万法阁·衍天传人」经历后自动解锁；建造需衍天珠 ×9 与任意金属锭 ×999。</Desc>

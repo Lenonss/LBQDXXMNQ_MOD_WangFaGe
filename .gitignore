@@ -15,3 +15,6 @@ __pycache__/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# 本机素材工作区（AI 原图、切图脚本，不进仓库）
+_art/

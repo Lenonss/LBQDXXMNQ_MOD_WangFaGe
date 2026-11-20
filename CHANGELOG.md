@@ -1,5 +1,17 @@
 # 更新日志
 
+## v2.1.1（2026-11-20）
+
+### 美术
+- 三柄本命飞剑换上专属外观：灵析剑 / 灵源剑 / 灵道剑各有 128×128 背包图标（`wfg_item_<k>_jian.png`）与法宝图（`wfg_fabao_<k>_jian.png`），`Item_YanTian.xml` 的 `TexPath` / `FabaoTexPath` 不再复用原版 `object_PTjian01` / `object_MBjian01`。
+- 衍天能源中心换成独立外观 `wfg_building_halleng.png`（553×980，与灵玉峰同尺寸基准），不再与灵玉峰共用一张贴图。
+
+### 修复
+- 本命飞剑落在地面上显示过大（约 4.2 个世界单位）：实测 `<TexScale>` 对物品不生效（`RenderPool.cs:616` 的 `Sprite.Create` 固定 100 PPU，`ItemView.cs:23` 虽乘 `def.TexScale`，实际仍按 `Item_Base` 的 0.8 渲染）。改为把法宝图裁到内容包围盒、内容高统一 100 px（39×104 / 20×104 / 51×104），并移除三处无效的 `<TexScale>`，现与原版法宝同量级。
+
+### 说明
+- 高清原图留在本机 `_art/fabao_hi_*.png`；`_art/` 是本机素材工作区，已加入 `.gitignore`，不进仓库。
+
 ## v2.1.0（2026-11-20）
 
 ### 新增
