@@ -69,6 +69,7 @@ function M:Char(npc, create)
 			heal  = 0,    -- 自愈程序开关
 			guard = 0,    -- 避天机开关（学没学会看秘籍，这里是玩家是否启用主动渡劫入口）
 			zhu   = 0,    -- 已服用的衍天珠（0..4，每层 +25% 根本灵气）
+			ld    = 0,    -- 灵道剑：存入剑中的道行（属于修士自身，换剑/易主不迁移）
 			fabao = { mode = 1, x = 0, limit = 0, used = 0, burst = 0 },
 		}
 		self.store.char[id] = c
@@ -292,7 +293,7 @@ end
 local function isOurFabao(dn)
 	local def = D()
 	if def == nil or def.item == nil or dn == nil then return false end
-	return dn == def.item.hallMat or dn == def.item.hallEng
+	return dn == def.item.hallMat or dn == def.item.hallEng or dn == def.item.lingDao
 end
 
 -- 兼容认主后的通用 FightFaBao：原定义名保存在 Fabao.Oitem 上
@@ -454,6 +455,191 @@ function M:EnsureEnergyButton(npc)
 	end
 end
 
+	-- 灵道剑：把自身道行存入剑中，换取无上限的法宝威力加成
+	--
+	-- 加成只能走 NPC 属性 NpcFight_FabaoPowerAddP（FabaoBase.GetPower 会乘 1+该值）：
+	-- FabaoData 没有 XLua 包装（XLua_Gen 只注册 ItemThing），it.Fabao 取 metatable 就会抛异常，
+	-- 单件法宝的 AttackPower 在 Lua 侧改不了。修正器「先移除、再按 scale 加回」即精确设值，
+	-- 每秒复核一次，换剑 / 转功法 / 读档均幂等。
+	local LINGDAO_BTN = "灵道剑"
+
+	local function lingDaoCfg()
+		local def = D()
+		return (def and def.lingDao) or {}
+	end
+
+	-- 只读基础道行（不含 AbilityLvAddV 加值），避免钳制按含加值的数算、扣的却是基础值
+	local function daoHangOf(p)
+		if p == nil then return 0 end
+		local v = nil
+		pcall(function() v = tonumber(p.DaoHang) end)
+		if v == nil then
+			local ok, g = pcall(function() return p:GetDaoHang() end)
+			if ok then v = tonumber(g) end
+		end
+		v = tonumber(v) or 0
+		if v < 0 then v = 0 end
+		return math.floor(v)
+	end
+
+	function M:LingDaoAddp(ld)
+		local rate = tonumber(lingDaoCfg().rate) or 0.01
+		ld = math.floor(tonumber(ld) or 0)
+		if ld <= 0 then return 0 end
+		return ld * rate
+	end
+
+	function M:LingDaoStored(npc)
+		if npc == nil then return 0 end
+		local id = WFG.npc:Id(npc)
+		local c = id and self.store.char[id]
+		return (c and tonumber(c.ld)) or 0
+	end
+
+	function M:HasLingDaoEquipped(npc)
+		if npc == nil then return false end
+		local def = D()
+		local target = def and def.item and def.item.lingDao
+		if target == nil then return false end
+		for i = 1, #FABAO_SLOTS do
+			local it = fabaoAt(npc, FABAO_SLOTS[i])
+			if it ~= nil and matchOurFabao(it) == target then return true end
+		end
+		return false
+	end
+
+	-- 生效条件：衍天诀 + 灵道剑在法宝格（认主由 EnsureFabaoCond / TickFabao 维护）
+	function M:LingDaoActive(npc)
+		if npc == nil then return false end
+		local ok, g = pcall(function() return WFG.npc:GetGongName(npc) end)
+		if not ok or g ~= self.gong then return false end
+		return self:HasLingDaoEquipped(npc)
+	end
+
+	function M:SyncLingDao(npc, force)
+		if npc == nil then return end
+		local cfg = lingDaoCfg()
+		local name = cfg.mod
+		if name == nil then return end
+		local c = self:Char(npc, true)
+		if c == nil then return end
+		local want = 0
+		if self:LingDaoActive(npc) then want = self:LingDaoAddp(c.ld) end
+		local cur = tonumber(c.ldAddp) or 0
+		local eps = tonumber(cfg.eps) or 0.005
+		if (not force) and math.abs(want - cur) < eps then return end
+		pcall(function() npc:RemoveModifier(name) end)
+		if want > 0 then
+			-- XML 里 AddV=1，scale 直接就是「+want」（want=5 即 +500%）
+			local ok, err = pcall(function() npc.PropertyMgr:AddModifier(name, want) end)
+			if not ok then
+				WFG:Error("yantian.lingdao", "修正器写入失败：" .. tostring(err))
+				return
+			end
+		end
+		c.ldAddp = (want > 0) and want or nil
+	end
+
+	function M:DepositLingDao(npc, n)
+		if npc == nil then return 0, "没有角色" end
+		if not self:LingDaoActive(npc) then return 0, "需佩带并认主灵道剑" end
+		n = math.floor(tonumber(n) or 0)
+		if n <= 0 then return 0, "请先选择要存入的道行" end
+		local c = self:Char(npc, true)
+		if c == nil then return 0, "无法读取角色数据" end
+		local p = WFG.npc:Practice(npc)
+		if p == nil then return 0, "无法读取道行" end
+		local base = daoHangOf(p)
+		if base <= 0 then return 0, "没有可存入的道行" end
+		if n > base then n = base end
+		WFG:Safe(function() p:AddDaoHang(-n) end)
+		local moved = base - daoHangOf(p)
+		if moved <= 0 then return 0, "没有可存入的道行" end
+		c.ld = math.max(0, (tonumber(c.ld) or 0) + moved)
+		self:SyncLingDao(npc, true)
+		return moved
+	end
+
+	function M:WithdrawLingDao(npc, n)
+		if npc == nil then return 0, "没有角色" end
+		local c = self:Char(npc, true)
+		if c == nil then return 0, "无法读取角色数据" end
+		local cap = math.max(0, math.floor(tonumber(c.ld) or 0))
+		if cap <= 0 then return 0, "剑中没有存道" end
+		n = math.floor(tonumber(n) or 0)
+		if n <= 0 then return 0, "请先选择要取回的道行" end
+		if n > cap then n = cap end
+		local p = WFG.npc:Practice(npc)
+		if p == nil then return 0, "无法读取道行" end
+		local before = daoHangOf(p)
+		WFG:Safe(function() p:AddDaoHang(n) end)
+		local moved = daoHangOf(p) - before
+		if moved <= 0 then return 0, "取回道行失败" end
+		c.ld = math.max(0, cap - moved)
+		self:SyncLingDao(npc, true)
+		return moved
+	end
+
+	function M:TickLingDao(npc)
+		local id = WFG.npc:Id(npc)
+		local c = id and self.store.char[id]
+		if c == nil and not self:HasLingDaoEquipped(npc) then return end
+		self:SyncLingDao(npc, false)
+	end
+
+	-- 佩带灵道剑、或剑外仍有存道时，角色指令栏出现「灵道剑」；
+	-- 后者保证剑被毁 / 转手后仍能把道行取回来。
+	function M:EnsureLingDaoButton(npc)
+		if npc == nil then return end
+		local want = self:HasLingDaoEquipped(npc) or self:LingDaoStored(npc) > 0
+		local has = false
+		local okN, n = pcall(function() return npc:GetLuaBtnCount() end)
+		if okN and type(n) == "number" then
+			for i = 0, n - 1 do
+				local okD, d = pcall(function() return npc:GetLuaBtnData(i) end)
+				if okD and d ~= nil and d.name == LINGDAO_BTN then has = true break end
+			end
+		end
+		if want and not has then
+			pcall(function()
+				npc:AddSaveBtnData(LINGDAO_BTN, "res/Sprs/ui/icon_hand",
+					"WFG.ui.lingdao:OpenNpc(bind)",
+					"存入或取回自身道行；每 1 点存道 +1% 法宝威力，无上限。")
+			end)
+		elseif (not want) and has then
+			pcall(function() npc:RemoveBtnData(LINGDAO_BTN) end)
+		end
+	end
+
+	-- 旧档兼容：秘籍的 <Fabaos> 只在「学会的那一刻」写进角色（EsotericaMgr.cs:466-472），
+	-- 已学过总纲的旧档角色不会因 XML 新增配方而拿到灵道剑，这里按「是否学过总纲」补发。
+	-- LearnFabaoFormulas 本身幂等（已存在返回 false），所以每秒调用没有副作用。
+	function M:EnsureFabaoFormula(npc)
+		if npc == nil then return end
+		if WFG.npc:GetGongName(npc) ~= self.gong then return end
+		local okP, p = pcall(function() return WFG.npc:Practice(npc) end)
+		if not (okP and p) then return end
+		local cfg = lingDaoCfg()
+		-- 正确判定：参悟树节点（LearnedTreeV 以 <Node Name> 为键，实时更新）
+		local okT, learned = pcall(function() return p:IsLearnedTreeUnit(cfg.tree) end)
+		if not (okT and learned) then
+			-- 兜底：总纲也可能是通过秘籍物品学到的，再按秘籍定义名试一次
+			local okE, e = pcall(function() return p:CheckIsLearnEsotericaDisplayName(cfg.eso) end)
+			if not (okE and e) then
+				local c = self:Char(npc)
+				if c and not c.ldDiag then
+					c.ldDiag = true
+					print("[WFG] 灵道剑：" .. tostring(npc:GetName()) .. " 未检测到总纲（tree=" .. tostring(okT and learned) .. "），跳过配方补发")
+				end
+				return
+			end
+		end
+		local okL, added = pcall(function() return p:LearnFabaoFormulas(cfg.formula) end)
+		if okL and added then
+			print("[WFG] 灵道剑：已为 " .. tostring(npc:GetName()) .. " 补学炼制配方")
+		end
+	end
+
 function M:OnSecond()
 	self:EnsureStep()
 	local list = WFG.npc.list or {}
@@ -465,6 +651,9 @@ function M:OnSecond()
 		self:EnsureFabaoCond(list[i])
 		self:TickFabao(list[i])
 		self:EnsureEnergyButton(list[i])
+		self:TickLingDao(list[i])
+		self:EnsureLingDaoButton(list[i])
+		self:EnsureFabaoFormula(list[i])
 	end
 	-- 衍天佩：只同步被动与主动神通按钮，不施法
 	local pei = WFG.YanTian and WFG.YanTian.pei
@@ -528,6 +717,7 @@ function M:OnSave()
 			heal  = c.heal or 0,
 			guard = c.guard or 0,
 			zhu   = c.zhu or 0,
+			ld    = c.ld or 0,
 			path  = c.path,
 			fabao = {
 				mode  = (c.fabao and c.fabao.mode) or 1,
@@ -596,6 +786,7 @@ function M:OnLoad(tb)
 			heal  = c.heal or 0,
 			guard = c.guard or 0,
 			zhu   = c.zhu or 0,
+			ld    = tonumber(c.ld) or 0,
 			path  = c.path,
 			fabao = c.fabao or { mode = 1, x = 0, limit = 0, used = 0, burst = 0 },
 			terminal = c.terminal or {},
@@ -610,6 +801,8 @@ function M:OnAfterLoad()
 	ningSynced = {}
 	fabaoCond = {}
 	fabaoWarned = {}
+	-- 修正器缓存不入档：读档后按存道重算，避免旧档残留导致重复加成
+	for _, c in pairs(self.store.char) do c.ldAddp = nil; c.ldDiag = nil end
 	WFG.npc:ClearCache()
 end
 

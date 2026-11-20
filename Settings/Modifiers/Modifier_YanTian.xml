@@ -182,6 +182,19 @@
 		</Properties>
 	</Modifier>
 
+	<!-- ============ 衍天诀：本命法宝 · 灵道剑（存道加成） ============ -->
+	<!-- AddV=1 × AddModifier 的 scale = 法宝威力加成（0.01 即 +1%）。MaxStack 必须 >0 才会登记。 -->
+	<Modifier Name="WFG_Mod_YanTian_LingDao" Type="Normal">
+		<DisplayName>灵道剑·道基</DisplayName>
+		<Desc>以自身道行喂剑。剑内存道越多，法宝威力越强，无上限；加成作用于佩者全部法宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="1"/>
+		</Properties>
+	</Modifier>
+
 	<!-- ============ 衍天诀：衍天珠 · 服用标记 ============ -->
 	<!-- 每次服用叠一层（MaxStack>0 才会登记进 m_lisModifiers，否则读不到层数）；
 	     module 每秒按层数结算并清空标记，转为永久加成 -->

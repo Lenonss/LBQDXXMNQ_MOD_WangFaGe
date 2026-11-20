@@ -96,6 +96,21 @@ D.fabao = {
 	defaultBurst = 10000,        -- 充满获取：一次取用灵气量
 }
 
+-- 灵道剑：把自身道行存入剑中，换取「每 point 无上限」的法宝威力加成
+-- addp = 存道 * rate；scale 直接写进修正器，所以不需要封顶/收敛
+D.lingDao = {
+	mod  = "WFG_Mod_YanTian_LingDao",   -- NpcFight_FabaoPowerAddP 修正器（AddV=1）
+	rate = 0.01,                          -- 每 1 点存道 +1% 法宝威力
+	eps  = 0.005,                         -- 变化小于 0.5% 不重设修正器，省得每秒抖动
+	formula = "WFG_Formula_LingDaoJian",  -- 官方炼器配方
+	-- 兼容旧档：秘籍的 <Fabaos> 只在「学会的那一刻」写进角色（EsotericaMgr.cs:466-472），
+	-- 之后往 XML 新增配方不会补发，所以按「是否学过总纲」给老角色补学。
+	-- 判定只能用参悟树节点名：EsotericaV / LearnedEsotericaList 都以「秘籍实例 ID」为键，
+	-- 传定义名永远 false；LearnedTreeV 以 <Node Name> 为键且实时更新（NpcPractice.cs:1058/1075）。
+	eso  = "WFG_Eso_YanTian_Fabao",
+	tree = "WFG_Tree_YanTian_D0",  -- 授予总纲的参悟树节点（本命法宝，Dan1）
+}
+
 -- 储灵兜底：原版多数工具/材料的 ThingDef.LingMax 为 0，
 -- 这类物品按「每件 lingFallback」给一个功法侧上限（造物时临时抬高 def 上限写入）。
 D.lingFallback = 100
@@ -105,6 +120,7 @@ D.item = {
 	hallMat  = "WFG_Item_HallMatFabao",   -- 共享素材库（终端法宝）
 	hallEng  = "WFG_Item_HallEngFabao",   -- 共享能源核心（终端法宝）
 	lingStone = "Item_LingStone",         -- 能源核心炼制前置：素材库需含灵石
+	lingDao  = "WFG_Item_LingDaoJian",   -- 灵道剑（纳道行）
 }
 
 D.build = {

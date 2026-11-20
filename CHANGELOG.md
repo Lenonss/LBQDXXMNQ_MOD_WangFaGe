@@ -1,5 +1,21 @@
 # 更新日志
 
+## v2.1.0（2026-11-20）
+
+### 新增
+- 专属秘宝「灵道剑」（`WFG_Item_LingDaoJian`）：本命法宝·总纲解锁第三柄本命飞剑配方，材料 **衍天珠 ×1 + 灵石 ×49**，走官方法宝炼制（Level 20 必成）。
+- 道行存取：佩带并认主后，衍天诀角色指令栏出现「灵道剑」，可把自身道行存入剑内或取回；存道上限为当前道行，取回上限为剑内存储。
+- 威力成长：每 1 点存道 +1% 法宝威力，**无上限**；加成通过角色级 `NpcFight_FabaoPowerAddP` 生效，因此作用于佩者全部法宝。
+- 存道归属修士（存档字段 `ld`），换剑、卸下或转修他法都不会丢失；未佩剑或转修时加成失效，但随时可取回。
+
+### 说明
+- 引擎限制：XLua 未导出 `FabaoData`，法宝特殊能力枚举也不可扩展，偷天七绝针的 `AgeAddPowerUp` 无法照搬为物品级能力，改用动态修正器实现同等效果。
+- 灵道剑与灵析剑/灵源剑共用剑形贴图（`object_PTjian01` / `object_MBjian01`）。
+- 旧档补发：秘籍的 `<Fabaos>` 只在学会瞬间写入角色，已学过总纲的老存档由 `module.lua` 的 `EnsureFabaoFormula` 每秒检查参悟树节点（`IsLearnedTreeUnit("WFG_Tree_YanTian_D0")`）并调用 `LearnFabaoFormulas`（幂等）补学灵道剑配方；新增物品与配方定义仍需完全重启游戏才会加载。
+- 判定键坑：`IsLearnedEsoterica` / `CheckIsLearnEsotericaDisplayName` 都以「秘籍实例 ID」为键（`NpcPractice.cs:1149`、`:1817-1838`、`:751-767`），传 XML 定义名恒为 false，因此不能用定义名判定是否学过总纲。
+- 按钮事件挂载失败修正：灵道剑窗里调用了仓库中并不存在的全局 `cb0`，异常被挂载函数的 pcall 吞掉，导致按钮全部「看得见、点不动」。该文件内补上 `local function cb0`，并让挂载失败写 `WFG:Error` 与提示框，不再静默。
+- 灵道剑界面只用已在灵析剑/灵源剑界面中实机验证过的 FairyGUI 原语（`browser` 壳、`MakeFlatButton`、`GRichTextField`、`AddClick`），不使用仓库内未经上机验证的 `Scripts/WFG/ui/kit.lua`；数量调节改为 ±1/±10/±100/±1000/一半/全部/清零按钮，不用滑块。
+
 ## v2.0.1（2026-11-19）
 
 ### 修复

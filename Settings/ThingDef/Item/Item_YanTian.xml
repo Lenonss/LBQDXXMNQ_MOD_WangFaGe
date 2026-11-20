@@ -62,12 +62,43 @@
 		</Element>
 	</ThingDef>
 
+	<!-- 衍天诀 · 第三柄本命飞剑：灵道剑（纳道行，剑威无上限） -->
+	<ThingDef Type="Item" Name="WFG_Item_LingDaoJian" Parent="MiBaoBase">
+		<ThingName>灵道剑</ThingName>
+		<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>
+		<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>
+		<Desc>衍天诀修士以自身道行为锋铸成的本命飞剑。佩带并认主后，角色指令栏会多出「灵道剑」：可把自身道行存入剑中，也可随时取回。每存入 1 点道行，法宝威力加成 +1%，没有上限——存得越深，剑威越盛。该加成作用于佩者的全部法宝；代价是那些道行被剑占住，不能再用于修行。存道刻在修士自身而非剑上，换剑或易主不会带走道基；转修他法后加成失效，但仍可取回存道。唯修衍天诀者可炼可用。</Desc>
+		<ElementKind>None</ElementKind>
+		<Item Kind="Equipment">
+			<PhysicalLables>
+				<li>SmallThing</li>
+				<li>Sharp</li>
+				<li>Hard2</li>
+				<li>GreatThing_Attack</li>
+			</PhysicalLables>
+			<BeMade>
+				<CostItems>
+					<Item name="WFG_Item_YanTianZhu" count="1"/>
+					<Item name="Item_LingStone" count="49"/>
+				</CostItems>
+			</BeMade>
+			<Fabao>
+				<ActiveCondition>
+					<Condition eventid="Other" des="修行衍天诀" needcount="1"/>
+				</ActiveCondition>
+			</Fabao>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+		</Element>
+	</ThingDef>
+
 
 	<!-- 衍天诀 · 凝练素材：衍天珠 -->
 	<ThingDef Type="Item" Name="WFG_Item_YanTianZhu" Parent="DanBase">
 		<ThingName>衍天珠</ThingName>
 		<TexPath>Spr\Object\wfg_item_yantianzhu.png</TexPath>
-		<Desc>衍天诀修士以自身灵气凝练而成的灵珠。服用可瞬间恢复一成最大灵气，并从根本上提高 25% 灵气上限（最多生效 4 次）；尚未入门的智慧生灵服用，还能增加筑基值。佩带可令心境 +100，并缓慢恢复伤势、气血与灵气。置于 5×5 范围内（游戏内「范围」显示为半径 2），聚灵效果与最顶级的聚灵物相当。它也是炼制灵析剑、灵源剑的核心材料，每颗需 500 灵气方能凝练。</Desc>
+		<Desc>衍天诀修士以自身灵气凝练而成的灵珠。服用可瞬间恢复一成最大灵气，并从根本上提高 25% 灵气上限（最多生效 4 次）；尚未入门的智慧生灵服用，还能增加筑基值。佩带可令心境 +100，并缓慢恢复伤势、气血与灵气。置于 5×5 范围内（游戏内「范围」显示为半径 2），聚灵效果与最顶级的聚灵物相当。它也是炼制灵析剑、灵源剑与灵道剑的核心材料，每颗需 500 灵气方能凝练。</Desc>
 		<MaxStack>99</MaxStack>
 		<Rate>12</Rate>
 		<Beauty>25</Beauty>

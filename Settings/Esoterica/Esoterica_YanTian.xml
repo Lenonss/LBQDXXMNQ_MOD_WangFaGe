@@ -78,15 +78,16 @@
 		<Icon>res/Sprs/ui/icon_jichu</Icon>
 		<StarLevel>2</StarLevel>
 		<Difficulty>1</Difficulty>
-		<Desc>灵体修士以自身灵子炼就本命法宝之法。灵体每进一步，可多炼一件。总纲载有两柄本命飞剑：灵析剑司素材，灵源剑司能源。</Desc>
+		<Desc>灵体修士以自身灵子炼就本命法宝之法。灵体每进一步，可多炼一件。总纲载有三柄本命飞剑：灵析剑司素材，灵源剑司能源，灵道剑纳道行。</Desc>
 		<GLevel>Dan1</GLevel>
 		<Element>None</Element>
 		<Type>Skill</Type>
 		<Fabaos>
 			<li>WFG_Formula_HallMat</li>
 			<li>WFG_Formula_HallEng</li>
+			<li>WFG_Formula_LingDaoJian</li>
 		</Fabaos>
-		<EffectDesc>[size=10][color=#D06508]解锁官方法宝炼制配方：灵析剑、灵源剑。炼成后装入本命法宝格并完成认主，才会开启对应功能：灵析剑自动同步个人素材库与衍天数据中心；灵源剑可存取衍天能源中心的灵气。两剑只对衍天诀修士生效，佩带后大幅提升各项属性；法宝格随境界提升。\n共享素材库与共享能源核心的管理入口在两座奇观建筑上，点击建筑上的「管理」即可打开。[/color][/size]</EffectDesc>
+		<EffectDesc>[size=10][color=#D06508]解锁官方法宝炼制配方：灵析剑、灵源剑、灵道剑。炼成后装入本命法宝格并完成认主，才会开启对应功能：灵析剑自动同步个人素材库与衍天数据中心；灵源剑可存取衍天能源中心的灵气；灵道剑纳道行——佩带认主后，角色指令栏出现「灵道剑」按钮，可把自身道行存入剑中或取回，每 1 点存道 +1% 法宝威力，没有上限，加成作用于佩者的全部法宝。三剑只对衍天诀修士生效，佩带后大幅提升各项属性；法宝格随境界提升。\n共享素材库与共享能源核心的管理入口在两座奇观建筑上，点击建筑上的「管理」即可打开。[/color][/size]</EffectDesc>
 	</Esoterica>
 
 	<Esoterica Name="WFG_Eso_YanTian_Guard">

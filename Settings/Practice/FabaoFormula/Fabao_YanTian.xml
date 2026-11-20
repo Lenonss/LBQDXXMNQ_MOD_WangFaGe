@@ -18,4 +18,13 @@
 		<Count>1</Count>
 	</Fabao>
 
+	<!-- 衍天诀 · 灵道剑（纳道行） -->
+	<Fabao Name="WFG_Formula_LingDaoJian">
+		<Normal>0</Normal>
+		<ItemName>WFG_Item_LingDaoJian</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
 </List></FabaoFormulas>
