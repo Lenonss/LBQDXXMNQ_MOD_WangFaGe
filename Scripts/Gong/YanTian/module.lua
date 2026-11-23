@@ -204,6 +204,45 @@ local function zhuStack(npc, name)
 	return math.floor(v)
 end
 
+-- 佩带效果对账用：引擎卸下时按 Modifier 名做 FindAll + Kill（acs_src NpcEquipData.cs:1115 ->
+-- NpcPropertyMgr.cs:981-1003），多颗珠共用同名实例，于是「戴两颗、卸一颗」会把剩下那颗的
+-- 心境/伤势恢复/层数一起清掉。每秒核对一次：还戴着珠却没有生效中的实例，就补挂回来。
+local ZHU_ITEM = "WFG_Item_YanTianZhu"
+local ZHU_TOOL_SLOTS = { 1001, 1002, 1003, 1004, 1005, 1006 }
+local zhuRepair = {}   -- npcId -> true，补挂日志只报一次（不入档）
+
+-- 佩带 Modifier 当前是否生效（死实例在 NpcPropertyMgr.RemoveNotVaild 里同帧清掉，这里只判一次）
+local function zhuEquipAlive(npc)
+	local ok, m = pcall(function() return npc.PropertyMgr:FindModifier(ZHU_EQUIP) end)
+	if not ok then return nil end
+	if m == nil then return false end
+	local okv, v = pcall(function() return m.IsVaild end)
+	if not okv then return nil end
+	return v == true
+end
+
+-- 道具槽 1001..1006 里还剩几颗衍天珠（Dan 不入法宝槽，走 GetToolEquipCell）
+local function zhuWornCount(npc)
+	local n = 0
+	for i = 1, #ZHU_TOOL_SLOTS do
+		local ok, it = pcall(function() return npc.Equip:GetEquip(ZHU_TOOL_SLOTS[i]) end)
+		if ok and it ~= nil then
+			local okd, dn = pcall(function() return WFG.item:DefName(it) end)
+			if okd and dn == ZHU_ITEM then n = n + 1 end
+		end
+	end
+	return n
+end
+
+-- 与引擎装备时同口径：1 * 品级值 + 「强化装备 Modifier」标记（通灵兽，g_emNpcSpecailFlag=10042）
+local function zhuEquipScale(npc)
+	local okf, flag = pcall(function()
+		return npc:CheckSpecialFlag(CS.XiaWorld.g_emNpcSpecailFlag.UpgradeEquipModifier)
+	end)
+	if okf and type(flag) == "number" and flag > 0 then return 1 + flag end
+	return 1
+end
+
 -- 衍天珠：4 段永久根本灵气，按 c.zhu 逐层补齐/移除
 function M:SyncZhuMods(npc, c)
 	if npc == nil or c == nil then return end
@@ -259,11 +298,27 @@ function M:TickZhu(npc)
 	if c ~= nil then self:SyncZhuMods(npc, c) end
 end
 
+-- 衍天珠：佩带效果是否生效；失效但仍戴着就补挂（多戴卸一颗的连坐 Kill）。
+function M:EnsureZhuEquip(npc)
+	local alive = zhuEquipAlive(npc)
+	if alive == true or (alive == nil and zhuStack(npc, ZHU_EQUIP) > 0) then return true end
+	local worn = zhuWornCount(npc)
+	if worn <= 0 then return false end
+	pcall(function() npc:AddModifier(ZHU_EQUIP, zhuEquipScale(npc)) end)
+	local id = WFG.npc:Id(npc)
+	if id ~= nil and not zhuRepair[id] then
+		zhuRepair[id] = true
+		WFG:Log("[衍天珠] %s 仍佩带 %d 颗，佩带效果被卸下的那颗连带清除，已自动恢复",
+			WFG.npc:GetName(npc), worn)
+	end
+	return true
+end
+
 -- 衍天珠：佩带时的缓慢恢复。伤势交给引擎（Modifier 里的 RecoveryPower 走自然恢复），
 -- 这里只补引擎没有的两项：持续回气血、持续回灵气。
 function M:TickZhuWear(npc)
 	if npc == nil then return end
-	if zhuStack(npc, ZHU_EQUIP) <= 0 then return end
+	if not self:EnsureZhuEquip(npc) then return end
 	local dead = false
 	pcall(function() dead = npc.IsDeath == true end)
 	if dead then return end
@@ -679,6 +734,7 @@ function M:OnLeave()
 	ningSynced = {}
 	fabaoCond = {}
 	fabaoWarned = {}
+	zhuRepair = {}
 	if WFG.YanTian and WFG.YanTian.hall and WFG.YanTian.hall.ClearAllBuffs then
 		WFG.YanTian.hall:ClearAllBuffs(self)
 	end

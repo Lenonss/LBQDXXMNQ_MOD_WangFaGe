@@ -123,12 +123,20 @@ function P:Sync(npc)
 		local want = equipped and learned
 
 		if s.mod ~= nil then
+			-- 不信内存缓存：Modifier 可能被引擎（跨地图打包 ClearNoSyncModifier、
+			-- 同名 RemoveModifier 全杀、死亡清理）外部撤掉，必须实测存活才跳过补挂。
+			local alive = false
+			local okf, mb = pcall(function() return npc.PropertyMgr:FindModifier(s.mod) end)
+			if okf and mb ~= nil then
+				local okv, v = pcall(function() return mb.IsVaild end)
+				alive = (not okv) or v == true
+			end
 			if want then
-				if not st.mods[id][s.mod] then
+				if not alive then
 					local ok = pcall(function() npc:AddModifier(s.mod) end)
 					if ok then st.mods[id][s.mod] = true end
 				end
-			elseif st.mods[id][s.mod] or first then
+			elseif alive or st.mods[id][s.mod] or first then
 				delMod(npc, s.mod)
 				st.mods[id][s.mod] = nil
 			end

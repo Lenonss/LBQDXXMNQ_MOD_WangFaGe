@@ -16,11 +16,13 @@
 
 	<Experience Name="WFG_Exp_StarterLingStone">
 		<DisplayName>万法阁·衍天遗泽</DisplayName>
-		<Desc>老者在你的行囊里留下了些许「灵子结晶」。它们本是天地间游离的灵子凝成的石头，寻常修士只当是货币，衍天诀的传人却能将其中的灵子抽出、分解为万物的构造。\n\n\n[size=10]初始增加物资：[color=#D06508]灵石 ×300[/color]。\n（衍天解析需要消耗大量灵气，灵石可在前期应急补充。）[/size]</Desc>
+		<Desc>老者在你的行囊里留下了些许「灵子结晶」。它们本是天地间游离的灵子凝成的石头，寻常修士只当是货币，衍天诀的传人却能将其中的灵子抽出、分解为万物的构造。\n\n\n[size=10]初始增加物资：[color=#D06508]灵石 ×300、衍天珠 ×4、衍天佩 ×4[/color]。\n（衍天解析需要消耗大量灵气，灵石可在前期应急补充；衍天珠可服用强化根本灵气、佩戴则温养心神与伤势，多颗同时佩戴只生效一份，卸下一颗会连带取消佩戴效果（1 秒内自动恢复）；衍天佩随衍天诀已学技能解锁增幅。）[/size]</Desc>
 		<Point>1</Point>
 		<RaceKind>Human</RaceKind>
 		<Items>
 			<li Name="Item_LingStone" Count="300"/>
+			<li Name="WFG_Item_YanTianZhu" Count="4"/>
+			<li Name="WFG_Item_YanTianPei" Count="4"/>
 		</Items>
 	</Experience>
 

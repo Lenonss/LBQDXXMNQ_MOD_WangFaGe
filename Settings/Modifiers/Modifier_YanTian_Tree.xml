@@ -8,6 +8,7 @@
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>1</Display>
+		<Sync>1</Sync>
 		<Properties>
 			<li Name="NpcFight_FabaoPowerAddP" AddV="0.3"/>
 			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.2"/>
@@ -21,6 +22,7 @@
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>1</Display>
+		<Sync>1</Sync>
 		<Properties>
 			<li Name="NpcFight_ShieldConversionRate" AddP="0.3"/>
 			<li Name="MaxHp" AddP="0.1"/>
@@ -34,6 +36,7 @@
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>1</Display>
+		<Sync>1</Sync>
 		<Properties>
 			<li Name="FabaoMake_SpeedAddV" AddV="0.3"/>
 			<li Name="FabaoMake_SuccessRateAddV" AddV="0.1"/>
@@ -48,6 +51,7 @@
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>1</Display>
+		<Sync>1</Sync>
 		<Properties>
 			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="0.5"/>
 			<li Name="InspirationCoefficient" AddV="0.3"/>
@@ -62,6 +66,7 @@
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>1</Display>
+		<Sync>1</Sync>
 		<Properties>
 			<li Name="NpcFight_FabaoPowerAddP" AddV="0.8"/>
 			<li Name="NpcFight_SpellPowerAddP" AddV="0.4"/>
@@ -76,6 +81,7 @@
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>1</Display>
+		<Sync>1</Sync>
 		<Properties>
 			<li Name="MaxHp" AddP="0.25"/>
 			<li Name="RecoveryPower" AddP="0.4"/>
